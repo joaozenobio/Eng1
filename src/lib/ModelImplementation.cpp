@@ -7,13 +7,16 @@
 #include "ModelImplementation.h"
 
 ModelImplementation::~ModelImplementation() {
-    this->flows.clear();
-    this->systems.clear();
+    flows.clear();
+    systems.clear();
 }
 
 ModelImplementation::ModelImplementation(std::string name, double time) : name(name), time(time) {}
 
-ModelImplementation::ModelImplementation(const ModelImplementation &other) {}
+ModelImplementation::ModelImplementation(const ModelImplementation& model) {
+    name = model.getName();
+    name = model.getTime();
+}
 
 ModelImplementation& ModelImplementation::operator=(const ModelImplementation& model) {
     return *this;
@@ -22,10 +25,10 @@ ModelImplementation& ModelImplementation::operator=(const ModelImplementation& m
 void ModelImplementation::simulate(double start, double end, double interval) {
     int count = 0;
     for (double i = start; i < end; i += interval) {
-        for (Flow* flow : this->flows) {
+        for (Flow* flow : flows) {
             flow->expression();
         }
-        for(Flow* flow : this->flows) {
+        for(Flow* flow : flows) {
             if(flow->getSystemBegin() != NULL) {
                 flow->getSystemBegin()->setValue(flow->getSystemBegin()->getValue() - flow->getValue());
             }
@@ -34,22 +37,30 @@ void ModelImplementation::simulate(double start, double end, double interval) {
             }
             count++;
         }
-        this->time += interval;
+        time += interval;
     }
 }
 
-std::string ModelImplementation::getName(){
-    return this->name;
+std::string ModelImplementation::getName() const {
+    return name;
 }
 
-void ModelImplementation::setName(std::string name){
-    this->name = name;
+void ModelImplementation::setName(std::string n) {
+    name = n;
 }
 
-void ModelImplementation::add(Flow* flow){
-    this->flows.push_back(flow);
+double ModelImplementation::getTime() const {
+    return time;
 }
 
-void ModelImplementation::add(System* system){
-    this->systems.push_back(system);
+void ModelImplementation::setTime(std::string t) {
+    name = t;
+}
+
+void ModelImplementation::add(Flow* flow) {
+    flows.push_back(flow);
+}
+
+void ModelImplementation::add(System* system) {
+    systems.push_back(system);
 }

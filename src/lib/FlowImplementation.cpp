@@ -9,8 +9,8 @@ FlowImplementation::~FlowImplementation() = default;
 FlowImplementation::FlowImplementation(std::string name, double value, System* systemBegin, System* systemEnd) : name(name), value(value), SystemBegin(systemBegin), SystemEnd(systemEnd) {}
 
 FlowImplementation::FlowImplementation(const FlowImplementation& flow) {
-    this->name = flow.getName();
-    this->value = flow.getValue();
+    name = flow.getName();
+    value = flow.getValue();
 }
 
 Flow& FlowImplementation::operator=(const Flow& flow){
@@ -27,30 +27,30 @@ std::string FlowImplementation::getName() const {
     return name;
 }
 
-void FlowImplementation::setName(std::string name) {
-    this->name = name;
+void FlowImplementation::setName(std::string n) {
+    name = n;
 }
 
 double FlowImplementation::getValue() const {
     return value;
 }
 
-void FlowImplementation::setValue(double value) {
-    this->value = value;
+void FlowImplementation::setValue(double v) {
+    value = v;
 }
 
 System* FlowImplementation::getSystemBegin() const {
-    return this->SystemBegin;
+    return SystemBegin;
 }
 
 void FlowImplementation::setSystemBegin(System* system) {
-    this->SystemBegin = system;
+    SystemBegin = system;
 }
 
 System* FlowImplementation::getSystemEnd() const {
-    return this->SystemEnd;
+    return SystemEnd;
 }
 
 void FlowImplementation::setSystemEnd(System* system) {
-    this->SystemEnd = system;
+    SystemEnd = system;
 }

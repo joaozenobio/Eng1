@@ -17,9 +17,9 @@ public:
     SystemImplementation(const SystemImplementation& other);
     SystemImplementation& operator=(const SystemImplementation& sistema);
     std::string getName() const override;
-    void setName(std::string name) override;
+    void setName(std::string n) override;
     double getValue() const override;
-    void setValue(double value) override;
+    void setValue(double v) override;
 };
 
 

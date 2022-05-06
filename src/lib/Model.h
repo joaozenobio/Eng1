@@ -16,8 +16,10 @@ class Model {
 public:
     virtual ~Model() = default;
     virtual void simulate(double, double, double) = 0;
-    virtual std::string getName() = 0;
+    virtual std::string getName() const = 0;
     virtual void setName(std::string) = 0;
+    virtual double getTime() const = 0;
+    virtual void setTime(std::string) = 0;
     virtual void add(System*) = 0;
     virtual void add(Flow*) = 0;
 };

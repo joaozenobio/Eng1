@@ -21,9 +21,9 @@ public:
     Flow& operator=(const Flow& flow);
     void expression() override = 0;
     std::string getName() const override;
-    void setName(std::string name) override;
+    void setName(std::string n) override;
     double getValue() const override;
-    void setValue(double value) override;
+    void setValue(double v) override;
     System* getSystemBegin() const override;
     void setSystemBegin(System* system) override;
     System* getSystemEnd() const override;

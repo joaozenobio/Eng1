@@ -9,8 +9,8 @@ SystemImplementation::~SystemImplementation() = default;
 SystemImplementation::SystemImplementation(std::string name, double value): name(name), value(value) {}
 
 SystemImplementation::SystemImplementation (const SystemImplementation& system){
-    this->name = system.getName();
-    this->value = system.getValue();
+    name = system.getName();
+    value = system.getValue();
 }
 SystemImplementation& SystemImplementation::operator=(const SystemImplementation& system){
     if (this == &system){
@@ -22,17 +22,17 @@ SystemImplementation& SystemImplementation::operator=(const SystemImplementation
 }
 
 std::string SystemImplementation::getName() const {
-    return this->name;
+    return name;
 }
 
-void SystemImplementation::setName(std::string name) {
-    this->name = name;
+void SystemImplementation::setName(std::string n) {
+    name = n;
 }
 
 double SystemImplementation::getValue() const {
-    return this->value;
+    return value;
 }
 
-void SystemImplementation::setValue(double value) {
-    this->value = value;
+void SystemImplementation::setValue(double v) {
+    value = v;
 }

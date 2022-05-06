@@ -20,8 +20,10 @@ public:
     ModelImplementation(const ModelImplementation& model);
     ModelImplementation& operator=(const ModelImplementation& model);
     void simulate(double start, double end, double interval) override;
-    std::string getName() override;
-    void setName(std::string name) override;
+    std::string getName() const override;
+    void setName(std::string n) override;
+    double getTime() const override;
+    void setTime(std::string t) override;
     void add(System*) override;
     void add(Flow*) override;
 };
