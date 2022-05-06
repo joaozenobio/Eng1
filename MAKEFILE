@@ -1,0 +1,23 @@
+all: ./bin/test ./bin/executable
+
+./bin/executable: ./bin/base.so
+	cd ./bin/ && g++ -std=c++11 -fPIC ../src/main.cpp -o ./executable -L . -lbase -Wl,-rpath .
+	rm -rf ./bin/*.o *~
+
+./bin/test: ./test/functional/main.cpp test/functional/FunctionalTests.cpp test/functional/FunctionalTests.h ./bin/base.so
+	cd ./bin/ && g++ -std=c++11 -fPIC ../test/functional/main.cpp ../test/functional/FunctionalTests.cpp -o ./test -L . -lbase -Wl,-rpath .
+
+./bin/base.so: ./bin/model.o ./bin/flow.o ./bin/system.o
+	g++ -std=c++11 -fPIC -shared ./bin/model.o ./bin/flow.o ./bin/system.o -o ./bin/libbase.so
+
+./bin/model.o: ./src/lib/ModelImplementation.cpp ./src/lib/ModelImplementation.h ./src/lib/Model.h ./bin/flow.o ./bin/system.o
+	g++ -std=c++11 -fPIC -c ./src/lib/ModelImplementation.cpp -o ./bin/model.o
+
+./bin/flow.o: ./src/lib/FlowImplementation.cpp ./src/lib/FlowImplementation.h ./src/lib/Flow.h ./bin/system.o
+	g++ -std=c++11 -fPIC -c ./src/lib/FlowImplementation.cpp -o ./bin/flow.o
+
+./bin/system.o: ./src/lib/SystemImplementation.cpp ./src/lib/SystemImplementation.h ./src/lib/System.h
+	g++ -std=c++11 -fPIC -c ./src/lib/SystemImplementation.cpp -o ./bin/system.o
+
+clean:
+	rm -rf ./bin/*.o *~
