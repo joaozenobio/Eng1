@@ -1,5 +1,4 @@
-all: ./bin/test ./bin/executable
-# ./documentation
+all: ./bin/test ./bin/executable ./documentation
 
 ./documentation: ./bin/executable
 	doxygen ./documentation/doxygen/.cfg
