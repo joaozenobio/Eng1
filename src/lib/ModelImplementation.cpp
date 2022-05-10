@@ -19,6 +19,12 @@ ModelImplementation::ModelImplementation(const ModelImplementation& model) {
 }
 
 ModelImplementation& ModelImplementation::operator=(const ModelImplementation& model) {
+    if (this == &model){
+        return *this;
+    }
+    setName(model.getName());
+    setTime(model.getTime());
+
     return *this;
 }
 
@@ -53,8 +59,8 @@ double ModelImplementation::getTime() const {
     return time;
 }
 
-void ModelImplementation::setTime(std::string t) {
-    name = t;
+void ModelImplementation::setTime(double t) {
+    time = t;
 }
 
 void ModelImplementation::add(Flow* flow) {

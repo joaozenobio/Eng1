@@ -76,7 +76,7 @@ public:
      * Set model time
      * \param t: Name for the system
     **/
-    void setTime(std::string t) override;
+    void setTime(double t) override;
 
     /**
      * Add a system to the model
