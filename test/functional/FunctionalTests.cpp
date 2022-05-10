@@ -73,6 +73,7 @@ void ComplexTest() {
     complexModel->add(system3);
     complexModel->add(system4);
     complexModel->add(system5);
+    complexModel->add(complexFlow1);
     complexModel->add(complexFlow2);
     complexModel->add(complexFlow3);
     complexModel->add(complexFlow4);
