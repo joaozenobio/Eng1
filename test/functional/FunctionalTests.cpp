@@ -4,7 +4,7 @@
 
 #include "FunctionalTests.h"
 
-void Test::ExponencialTest() {
+void ExponencialTest() {
     std::cout << "Exponencial test\n";
     System* system1 = new SystemImplementation("System 1", 100);
     System* system2 = new SystemImplementation("System 2", 0);
@@ -26,7 +26,7 @@ void Test::ExponencialTest() {
     assert(fabs(system2->getValue() - 63.3968) < 0.001);
 }
 
-void Test::LogisticalTest() {
+void LogisticalTest() {
     std::cout << "Logistical test\n";
 
     System* system1 = new SystemImplementation("System 1", 100);
@@ -49,7 +49,7 @@ void Test::LogisticalTest() {
     assert(fabs(system2->getValue() - 21.7833) < 0.0001);
 }
 
-void Test::ComplexTest() {
+void ComplexTest() {
     std::cout << "Complex test\n";
 
     System* system1 = new SystemImplementation("System 1", 100);

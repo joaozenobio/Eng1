@@ -37,11 +37,8 @@ public:
     }
 };
 
-class Test{
-public:
-    static void ExponencialTest();
-    static void ComplexTest();
-    static void LogisticalTest();
-};
+void ExponencialTest();
+void ComplexTest();
+void LogisticalTest();
 
 #endif //ENG1_FUNCTIONALTESTS_H

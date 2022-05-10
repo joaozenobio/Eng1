@@ -9,9 +9,9 @@
 int main() {
 
     std::cout << "Begin test...\n";
-    Test::ExponencialTest();
-    Test::LogisticalTest();
-    Test::ComplexTest();
+    ExponencialTest();
+    LogisticalTest();
+    ComplexTest();
 
     std::cout << "End test!\n";
 
