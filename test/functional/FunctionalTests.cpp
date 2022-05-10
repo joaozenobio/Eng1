@@ -10,6 +10,8 @@ void ExponencialTest() {
     System* system2 = new SystemImplementation("System 2", 0);
     Flow* exponencialFlow = new ExponencialFlow("Exponencial Flow", 0, system1, system2);
     Model* exponencialModel = new ModelImplementation("Exponencial Model", 0);
+    exponencialModel->add(system1);
+    exponencialModel->add(system2);
     exponencialModel->add(exponencialFlow);
 
     assert(system1->getName() == "System 1");
@@ -33,6 +35,8 @@ void LogisticalTest() {
     System* system2 = new SystemImplementation("System 2", 10);
     Flow* logisticalFlow = new LogisticalFlow("Logistical Flow", 0, system1, system2);
     Model* logisticalModel = new ModelImplementation("Logistical Model", 0);
+    logisticalModel->add(system1);
+    logisticalModel->add(system2);
     logisticalModel->add(logisticalFlow);
 
     assert(system1->getName() == "System 1");
@@ -64,7 +68,11 @@ void ComplexTest() {
     Flow* complexFlow5 = new ComplexFlow("Complex Flow 5", 0, system2, system3);
     Flow* complexFlow6 = new ComplexFlow("Complex Flow 6", 0, system2, system5);
     Model* complexModel = new ModelImplementation("Complex Model", 0);
-    complexModel->add(complexFlow1);
+    complexModel->add(system1);
+    complexModel->add(system2);
+    complexModel->add(system3);
+    complexModel->add(system4);
+    complexModel->add(system5);
     complexModel->add(complexFlow2);
     complexModel->add(complexFlow3);
     complexModel->add(complexFlow4);

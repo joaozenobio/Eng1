@@ -11,6 +11,8 @@ FlowImplementation::FlowImplementation(std::string name, double value, System* s
 FlowImplementation::FlowImplementation(const FlowImplementation& flow) {
     name = flow.getName();
     value = flow.getValue();
+    systemBegin = flow.systemBegin;
+    systemEnd = flow.systemEnd;
 }
 
 FlowImplementation& FlowImplementation::operator=(const Flow& flow){

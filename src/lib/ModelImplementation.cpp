@@ -16,6 +16,8 @@ ModelImplementation::ModelImplementation(std::string name, double time) : name(n
 ModelImplementation::ModelImplementation(const ModelImplementation& model) {
     name = model.getName();
     time = model.getTime();
+    flows = model.flows;
+    systems = model.systems;
 }
 
 ModelImplementation& ModelImplementation::operator=(const ModelImplementation& model) {
