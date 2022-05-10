@@ -19,6 +19,8 @@ FlowImplementation& FlowImplementation::operator=(const Flow& flow){
     }
     setName(flow.getName());
     setValue(flow.getValue());
+    setSystemBegin(flow.getSystemBegin());
+    setSystemEnd(flow.getSystemEnd());
     return *this;
 }
 
