@@ -10,7 +10,7 @@ int main() {
 
     std::cout << "Begin test...\n";
     Test::ExponencialTest();
-    Test::LogisticTest();
+    Test::LogisticalTest();
     Test::ComplexTest();
 
     std::cout << "End test!\n";

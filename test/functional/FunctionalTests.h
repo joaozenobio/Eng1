@@ -21,9 +21,9 @@ public:
     }
 };
 
-class LogisticFlow : public FlowImplementation{
+class LogisticalFlow : public FlowImplementation{
 public:
-    LogisticFlow(std::string name, double value, System* systemOut, System* systemIn) : FlowImplementation(name, value, systemOut, systemIn) {}
+    LogisticalFlow(std::string name, double value, System* systemOut, System* systemIn) : FlowImplementation(name, value, systemOut, systemIn) {}
     void expression() override {
         this->setValue(0.01 * this->getSystemEnd()->getValue() * (1 - this->getSystemEnd()->getValue() / 70));
     }
@@ -41,7 +41,7 @@ class Test{
 public:
     static void ExponencialTest();
     static void ComplexTest();
-    static void LogisticTest();
+    static void LogisticalTest();
 };
 
 #endif //ENG1_FUNCTIONALTESTS_H

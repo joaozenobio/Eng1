@@ -22,33 +22,29 @@ void Test::ExponencialTest() {
 
     exponencialModel->simulate(0, 100, 1);
 
-//    std::cout << system1->getValue() << "\n";
-//    std::cout << system2->getValue() << "\n";
     assert(fabs(system1->getValue() - 36.6032) < 0.001);
     assert(fabs(system2->getValue() - 63.3968) < 0.001);
 }
 
-void Test::LogisticTest() {
-    std::cout << "Logistic test\n";
+void Test::LogisticalTest() {
+    std::cout << "Logistical test\n";
 
     System* system1 = new SystemImplementation("System 1", 100);
     System* system2 = new SystemImplementation("System 2", 10);
-    Flow* logisticFlow = new LogisticFlow("Logistic Flow", 0, system1, system2);
-    Model* logisticModel = new ModelImplementation("Logistic Model", 0);
-    logisticModel->add(logisticFlow);
+    Flow* logisticalFlow = new LogisticalFlow("Logistical Flow", 0, system1, system2);
+    Model* logisticalModel = new ModelImplementation("Logistical Model", 0);
+    logisticalModel->add(logisticalFlow);
 
     assert(system1->getName() == "System 1");
     assert(system2->getName() == "System 2");
-    assert(logisticFlow->getName() == "Logistic Flow");
-    assert(logisticModel->getName() == "Logistic Model");
+    assert(logisticalFlow->getName() == "Logistical Flow");
+    assert(logisticalModel->getName() == "Logistical Model");
 
     assert(fabs(system1->getValue() - 100) < 0.001);
     assert(fabs(system2->getValue() - 10) < 0.001);
 
-    logisticModel->simulate(0, 100, 1);
+    logisticalModel->simulate(0, 100, 1);
 
-//    std::cout << system1->getValue() << "\n";
-//    std::cout << system2->getValue() << "\n";
     assert(fabs(system1->getValue() - 88.2167) < 0.0001);
     assert(fabs(system2->getValue() - 21.7833) < 0.0001);
 }
@@ -96,11 +92,6 @@ void Test::ComplexTest() {
 
     complexModel->simulate(0, 100, 1);
 
-//    std::cout << system1->getValue() << "\n";
-//    std::cout << system2->getValue() << "\n";
-//    std::cout << system3->getValue() << "\n";
-//    std::cout << system4->getValue() << "\n";
-//    std::cout << system5->getValue() << "\n";
     assert(fabs(system1->getValue() - 31.8513) < 0.0001);
     assert(fabs(system2->getValue() - 18.4003) < 0.0001);
     assert(fabs(system3->getValue() - 77.1143) < 0.0001);
