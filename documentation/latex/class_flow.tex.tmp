@@ -1,0 +1,125 @@
+\hypertarget{class_flow}{}\doxysection{Flow Class Reference}
+\label{class_flow}\index{Flow@{Flow}}
+
+
+Inheritance diagram for Flow\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \mbox{\hyperlink{class_flow_a2d0340d844ab2d275222938234e44169}{get\+Name}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_flow_a80346b11c95c20a009278eb78f8f9653}{set\+Name}} (std\+::string)=0
+\item 
+virtual double \mbox{\hyperlink{class_flow_a8acd2815f580b2c0b29f7fd703b3cdc4}{get\+Value}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_flow_a09ab3b09ccf70f5d6cfcffe2d1af1be0}{set\+Value}} (double)=0
+\item 
+virtual void \mbox{\hyperlink{class_flow_aa690a4df57320290f597985a6fcafd5d}{expression}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_a504a7a6039153b7a723ac43461978d56}{get\+System\+Begin}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_flow_a2414f61bc74aa065b5e5ee5ea4d4801d}{set\+System\+Begin}} (\mbox{\hyperlink{class_system}{System}} $\ast$)=0
+\item 
+virtual \mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_ac07b6b9dc00825dffadf781313eec1b5}{get\+System\+End}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_flow_a249d4547e284863fcbf5a01916af652f}{set\+System\+End}} (\mbox{\hyperlink{class_system}{System}} $\ast$)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_flow_aa690a4df57320290f597985a6fcafd5d}\label{class_flow_aa690a4df57320290f597985a6fcafd5d}} 
+\index{Flow@{Flow}!expression@{expression}}
+\index{expression@{expression}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{expression()}{expression()}}
+{\footnotesize\ttfamily virtual void Flow\+::expression (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_flow_implementation_a833ca4ff1dbdfa6723f9edabd9ed0adf}{Flow\+Implementation}}.
+
+\mbox{\Hypertarget{class_flow_a2d0340d844ab2d275222938234e44169}\label{class_flow_a2d0340d844ab2d275222938234e44169}} 
+\index{Flow@{Flow}!getName@{getName}}
+\index{getName@{getName}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual std\+::string Flow\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_flow_implementation_a045a2433eab6c12b4a1655a23d3e89b9}{Flow\+Implementation}}.
+
+\mbox{\Hypertarget{class_flow_a504a7a6039153b7a723ac43461978d56}\label{class_flow_a504a7a6039153b7a723ac43461978d56}} 
+\index{Flow@{Flow}!getSystemBegin@{getSystemBegin}}
+\index{getSystemBegin@{getSystemBegin}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getSystemBegin()}{getSystemBegin()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_system}{System}} $\ast$ Flow\+::get\+System\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_flow_implementation_a8be3ceb80c4090f09bffd850f24c92e6}{Flow\+Implementation}}.
+
+\mbox{\Hypertarget{class_flow_ac07b6b9dc00825dffadf781313eec1b5}\label{class_flow_ac07b6b9dc00825dffadf781313eec1b5}} 
+\index{Flow@{Flow}!getSystemEnd@{getSystemEnd}}
+\index{getSystemEnd@{getSystemEnd}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getSystemEnd()}{getSystemEnd()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_system}{System}} $\ast$ Flow\+::get\+System\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_flow_implementation_a21375e757d62d9d1416ddb7962e2b215}{Flow\+Implementation}}.
+
+\mbox{\Hypertarget{class_flow_a8acd2815f580b2c0b29f7fd703b3cdc4}\label{class_flow_a8acd2815f580b2c0b29f7fd703b3cdc4}} 
+\index{Flow@{Flow}!getValue@{getValue}}
+\index{getValue@{getValue}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily virtual double Flow\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_flow_implementation_a203a5f4831e2f8be830ed8298080e536}{Flow\+Implementation}}.
+
+\mbox{\Hypertarget{class_flow_a80346b11c95c20a009278eb78f8f9653}\label{class_flow_a80346b11c95c20a009278eb78f8f9653}} 
+\index{Flow@{Flow}!setName@{setName}}
+\index{setName@{setName}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_flow_implementation_a91100bd7500050c33d10dc59bfdf7aff}{Flow\+Implementation}}.
+
+\mbox{\Hypertarget{class_flow_a2414f61bc74aa065b5e5ee5ea4d4801d}\label{class_flow_a2414f61bc74aa065b5e5ee5ea4d4801d}} 
+\index{Flow@{Flow}!setSystemBegin@{setSystemBegin}}
+\index{setSystemBegin@{setSystemBegin}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setSystemBegin()}{setSystemBegin()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+System\+Begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_flow_implementation_aea7e5af026738636b9aea92471e15295}{Flow\+Implementation}}.
+
+\mbox{\Hypertarget{class_flow_a249d4547e284863fcbf5a01916af652f}\label{class_flow_a249d4547e284863fcbf5a01916af652f}} 
+\index{Flow@{Flow}!setSystemEnd@{setSystemEnd}}
+\index{setSystemEnd@{setSystemEnd}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setSystemEnd()}{setSystemEnd()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+System\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_flow_implementation_a788d57fd956a3448355a85a3c0f355ef}{Flow\+Implementation}}.
+
+\mbox{\Hypertarget{class_flow_a09ab3b09ccf70f5d6cfcffe2d1af1be0}\label{class_flow_a09ab3b09ccf70f5d6cfcffe2d1af1be0}} 
+\index{Flow@{Flow}!setValue@{setValue}}
+\index{setValue@{setValue}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily virtual void Flow\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_flow_implementation_a0856e8004ba047743c72700cd01764cb}{Flow\+Implementation}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/joaozenobio/\+CLion\+Projects/\+Eng1/src/lib/Flow.\+h\end{DoxyCompactItemize}

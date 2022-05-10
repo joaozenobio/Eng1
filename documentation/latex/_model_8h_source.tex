@@ -1,0 +1,34 @@
+\hypertarget{_model_8h_source}{}\doxysection{Model.\+h}
+\label{_model_8h_source}\index{/home/joaozenobio/CLionProjects/Eng1/src/lib/Model.h@{/home/joaozenobio/CLionProjects/Eng1/src/lib/Model.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by joaozenobio on 27/04/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef ENG1\_MODEL\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define ENG1\_MODEL\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}System.h"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}Flow.h"{}}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_model}{Model}} \{}
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_model}{\string~Model}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{18     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} simulate(\textcolor{keywordtype}{double}, \textcolor{keywordtype}{double}, \textcolor{keywordtype}{double}) = 0;}
+\DoxyCodeLine{19     \textcolor{keyword}{virtual} std::string getName() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{20     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setName(std::string) = 0;}
+\DoxyCodeLine{21     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} getTime() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{22     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setTime(std::string) = 0;}
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} add(\mbox{\hyperlink{class_system}{System}}*) = 0;}
+\DoxyCodeLine{24     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} add(\mbox{\hyperlink{class_flow}{Flow}}*) = 0;}
+\DoxyCodeLine{25 \};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//ENG1\_MODEL\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,52 @@
+\hypertarget{_flow_implementation_8h_source}{}\doxysection{Flow\+Implementation.\+h}
+\label{_flow_implementation_8h_source}\index{/home/joaozenobio/CLionProjects/Eng1/src/lib/FlowImplementation.h@{/home/joaozenobio/CLionProjects/Eng1/src/lib/FlowImplementation.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by joaozenobio on 28/04/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef ENG1\_FLOWIMPLEMENTATION\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define ENG1\_FLOWIMPLEMENTATION\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}Flow.h"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_flow_implementation}{FlowImplementation}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flow}{Flow}} \{}
+\DoxyCodeLine{15 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{16     std::string name;}
+\DoxyCodeLine{17     \textcolor{keywordtype}{double} value;}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_system}{System}}* systemBegin;}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_system}{System}}* systemEnd;}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_flow_implementation_ac825f355b8376eb84f8463499d6e8787}{\string~FlowImplementation}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{34     \mbox{\hyperlink{class_flow_implementation_a79183f6fae1391c6be6e19b2711aa7b7}{FlowImplementation}}(std::string name, \textcolor{keywordtype}{double} value, \mbox{\hyperlink{class_system}{System}}* systemBegin, \mbox{\hyperlink{class_system}{System}}* systemEnd);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{41     \mbox{\hyperlink{class_flow_implementation_a79183f6fae1391c6be6e19b2711aa7b7}{FlowImplementation}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}\& flow);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{48     \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}\& \mbox{\hyperlink{class_flow_implementation_aa6b15bd2f9807cd6cf0d80b7f167f925}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_flow}{Flow}}\& flow);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_implementation_a833ca4ff1dbdfa6723f9edabd9ed0adf}{expression}}() \textcolor{keyword}{override} = 0;}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{58     std::string \mbox{\hyperlink{class_flow_implementation_a045a2433eab6c12b4a1655a23d3e89b9}{getName}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_implementation_a91100bd7500050c33d10dc59bfdf7aff}{setName}}(std::string n) \textcolor{keyword}{override};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{69     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_flow_implementation_a203a5f4831e2f8be830ed8298080e536}{getValue}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{75     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_implementation_a0856e8004ba047743c72700cd01764cb}{setValue}}(\textcolor{keywordtype}{double} v) \textcolor{keyword}{override};}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{80     \mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_flow_implementation_a8be3ceb80c4090f09bffd850f24c92e6}{getSystemBegin}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{86     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_implementation_aea7e5af026738636b9aea92471e15295}{setSystemBegin}}(\mbox{\hyperlink{class_system}{System}}* system) \textcolor{keyword}{override};}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{91     \mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_flow_implementation_a21375e757d62d9d1416ddb7962e2b215}{getSystemEnd}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{97     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_flow_implementation_a788d57fd956a3448355a85a3c0f355ef}{setSystemEnd}}(\mbox{\hyperlink{class_system}{System}}* system) \textcolor{keyword}{override};}
+\DoxyCodeLine{98 \};}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//ENG1\_FLOWIMPLEMENTATION\_H}}
+
+\end{DoxyCode}

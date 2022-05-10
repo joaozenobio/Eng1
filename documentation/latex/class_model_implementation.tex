@@ -1,0 +1,211 @@
+\hypertarget{class_model_implementation}{}\doxysection{Model\+Implementation Class Reference}
+\label{class_model_implementation}\index{ModelImplementation@{ModelImplementation}}
+
+
+Inheritance diagram for Model\+Implementation\+:
+% FIG 0
+
+
+Collaboration diagram for Model\+Implementation\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_implementation_a5414546b120a3d093e61a152ff9ffbfd}{$\sim$\+Model\+Implementation}} () override
+\item 
+\mbox{\hyperlink{class_model_implementation_ac0dca9187eb4c438b7dc7209165480ee}{Model\+Implementation}} (std\+::string name, double time)
+\item 
+\mbox{\hyperlink{class_model_implementation_a49f4510c6c70a7cdfd81c14a6123fd2b}{Model\+Implementation}} (const \mbox{\hyperlink{class_model_implementation}{Model\+Implementation}} \&model)
+\item 
+\mbox{\hyperlink{class_model_implementation}{Model\+Implementation}} \& \mbox{\hyperlink{class_model_implementation_a3853e1f828955d9a397606988dbde071}{operator=}} (const \mbox{\hyperlink{class_model_implementation}{Model\+Implementation}} \&model)
+\item 
+void \mbox{\hyperlink{class_model_implementation_a6e4abe69f72c5797323d756a10f30ad3}{simulate}} (double start, double end, double timestep) override
+\item 
+std\+::string \mbox{\hyperlink{class_model_implementation_afc943048167f4bd42a6311ee71aa6ab2}{get\+Name}} () const override
+\item 
+void \mbox{\hyperlink{class_model_implementation_a73d846c6a037eeb63a85e0496045fa7a}{set\+Name}} (std\+::string n) override
+\item 
+double \mbox{\hyperlink{class_model_implementation_a4764f51274602af5ca5b81d74840d9e7}{get\+Time}} () const override
+\item 
+void \mbox{\hyperlink{class_model_implementation_a15b2dbb336f7727eff052006476efe41}{set\+Time}} (std\+::string t) override
+\item 
+void \mbox{\hyperlink{class_model_implementation_a8754857fc03af9624069749550f3e22f}{add}} (\mbox{\hyperlink{class_system}{System}} $\ast$system) override
+\item 
+void \mbox{\hyperlink{class_model_implementation_a28f21761aecbef9c90395f3f2c7cb9c8}{add}} (\mbox{\hyperlink{class_flow}{Flow}} $\ast$flow) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_model_implementation_ac63b6f43d79bc5fe54561e390f3fee97}\label{class_model_implementation_ac63b6f43d79bc5fe54561e390f3fee97}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{class_model_implementation_ac36f2f2cf9e4004913acad22cbc04f1b}\label{class_model_implementation_ac36f2f2cf9e4004913acad22cbc04f1b}} 
+double {\bfseries time}
+\item 
+\mbox{\Hypertarget{class_model_implementation_a320470d8323cec3a08f1d0adbf77d0b9}\label{class_model_implementation_a320470d8323cec3a08f1d0adbf77d0b9}} 
+std\+::vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$ {\bfseries systems}
+\item 
+\mbox{\Hypertarget{class_model_implementation_a422c0d1c4fd550463347889985295eac}\label{class_model_implementation_a422c0d1c4fd550463347889985295eac}} 
+std\+::vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$ {\bfseries flows}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_model_implementation_a5414546b120a3d093e61a152ff9ffbfd}\label{class_model_implementation_a5414546b120a3d093e61a152ff9ffbfd}} 
+\index{ModelImplementation@{ModelImplementation}!````~ModelImplementation@{$\sim$ModelImplementation}}
+\index{````~ModelImplementation@{$\sim$ModelImplementation}!ModelImplementation@{ModelImplementation}}
+\doxysubsubsection{\texorpdfstring{$\sim$ModelImplementation()}{~ModelImplementation()}}
+{\footnotesize\ttfamily Model\+Implementation\+::$\sim$\+Model\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+Default destructor \mbox{\Hypertarget{class_model_implementation_ac0dca9187eb4c438b7dc7209165480ee}\label{class_model_implementation_ac0dca9187eb4c438b7dc7209165480ee}} 
+\index{ModelImplementation@{ModelImplementation}!ModelImplementation@{ModelImplementation}}
+\index{ModelImplementation@{ModelImplementation}!ModelImplementation@{ModelImplementation}}
+\doxysubsubsection{\texorpdfstring{ModelImplementation()}{ModelImplementation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Model\+Implementation\+::\+Model\+Implementation (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{double}]{time }\end{DoxyParamCaption})}
+
+Default constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & Inital model name \\
+\hline
+{\em time} & Inital model time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_model}{Model}} with initial name and time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_implementation_a49f4510c6c70a7cdfd81c14a6123fd2b}\label{class_model_implementation_a49f4510c6c70a7cdfd81c14a6123fd2b}} 
+\index{ModelImplementation@{ModelImplementation}!ModelImplementation@{ModelImplementation}}
+\index{ModelImplementation@{ModelImplementation}!ModelImplementation@{ModelImplementation}}
+\doxysubsubsection{\texorpdfstring{ModelImplementation()}{ModelImplementation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Model\+Implementation\+::\+Model\+Implementation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_model_implementation}{Model\+Implementation}} \&}]{model }\end{DoxyParamCaption})}
+
+Copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em model} & \mbox{\hyperlink{class_model}{Model}} to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Copied model 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_model_implementation_a28f21761aecbef9c90395f3f2c7cb9c8}\label{class_model_implementation_a28f21761aecbef9c90395f3f2c7cb9c8}} 
+\index{ModelImplementation@{ModelImplementation}!add@{add}}
+\index{add@{add}!ModelImplementation@{ModelImplementation}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Model\+Implementation\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} $\ast$}]{flow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Add a flow to the model 
+\begin{DoxyParams}{Parameters}
+{\em flow} & \mbox{\hyperlink{class_flow}{Flow}} to be added to the model \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_model}{Model}}.
+
+\mbox{\Hypertarget{class_model_implementation_a8754857fc03af9624069749550f3e22f}\label{class_model_implementation_a8754857fc03af9624069749550f3e22f}} 
+\index{ModelImplementation@{ModelImplementation}!add@{add}}
+\index{add@{add}!ModelImplementation@{ModelImplementation}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Model\+Implementation\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Add a system to the model 
+\begin{DoxyParams}{Parameters}
+{\em system} & \mbox{\hyperlink{class_system}{System}} to be added to the model \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_model}{Model}}.
+
+\mbox{\Hypertarget{class_model_implementation_afc943048167f4bd42a6311ee71aa6ab2}\label{class_model_implementation_afc943048167f4bd42a6311ee71aa6ab2}} 
+\index{ModelImplementation@{ModelImplementation}!getName@{getName}}
+\index{getName@{getName}!ModelImplementation@{ModelImplementation}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Model\+Implementation\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get model name 
+
+Implements \mbox{\hyperlink{class_model}{Model}}.
+
+\mbox{\Hypertarget{class_model_implementation_a4764f51274602af5ca5b81d74840d9e7}\label{class_model_implementation_a4764f51274602af5ca5b81d74840d9e7}} 
+\index{ModelImplementation@{ModelImplementation}!getTime@{getTime}}
+\index{getTime@{getTime}!ModelImplementation@{ModelImplementation}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily double Model\+Implementation\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get model time 
+
+Implements \mbox{\hyperlink{class_model}{Model}}.
+
+\mbox{\Hypertarget{class_model_implementation_a3853e1f828955d9a397606988dbde071}\label{class_model_implementation_a3853e1f828955d9a397606988dbde071}} 
+\index{ModelImplementation@{ModelImplementation}!operator=@{operator=}}
+\index{operator=@{operator=}!ModelImplementation@{ModelImplementation}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_implementation}{Model\+Implementation}} \& Model\+Implementation\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_model_implementation}{Model\+Implementation}} \&}]{model }\end{DoxyParamCaption})}
+
+Copy Assignment Operator 
+\begin{DoxyParams}{Parameters}
+{\em model} & \mbox{\hyperlink{class_model}{Model}} to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Copied model 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_implementation_a73d846c6a037eeb63a85e0496045fa7a}\label{class_model_implementation_a73d846c6a037eeb63a85e0496045fa7a}} 
+\index{ModelImplementation@{ModelImplementation}!setName@{setName}}
+\index{setName@{setName}!ModelImplementation@{ModelImplementation}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Model\+Implementation\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set model name 
+\begin{DoxyParams}{Parameters}
+{\em n} & Name for the system \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_model}{Model}}.
+
+\mbox{\Hypertarget{class_model_implementation_a15b2dbb336f7727eff052006476efe41}\label{class_model_implementation_a15b2dbb336f7727eff052006476efe41}} 
+\index{ModelImplementation@{ModelImplementation}!setTime@{setTime}}
+\index{setTime@{setTime}!ModelImplementation@{ModelImplementation}}
+\doxysubsubsection{\texorpdfstring{setTime()}{setTime()}}
+{\footnotesize\ttfamily void Model\+Implementation\+::set\+Time (\begin{DoxyParamCaption}\item[{std\+::string}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set model time 
+\begin{DoxyParams}{Parameters}
+{\em t} & Name for the system \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_model}{Model}}.
+
+\mbox{\Hypertarget{class_model_implementation_a6e4abe69f72c5797323d756a10f30ad3}\label{class_model_implementation_a6e4abe69f72c5797323d756a10f30ad3}} 
+\index{ModelImplementation@{ModelImplementation}!simulate@{simulate}}
+\index{simulate@{simulate}!ModelImplementation@{ModelImplementation}}
+\doxysubsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily void Model\+Implementation\+::simulate (\begin{DoxyParamCaption}\item[{double}]{start,  }\item[{double}]{end,  }\item[{double}]{timestep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Simulates the model during a period of time between start and end time values with a specified timestep 
+\begin{DoxyParams}{Parameters}
+{\em start} & Time where the simulation starts \\
+\hline
+{\em end} & Time where the simulation ends \\
+\hline
+{\em timestep} & Timestep value to simulate with \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_model}{Model}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/joaozenobio/\+CLion\+Projects/\+Eng1/src/lib/Model\+Implementation.\+h\item 
+/home/joaozenobio/\+CLion\+Projects/\+Eng1/src/lib/Model\+Implementation.\+cpp\end{DoxyCompactItemize}

@@ -6,20 +6,22 @@
 
 FlowImplementation::~FlowImplementation() = default;
 
-FlowImplementation::FlowImplementation(std::string name, double value, System* systemBegin, System* systemEnd) : name(name), value(value), SystemBegin(systemBegin), SystemEnd(systemEnd) {}
+FlowImplementation::FlowImplementation(std::string name, double value, System* systemBegin, System* systemEnd) : name(name), value(value), systemBegin(systemBegin), systemEnd(systemEnd) {}
 
 FlowImplementation::FlowImplementation(const FlowImplementation& flow) {
     name = flow.getName();
     value = flow.getValue();
+    systemBegin = flow.getSystemBegin();
+    systemEnd = flow.getSystemEnd();
 }
 
-Flow& FlowImplementation::operator=(const Flow& flow){
+FlowImplementation& FlowImplementation::operator=(const Flow& flow){
     if (this == &flow){
         return *this;
     }
     setName(flow.getName());
-    setSystemBegin(NULL);
-    setSystemEnd(NULL);
+    setSystemBegin(flow.getSystemBegin());
+    setSystemEnd(flow.getSystemEnd());
     return *this;
 }
 
@@ -40,17 +42,17 @@ void FlowImplementation::setValue(double v) {
 }
 
 System* FlowImplementation::getSystemBegin() const {
-    return SystemBegin;
+    return systemBegin;
 }
 
 void FlowImplementation::setSystemBegin(System* system) {
-    SystemBegin = system;
+    systemBegin = system;
 }
 
 System* FlowImplementation::getSystemEnd() const {
-    return SystemEnd;
+    return systemEnd;
 }
 
 void FlowImplementation::setSystemEnd(System* system) {
-    SystemEnd = system;
+    systemEnd = system;
 }

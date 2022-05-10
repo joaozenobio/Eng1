@@ -1,0 +1,150 @@
+\hypertarget{class_system_implementation}{}\doxysection{System\+Implementation Class Reference}
+\label{class_system_implementation}\index{SystemImplementation@{SystemImplementation}}
+
+
+Inheritance diagram for System\+Implementation\+:
+% FIG 0
+
+
+Collaboration diagram for System\+Implementation\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_system_implementation_a2ca2a7e9876ec2d6d6854fb566341092}{$\sim$\+System\+Implementation}} () override
+\item 
+\mbox{\hyperlink{class_system_implementation_a9649ee0b2180c5f8792d2bcf2bc02039}{System\+Implementation}} (std\+::string name, double value)
+\item 
+\mbox{\hyperlink{class_system_implementation_afdf6d04313b02eac9cb00737978f6eaf}{System\+Implementation}} (const \mbox{\hyperlink{class_system_implementation}{System\+Implementation}} \&system)
+\item 
+\mbox{\hyperlink{class_system_implementation}{System\+Implementation}} \& \mbox{\hyperlink{class_system_implementation_a55f2359f0f4bb71e4664dbef1900e1d8}{operator=}} (const \mbox{\hyperlink{class_system_implementation}{System\+Implementation}} \&system)
+\item 
+std\+::string \mbox{\hyperlink{class_system_implementation_ad64b6f24584bf593a0193f4e50e7068c}{get\+Name}} () const override
+\item 
+void \mbox{\hyperlink{class_system_implementation_ae4f20947a3288faa1e2decdd63702d06}{set\+Name}} (std\+::string n) override
+\item 
+double \mbox{\hyperlink{class_system_implementation_ae43c51519a0445e20ccfec7a573713c4}{get\+Value}} () const override
+\item 
+void \mbox{\hyperlink{class_system_implementation_a6f7a9497a014563f3276a72ff37a9b4c}{set\+Value}} (double v) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_system_implementation_af151ce35c028cccec920e03256ff55fd}\label{class_system_implementation_af151ce35c028cccec920e03256ff55fd}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{class_system_implementation_afdef2d11c4f94321a9de2e5f082c7675}\label{class_system_implementation_afdef2d11c4f94321a9de2e5f082c7675}} 
+double {\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_system_implementation_a2ca2a7e9876ec2d6d6854fb566341092}\label{class_system_implementation_a2ca2a7e9876ec2d6d6854fb566341092}} 
+\index{SystemImplementation@{SystemImplementation}!````~SystemImplementation@{$\sim$SystemImplementation}}
+\index{````~SystemImplementation@{$\sim$SystemImplementation}!SystemImplementation@{SystemImplementation}}
+\doxysubsubsection{\texorpdfstring{$\sim$SystemImplementation()}{~SystemImplementation()}}
+{\footnotesize\ttfamily System\+Implementation\+::$\sim$\+System\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{class_system_implementation_a9649ee0b2180c5f8792d2bcf2bc02039}\label{class_system_implementation_a9649ee0b2180c5f8792d2bcf2bc02039}} 
+\index{SystemImplementation@{SystemImplementation}!SystemImplementation@{SystemImplementation}}
+\index{SystemImplementation@{SystemImplementation}!SystemImplementation@{SystemImplementation}}
+\doxysubsubsection{\texorpdfstring{SystemImplementation()}{SystemImplementation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily System\+Implementation\+::\+System\+Implementation (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+Default constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & Inital system name \\
+\hline
+{\em value} & Inital system value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_system}{System}} with initial name and value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_system_implementation_afdf6d04313b02eac9cb00737978f6eaf}\label{class_system_implementation_afdf6d04313b02eac9cb00737978f6eaf}} 
+\index{SystemImplementation@{SystemImplementation}!SystemImplementation@{SystemImplementation}}
+\index{SystemImplementation@{SystemImplementation}!SystemImplementation@{SystemImplementation}}
+\doxysubsubsection{\texorpdfstring{SystemImplementation()}{SystemImplementation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily System\+Implementation\+::\+System\+Implementation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system_implementation}{System\+Implementation}} \&}]{system }\end{DoxyParamCaption})}
+
+Copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em system} & \mbox{\hyperlink{class_system}{System}} to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Copied system 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_system_implementation_ad64b6f24584bf593a0193f4e50e7068c}\label{class_system_implementation_ad64b6f24584bf593a0193f4e50e7068c}} 
+\index{SystemImplementation@{SystemImplementation}!getName@{getName}}
+\index{getName@{getName}!SystemImplementation@{SystemImplementation}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string System\+Implementation\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get system name 
+
+Implements \mbox{\hyperlink{class_system}{System}}.
+
+\mbox{\Hypertarget{class_system_implementation_ae43c51519a0445e20ccfec7a573713c4}\label{class_system_implementation_ae43c51519a0445e20ccfec7a573713c4}} 
+\index{SystemImplementation@{SystemImplementation}!getValue@{getValue}}
+\index{getValue@{getValue}!SystemImplementation@{SystemImplementation}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily double System\+Implementation\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get system value 
+
+Implements \mbox{\hyperlink{class_system}{System}}.
+
+\mbox{\Hypertarget{class_system_implementation_a55f2359f0f4bb71e4664dbef1900e1d8}\label{class_system_implementation_a55f2359f0f4bb71e4664dbef1900e1d8}} 
+\index{SystemImplementation@{SystemImplementation}!operator=@{operator=}}
+\index{operator=@{operator=}!SystemImplementation@{SystemImplementation}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system_implementation}{System\+Implementation}} \& System\+Implementation\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system_implementation}{System\+Implementation}} \&}]{system }\end{DoxyParamCaption})}
+
+Copy Assignment Operator 
+\begin{DoxyParams}{Parameters}
+{\em system} & \mbox{\hyperlink{class_system}{System}} to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Copied system 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_system_implementation_ae4f20947a3288faa1e2decdd63702d06}\label{class_system_implementation_ae4f20947a3288faa1e2decdd63702d06}} 
+\index{SystemImplementation@{SystemImplementation}!setName@{setName}}
+\index{setName@{setName}!SystemImplementation@{SystemImplementation}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void System\+Implementation\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set system name 
+\begin{DoxyParams}{Parameters}
+{\em n} & Name for the system \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_system}{System}}.
+
+\mbox{\Hypertarget{class_system_implementation_a6f7a9497a014563f3276a72ff37a9b4c}\label{class_system_implementation_a6f7a9497a014563f3276a72ff37a9b4c}} 
+\index{SystemImplementation@{SystemImplementation}!setValue@{setValue}}
+\index{setValue@{setValue}!SystemImplementation@{SystemImplementation}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily void System\+Implementation\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set system value 
+\begin{DoxyParams}{Parameters}
+{\em v} & Value for the system \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_system}{System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/joaozenobio/\+CLion\+Projects/\+Eng1/src/lib/System\+Implementation.\+h\item 
+/home/joaozenobio/\+CLion\+Projects/\+Eng1/src/lib/System\+Implementation.\+cpp\end{DoxyCompactItemize}

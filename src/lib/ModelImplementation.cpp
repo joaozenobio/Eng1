@@ -15,16 +15,16 @@ ModelImplementation::ModelImplementation(std::string name, double time) : name(n
 
 ModelImplementation::ModelImplementation(const ModelImplementation& model) {
     name = model.getName();
-    name = model.getTime();
+    time = model.getTime();
 }
 
 ModelImplementation& ModelImplementation::operator=(const ModelImplementation& model) {
     return *this;
 }
 
-void ModelImplementation::simulate(double start, double end, double interval) {
+void ModelImplementation::simulate(double start, double end, double timestep) {
     int count = 0;
-    for (double i = start; i < end; i += interval) {
+    for (double i = start; i < end; i += timestep) {
         for (Flow* flow : flows) {
             flow->expression();
         }
@@ -37,7 +37,7 @@ void ModelImplementation::simulate(double start, double end, double interval) {
             }
             count++;
         }
-        time += interval;
+        time += timestep;
     }
 }
 
