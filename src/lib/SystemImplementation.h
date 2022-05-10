@@ -7,6 +7,9 @@
 
 #include "System.h"
 
+/**
+ * System that stores energy
+**/
 class SystemImplementation : public System {
 
 private:

@@ -9,7 +9,7 @@
 #include "Flow.h"
 
 /**
- * Flow that converges energy from a model to another.
+ * Flow that converges energy from a model to another
 **/
 class FlowImplementation : public Flow {
 

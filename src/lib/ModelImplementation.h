@@ -8,6 +8,9 @@
 
 #include "Model.h"
 
+/**
+ * Model that simulates the energy flow through models
+**/
 class ModelImplementation: public Model {
 
 private:

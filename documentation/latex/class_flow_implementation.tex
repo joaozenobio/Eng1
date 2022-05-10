@@ -6,20 +6,28 @@
 
 
 
-Inheritance diagram for Flow\+Implementation\+:
-% FIG 0
+Inheritance diagram for Flow\+Implementation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_flow_implementation__inherit__graph}
+\end{center}
+\end{figure}
 
 
-Collaboration diagram for Flow\+Implementation\+:
-% FIG 1
+Collaboration diagram for Flow\+Implementation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_flow_implementation__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_flow_implementation_ac825f355b8376eb84f8463499d6e8787}{$\sim$\+Flow\+Implementation}} () override
 \item 
-\mbox{\hyperlink{class_flow_implementation_a79183f6fae1391c6be6e19b2711aa7b7}{Flow\+Implementation}} (std\+::string name, double value, \mbox{\hyperlink{class_system}{System}} $\ast$system\+Begin, \mbox{\hyperlink{class_system}{System}} $\ast$system\+End)
-\item 
-\mbox{\hyperlink{class_flow_implementation_a8f22eea5f01c8c9ad63a6977ca14b977}{Flow\+Implementation}} (const \mbox{\hyperlink{class_flow_implementation}{Flow\+Implementation}} \&flow)
+\mbox{\hyperlink{class_flow_implementation_a79183f6fae1391c6be6e19b2711aa7b7}{Flow\+Implementation}} (std\+::string \mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, double \mbox{\hyperlink{class_flow_implementation_a6b2913c2fb6520fc5636fac156c12c1d}{value}}, \mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_implementation_a3543a5af064003b6597b68f6634e6509}{system\+Begin}}, \mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_implementation_aa39314b2c3bcffd52a71c1cbc952fb97}{system\+End}})
 \item 
 \mbox{\hyperlink{class_flow_implementation}{Flow\+Implementation}} \& \mbox{\hyperlink{class_flow_implementation_aa6b15bd2f9807cd6cf0d80b7f167f925}{operator=}} (const \mbox{\hyperlink{class_flow}{Flow}} \&flow)
 \item 
@@ -44,22 +52,18 @@ void \mbox{\hyperlink{class_flow_implementation_a788d57fd956a3448355a85a3c0f355e
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}\label{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}} 
-std\+::string {\bfseries name}
+std\+::string \mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}
 \item 
-\mbox{\Hypertarget{class_flow_implementation_a6b2913c2fb6520fc5636fac156c12c1d}\label{class_flow_implementation_a6b2913c2fb6520fc5636fac156c12c1d}} 
-double {\bfseries value}
+double \mbox{\hyperlink{class_flow_implementation_a6b2913c2fb6520fc5636fac156c12c1d}{value}}
 \item 
-\mbox{\Hypertarget{class_flow_implementation_a3543a5af064003b6597b68f6634e6509}\label{class_flow_implementation_a3543a5af064003b6597b68f6634e6509}} 
-\mbox{\hyperlink{class_system}{System}} $\ast$ {\bfseries system\+Begin}
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_implementation_a3543a5af064003b6597b68f6634e6509}{system\+Begin}}
 \item 
-\mbox{\Hypertarget{class_flow_implementation_aa39314b2c3bcffd52a71c1cbc952fb97}\label{class_flow_implementation_aa39314b2c3bcffd52a71c1cbc952fb97}} 
-\mbox{\hyperlink{class_system}{System}} $\ast$ {\bfseries system\+End}
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_implementation_aa39314b2c3bcffd52a71c1cbc952fb97}{system\+End}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-\mbox{\hyperlink{class_flow}{Flow}} that converges energy from a model to another. 
+\mbox{\hyperlink{class_flow}{Flow}} that converges energy from a model to another 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_flow_implementation_ac825f355b8376eb84f8463499d6e8787}\label{class_flow_implementation_ac825f355b8376eb84f8463499d6e8787}} 
@@ -71,7 +75,7 @@ double {\bfseries value}
 Default destructor \mbox{\Hypertarget{class_flow_implementation_a79183f6fae1391c6be6e19b2711aa7b7}\label{class_flow_implementation_a79183f6fae1391c6be6e19b2711aa7b7}} 
 \index{FlowImplementation@{FlowImplementation}!FlowImplementation@{FlowImplementation}}
 \index{FlowImplementation@{FlowImplementation}!FlowImplementation@{FlowImplementation}}
-\doxysubsubsection{\texorpdfstring{FlowImplementation()}{FlowImplementation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{FlowImplementation()}{FlowImplementation()}}
 {\footnotesize\ttfamily Flow\+Implementation\+::\+Flow\+Implementation (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{double}]{value,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system\+Begin,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system\+End }\end{DoxyParamCaption})}
 
 Default constructor 
@@ -88,20 +92,6 @@ Default constructor
 \begin{DoxyReturn}{Returns}
 \mbox{\hyperlink{class_flow}{Flow}} with initial name, value, system\+Begin and system\+End 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_flow_implementation_a8f22eea5f01c8c9ad63a6977ca14b977}\label{class_flow_implementation_a8f22eea5f01c8c9ad63a6977ca14b977}} 
-\index{FlowImplementation@{FlowImplementation}!FlowImplementation@{FlowImplementation}}
-\index{FlowImplementation@{FlowImplementation}!FlowImplementation@{FlowImplementation}}
-\doxysubsubsection{\texorpdfstring{FlowImplementation()}{FlowImplementation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Flow\+Implementation\+::\+Flow\+Implementation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_flow_implementation}{Flow\+Implementation}} \&}]{flow }\end{DoxyParamCaption})}
-
-Copy constructor 
-\begin{DoxyParams}{Parameters}
-{\em flow} & \mbox{\hyperlink{class_flow}{Flow}} to copy from \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Copied flow 
-\end{DoxyReturn}
 
 
 \doxysubsection{Member Function Documentation}
@@ -113,7 +103,7 @@ Copied flow
 
 Sets the expression of the flow 
 
-Implements \mbox{\hyperlink{class_flow}{Flow}}.
+Implements \mbox{\hyperlink{class_flow_aa690a4df57320290f597985a6fcafd5d}{Flow}}.
 
 \mbox{\Hypertarget{class_flow_implementation_a045a2433eab6c12b4a1655a23d3e89b9}\label{class_flow_implementation_a045a2433eab6c12b4a1655a23d3e89b9}} 
 \index{FlowImplementation@{FlowImplementation}!getName@{getName}}
@@ -123,7 +113,7 @@ Implements \mbox{\hyperlink{class_flow}{Flow}}.
 
 Get system name 
 
-Implements \mbox{\hyperlink{class_flow}{Flow}}.
+Implements \mbox{\hyperlink{class_flow_a2d0340d844ab2d275222938234e44169}{Flow}}.
 
 \mbox{\Hypertarget{class_flow_implementation_a8be3ceb80c4090f09bffd850f24c92e6}\label{class_flow_implementation_a8be3ceb80c4090f09bffd850f24c92e6}} 
 \index{FlowImplementation@{FlowImplementation}!getSystemBegin@{getSystemBegin}}
@@ -133,7 +123,7 @@ Implements \mbox{\hyperlink{class_flow}{Flow}}.
 
 Get system\+Begin 
 
-Implements \mbox{\hyperlink{class_flow}{Flow}}.
+Implements \mbox{\hyperlink{class_flow_a504a7a6039153b7a723ac43461978d56}{Flow}}.
 
 \mbox{\Hypertarget{class_flow_implementation_a21375e757d62d9d1416ddb7962e2b215}\label{class_flow_implementation_a21375e757d62d9d1416ddb7962e2b215}} 
 \index{FlowImplementation@{FlowImplementation}!getSystemEnd@{getSystemEnd}}
@@ -143,7 +133,7 @@ Implements \mbox{\hyperlink{class_flow}{Flow}}.
 
 Get system\+End 
 
-Implements \mbox{\hyperlink{class_flow}{Flow}}.
+Implements \mbox{\hyperlink{class_flow_ac07b6b9dc00825dffadf781313eec1b5}{Flow}}.
 
 \mbox{\Hypertarget{class_flow_implementation_a203a5f4831e2f8be830ed8298080e536}\label{class_flow_implementation_a203a5f4831e2f8be830ed8298080e536}} 
 \index{FlowImplementation@{FlowImplementation}!getValue@{getValue}}
@@ -153,7 +143,7 @@ Implements \mbox{\hyperlink{class_flow}{Flow}}.
 
 Get system value 
 
-Implements \mbox{\hyperlink{class_flow}{Flow}}.
+Implements \mbox{\hyperlink{class_flow_a8acd2815f580b2c0b29f7fd703b3cdc4}{Flow}}.
 
 \mbox{\Hypertarget{class_flow_implementation_aa6b15bd2f9807cd6cf0d80b7f167f925}\label{class_flow_implementation_aa6b15bd2f9807cd6cf0d80b7f167f925}} 
 \index{FlowImplementation@{FlowImplementation}!operator=@{operator=}}
@@ -182,7 +172,7 @@ Set system name
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{class_flow}{Flow}}.
+Implements \mbox{\hyperlink{class_flow_a80346b11c95c20a009278eb78f8f9653}{Flow}}.
 
 \mbox{\Hypertarget{class_flow_implementation_aea7e5af026738636b9aea92471e15295}\label{class_flow_implementation_aea7e5af026738636b9aea92471e15295}} 
 \index{FlowImplementation@{FlowImplementation}!setSystemBegin@{setSystemBegin}}
@@ -197,7 +187,7 @@ Set system\+Begin
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{class_flow}{Flow}}.
+Implements \mbox{\hyperlink{class_flow_a2414f61bc74aa065b5e5ee5ea4d4801d}{Flow}}.
 
 \mbox{\Hypertarget{class_flow_implementation_a788d57fd956a3448355a85a3c0f355ef}\label{class_flow_implementation_a788d57fd956a3448355a85a3c0f355ef}} 
 \index{FlowImplementation@{FlowImplementation}!setSystemEnd@{setSystemEnd}}
@@ -212,7 +202,7 @@ Set system\+Begin
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{class_flow}{Flow}}.
+Implements \mbox{\hyperlink{class_flow_a249d4547e284863fcbf5a01916af652f}{Flow}}.
 
 \mbox{\Hypertarget{class_flow_implementation_a0856e8004ba047743c72700cd01764cb}\label{class_flow_implementation_a0856e8004ba047743c72700cd01764cb}} 
 \index{FlowImplementation@{FlowImplementation}!setValue@{setValue}}
@@ -227,11 +217,38 @@ Set system value
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{class_flow}{Flow}}.
+Implements \mbox{\hyperlink{class_flow_a09ab3b09ccf70f5d6cfcffe2d1af1be0}{Flow}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}\label{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}} 
+\index{FlowImplementation@{FlowImplementation}!name@{name}}
+\index{name@{name}!FlowImplementation@{FlowImplementation}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Flow\+Implementation\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_flow_implementation_a3543a5af064003b6597b68f6634e6509}\label{class_flow_implementation_a3543a5af064003b6597b68f6634e6509}} 
+\index{FlowImplementation@{FlowImplementation}!systemBegin@{systemBegin}}
+\index{systemBegin@{systemBegin}!FlowImplementation@{FlowImplementation}}
+\doxysubsubsection{\texorpdfstring{systemBegin}{systemBegin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}}$\ast$ Flow\+Implementation\+::system\+Begin\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_flow_implementation_aa39314b2c3bcffd52a71c1cbc952fb97}\label{class_flow_implementation_aa39314b2c3bcffd52a71c1cbc952fb97}} 
+\index{FlowImplementation@{FlowImplementation}!systemEnd@{systemEnd}}
+\index{systemEnd@{systemEnd}!FlowImplementation@{FlowImplementation}}
+\doxysubsubsection{\texorpdfstring{systemEnd}{systemEnd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}}$\ast$ Flow\+Implementation\+::system\+End\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_flow_implementation_a6b2913c2fb6520fc5636fac156c12c1d}\label{class_flow_implementation_a6b2913c2fb6520fc5636fac156c12c1d}} 
+\index{FlowImplementation@{FlowImplementation}!value@{value}}
+\index{value@{value}!FlowImplementation@{FlowImplementation}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily double Flow\+Implementation\+::value\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/joaozenobio/\+CLion\+Projects/\+Eng1/src/lib/Flow\+Implementation.\+h\item 
-/home/joaozenobio/\+CLion\+Projects/\+Eng1/src/lib/Flow\+Implementation.\+cpp\end{DoxyCompactItemize}
+src/lib/\mbox{\hyperlink{_flow_implementation_8h}{Flow\+Implementation.\+h}}\item 
+src/lib/\mbox{\hyperlink{_flow_implementation_8cpp}{Flow\+Implementation.\+cpp}}\end{DoxyCompactItemize}
