@@ -1,0 +1,72 @@
+\hypertarget{class_exponencial_flow}{}\doxysection{Exponencial\+Flow Class Reference}
+\label{class_exponencial_flow}\index{ExponencialFlow@{ExponencialFlow}}
+
+
+Inheritance diagram for Exponencial\+Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_exponencial_flow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Exponencial\+Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_exponencial_flow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_exponencial_flow_a3ba03a8cc71176b1d38653ef4285a41f}{Exponencial\+Flow}} (std\+::string \mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, double \mbox{\hyperlink{class_flow_implementation_a6b2913c2fb6520fc5636fac156c12c1d}{value}}, \mbox{\hyperlink{class_system}{System}} $\ast$system\+Out, \mbox{\hyperlink{class_system}{System}} $\ast$system\+In)
+\item 
+double \mbox{\hyperlink{class_exponencial_flow_a3c306d181c9a18216dee34feb2cd58d5}{expression}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_flow}{Flow}} that converges energy from a model to another exponencialy with 1\% of the initial system per timestep 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_exponencial_flow_a3ba03a8cc71176b1d38653ef4285a41f}\label{class_exponencial_flow_a3ba03a8cc71176b1d38653ef4285a41f}} 
+\index{ExponencialFlow@{ExponencialFlow}!ExponencialFlow@{ExponencialFlow}}
+\index{ExponencialFlow@{ExponencialFlow}!ExponencialFlow@{ExponencialFlow}}
+\doxysubsubsection{\texorpdfstring{ExponencialFlow()}{ExponencialFlow()}}
+{\footnotesize\ttfamily Exponencial\+Flow\+::\+Exponencial\+Flow (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{double}]{value,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system\+Out,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system\+In }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & Inital flow name \\
+\hline
+{\em value} & Inital flow value \\
+\hline
+{\em system\+Begin} & Inital system where the flow comes from \\
+\hline
+{\em system\+End} & Inital system where the flow goes to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Exponencial flow with initial name, value, system\+Begin and system\+End 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_exponencial_flow_a3c306d181c9a18216dee34feb2cd58d5}\label{class_exponencial_flow_a3c306d181c9a18216dee34feb2cd58d5}} 
+\index{ExponencialFlow@{ExponencialFlow}!expression@{expression}}
+\index{expression@{expression}!ExponencialFlow@{ExponencialFlow}}
+\doxysubsubsection{\texorpdfstring{expression()}{expression()}}
+{\footnotesize\ttfamily double Exponencial\+Flow\+::expression (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Exponencial expression 
+
+Implements \mbox{\hyperlink{class_flow_implementation_a09ac4d7f3295d55d7956c9714fbe55c8}{Flow\+Implementation}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+test/functional/\mbox{\hyperlink{_functional_tests_8cpp}{Functional\+Tests.\+cpp}}\end{DoxyCompactItemize}

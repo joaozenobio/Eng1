@@ -89,6 +89,16 @@ public:
      * \param flow: Flow to be added to the model
     **/
     void add(Flow* flow) override;
+
+    /**
+     * Get model systems iterator
+    **/
+    std::vector<System*>::iterator getSystemsIterator() override;
+
+    /**
+     * Get model flows iterator
+    **/
+    std::vector<Flow*>::iterator getFlowsIterator() override;
 };
 
 

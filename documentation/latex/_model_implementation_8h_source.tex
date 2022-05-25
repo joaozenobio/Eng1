@@ -43,9 +43,13 @@
 \DoxyCodeLine{85     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_implementation_a8754857fc03af9624069749550f3e22f}{add}}(\mbox{\hyperlink{class_system}{System}}* system) \textcolor{keyword}{override};}
 \DoxyCodeLine{86 }
 \DoxyCodeLine{91     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_implementation_a8754857fc03af9624069749550f3e22f}{add}}(\mbox{\hyperlink{class_flow}{Flow}}* flow) \textcolor{keyword}{override};}
-\DoxyCodeLine{92 \};}
-\DoxyCodeLine{93 }
-\DoxyCodeLine{94 }
-\DoxyCodeLine{95 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//ENG1\_MODELIMPLEMENTATION\_H}}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{96     std::vector<System*>::iterator \mbox{\hyperlink{class_model_implementation_aa264a40bedfbf6d0094eae245deb7d22}{getSystemsIterator}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{101     std::vector<Flow*>::iterator \mbox{\hyperlink{class_model_implementation_ad8fedc8f40a94fae965071e922b2ca1b}{getFlowsIterator}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{102 \};}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//ENG1\_MODELIMPLEMENTATION\_H}}
 
 \end{DoxyCode}

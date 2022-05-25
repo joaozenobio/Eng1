@@ -14,8 +14,8 @@ ModelImplementation::~ModelImplementation() {
 ModelImplementation::ModelImplementation(std::string name, double time) : name(name), time(time) {}
 
 ModelImplementation::ModelImplementation(const ModelImplementation& model) {
-    name = model.getName();
-    time = model.getTime();
+    name = model.name;
+    time = model.time;
     flows = model.flows;
     systems = model.systems;
 }
@@ -24,9 +24,10 @@ ModelImplementation& ModelImplementation::operator=(const ModelImplementation& m
     if (this == &model){
         return *this;
     }
-    setName(model.getName());
-    setTime(model.getTime());
-
+    name = model.name;
+    time = model.time;
+    flows = model.flows;
+    systems = model.systems;
     return *this;
 }
 
@@ -34,7 +35,7 @@ void ModelImplementation::simulate(double start, double end, double timestep) {
     int count = 0;
     for (double i = start; i < end; i += timestep) {
         for (Flow* flow : flows) {
-            flow->expression();
+            flow->setValue(flow->expression());
         }
         for(Flow* flow : flows) {
             if(flow->getSystemBegin() != NULL) {
@@ -71,4 +72,12 @@ void ModelImplementation::add(Flow* flow) {
 
 void ModelImplementation::add(System* system) {
     systems.push_back(system);
+}
+
+std::vector<System *>::iterator ModelImplementation::getSystemsIterator() {
+    return systems.begin();
+}
+
+std::vector<Flow *>::iterator ModelImplementation::getFlowsIterator() {
+    return flows.begin();
 }

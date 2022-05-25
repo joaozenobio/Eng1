@@ -9,20 +9,20 @@ FlowImplementation::~FlowImplementation() = default;
 FlowImplementation::FlowImplementation(std::string name, double value, System* systemBegin, System* systemEnd) : name(name), value(value), systemBegin(systemBegin), systemEnd(systemEnd) {}
 
 FlowImplementation::FlowImplementation(const FlowImplementation& flow) {
-    name = flow.getName();
-    value = flow.getValue();
+    name = flow.name;
+    value = flow.value;
     systemBegin = flow.systemBegin;
     systemEnd = flow.systemEnd;
 }
 
-FlowImplementation& FlowImplementation::operator=(const Flow& flow){
+FlowImplementation& FlowImplementation::operator=(const FlowImplementation& flow){
     if (this == &flow){
         return *this;
     }
-    setName(flow.getName());
-    setValue(flow.getValue());
-    setSystemBegin(flow.getSystemBegin());
-    setSystemEnd(flow.getSystemEnd());
+    name = flow.name;
+    value = flow.value;
+    systemBegin = flow.systemBegin;
+    systemEnd = flow.systemEnd;
     return *this;
 }
 

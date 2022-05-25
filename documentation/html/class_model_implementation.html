@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Software Documentation: ModelImplementation Class Reference</title>
+<title>MyVensim: ModelImplementation Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Software Documentation
+   <div id="projectname">MyVensim
    </div>
   </td>
  </tr>
@@ -118,6 +118,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8754857fc03af9624069749550f3e22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28f21761aecbef9c90395f3f2c7cb9c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implementation.html#a28f21761aecbef9c90395f3f2c7cb9c8">add</a> (<a class="el" href="class_flow.html">Flow</a> *flow) override</td></tr>
 <tr class="separator:a28f21761aecbef9c90395f3f2c7cb9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa264a40bedfbf6d0094eae245deb7d22"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_system.html">System</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implementation.html#aa264a40bedfbf6d0094eae245deb7d22">getSystemsIterator</a> () override</td></tr>
+<tr class="separator:aa264a40bedfbf6d0094eae245deb7d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8fedc8f40a94fae965071e922b2ca1b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_implementation.html#ad8fedc8f40a94fae965071e922b2ca1b">getFlowsIterator</a> () override</td></tr>
+<tr class="separator:ad8fedc8f40a94fae965071e922b2ca1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_model.html">Model</a></td></tr>
 <tr class="memitem:a2efbe4ec768191fa70ad86f260ec2fd6 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a2efbe4ec768191fa70ad86f260ec2fd6">~Model</a> ()=default</td></tr>
 <tr class="separator:a2efbe4ec768191fa70ad86f260ec2fd6 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +139,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a70362afdd9db6268b4adaedfeddb2935 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1e19f5fcc4ced9defbfe2847a26ff33 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ac1e19f5fcc4ced9defbfe2847a26ff33">add</a> (<a class="el" href="class_flow.html">Flow</a> *)=0</td></tr>
 <tr class="separator:ac1e19f5fcc4ced9defbfe2847a26ff33 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c96b2e11c6e198786975d38bf68cbd2 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="class_system.html">System</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a5c96b2e11c6e198786975d38bf68cbd2">getSystemsIterator</a> ()=0</td></tr>
+<tr class="separator:a5c96b2e11c6e198786975d38bf68cbd2 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1bbb0bb655ca070d747a24c78f3622 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ada1bbb0bb655ca070d747a24c78f3622">getFlowsIterator</a> ()=0</td></tr>
+<tr class="separator:ada1bbb0bb655ca070d747a24c78f3622 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -281,6 +289,34 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad8fedc8f40a94fae965071e922b2ca1b" name="ad8fedc8f40a94fae965071e922b2ca1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8fedc8f40a94fae965071e922b2ca1b">&#9670;&nbsp;</a></span>getFlowsIterator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;::iterator ModelImplementation::getFlowsIterator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Get model flows iterator </p>
+
+<p>Implements <a class="el" href="class_model.html#ada1bbb0bb655ca070d747a24c78f3622">Model</a>.</p>
+
+</div>
+</div>
 <a id="afc943048167f4bd42a6311ee71aa6ab2" name="afc943048167f4bd42a6311ee71aa6ab2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc943048167f4bd42a6311ee71aa6ab2">&#9670;&nbsp;</a></span>getName()</h2>
 
@@ -306,6 +342,34 @@ Protected Attributes</h2></td></tr>
 <p >Get model name </p>
 
 <p>Implements <a class="el" href="class_model.html#a17e89ca8d15af46d074423a47d3c6802">Model</a>.</p>
+
+</div>
+</div>
+<a id="aa264a40bedfbf6d0094eae245deb7d22" name="aa264a40bedfbf6d0094eae245deb7d22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa264a40bedfbf6d0094eae245deb7d22">&#9670;&nbsp;</a></span>getSystemsIterator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_system.html">System</a> * &gt;::iterator ModelImplementation::getSystemsIterator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Get model systems iterator </p>
+
+<p>Implements <a class="el" href="class_model.html#a5c96b2e11c6e198786975d38bf68cbd2">Model</a>.</p>
 
 </div>
 </div>

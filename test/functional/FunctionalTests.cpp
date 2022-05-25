@@ -4,6 +4,76 @@
 
 #include "FunctionalTests.h"
 
+/**
+ * Flow that converges energy from a model to another exponencialy with 1% of the initial system per timestep
+**/
+class ExponencialFlow : public FlowImplementation{
+public:
+    /**
+     * Default constructor
+     * \param name: Inital flow name
+     * \param value: Inital flow value
+     * \param systemBegin: Inital system where the flow comes from
+     * \param systemEnd: Inital system where the flow goes to
+     * \return Exponencial flow with initial name, value, systemBegin and systemEnd
+    **/
+    ExponencialFlow(std::string name, double value, System* systemOut, System* systemIn) : FlowImplementation(name, value, systemOut, systemIn) {}
+    /**
+     * Exponencial expression
+    **/
+    double expression() override {
+        return 0.01 * getSystemBegin()->getValue();
+    }
+};
+
+/**
+ * Flow that converges energy from a model to another exponencialy with 1% of the end system per timestep
+ * times onde minus the end system divided by seventy
+**/
+class LogisticalFlow : public FlowImplementation{
+public:
+    /**
+     * Default constructor
+     * \param name: Inital flow name
+     * \param value: Inital flow value
+     * \param systemBegin: Inital system where the flow comes from
+     * \param systemEnd: Inital system where the flow goes to
+     * \return Logistical flow with initial name, value, systemBegin and systemEnd
+    **/
+    LogisticalFlow(std::string name, double value, System* systemOut, System* systemIn) : FlowImplementation(name, value, systemOut, systemIn) {}
+    /**
+     * Logistical expression
+    **/
+    double expression() override {
+        return 0.01 * this->getSystemEnd()->getValue() * (1 - this->getSystemEnd()->getValue() / 70);
+    }
+};
+
+/**
+ * Flow that converges energy from a model to another exponencialy with 1% of the end system per timestep
+**/
+class ComplexFlow : public FlowImplementation{
+public:
+    /**
+     * Default constructor
+     * \param name: Inital flow name
+     * \param value: Inital flow value
+     * \param systemBegin: Inital system where the flow comes from
+     * \param systemEnd: Inital system where the flow goes to
+     * \return Complex flow with initial name, value, systemBegin and systemEnd
+    **/
+    ComplexFlow(std::string name, double value, System* systemOut, System* systemIn) : FlowImplementation(name, value, systemOut, systemIn) {}
+    /**
+     * Complex expression
+    **/
+    double expression() override {
+        return 0.01 * getSystemBegin()->getValue();
+    }
+};
+
+/**
+    Function to test the exponencial flow.
+*/
 void ExponencialTest() {
     std::cout << "Exponencial test\n";
     System* system1 = new SystemImplementation("System 1", 100);
@@ -19,15 +89,18 @@ void ExponencialTest() {
     assert(exponencialFlow->getName() == "Exponencial Flow");
     assert(exponencialModel->getName() == "Exponencial Model");
 
-    assert(fabs(system1->getValue() - 100) < 0.001);
-    assert(fabs(system2->getValue() - 0) < 0.001);
+    assert(fabs(system1->getValue() - 100) < 0.00005);
+    assert(fabs(system2->getValue() - 0) < 0.00005);
 
     exponencialModel->simulate(0, 100, 1);
 
-    assert(fabs(system1->getValue() - 36.6032) < 0.001);
-    assert(fabs(system2->getValue() - 63.3968) < 0.001);
+    assert(fabs(system1->getValue() - 36.6032) < 0.00005);
+    assert(fabs(system2->getValue() - 63.3968) < 0.00005);
 }
 
+/**
+    Function to test the logistical flow.
+*/
 void LogisticalTest() {
     std::cout << "Logistical test\n";
 
@@ -44,15 +117,18 @@ void LogisticalTest() {
     assert(logisticalFlow->getName() == "Logistical Flow");
     assert(logisticalModel->getName() == "Logistical Model");
 
-    assert(fabs(system1->getValue() - 100) < 0.001);
-    assert(fabs(system2->getValue() - 10) < 0.001);
+    assert(fabs(system1->getValue() - 100) < 0.00005);
+    assert(fabs(system2->getValue() - 10) < 0.00005);
 
     logisticalModel->simulate(0, 100, 1);
 
-    assert(fabs(system1->getValue() - 88.2167) < 0.0001);
-    assert(fabs(system2->getValue() - 21.7833) < 0.0001);
+    assert(fabs(system1->getValue() - 88.2167) < 0.00005);
+    assert(fabs(system2->getValue() - 21.7833) < 0.00005);
 }
 
+/**
+    Function to test the complex flow.
+*/
 void ComplexTest() {
     std::cout << "Complex test\n";
 
@@ -93,17 +169,17 @@ void ComplexTest() {
     assert(complexFlow6->getName() == "Complex Flow 6");
     assert(complexModel->getName() == "Complex Model");
 
-    assert(fabs(system1->getValue() - 100) < 0.0001);
-    assert(fabs(system2->getValue() - 0) < 0.0001);
-    assert(fabs(system3->getValue() - 100) < 0.0001);
-    assert(fabs(system4->getValue() - 0) < 0.0001);
-    assert(fabs(system5->getValue() - 0) < 0.0001);
+    assert(fabs(system1->getValue() - 100) < 0.00005);
+    assert(fabs(system2->getValue() - 0) < 0.00005);
+    assert(fabs(system3->getValue() - 100) < 0.00005);
+    assert(fabs(system4->getValue() - 0) < 0.00005);
+    assert(fabs(system5->getValue() - 0) < 0.00005);
 
     complexModel->simulate(0, 100, 1);
 
-    assert(fabs(system1->getValue() - 31.8513) < 0.0001);
-    assert(fabs(system2->getValue() - 18.4003) < 0.0001);
-    assert(fabs(system3->getValue() - 77.1143) < 0.0001);
-    assert(fabs(system4->getValue() - 56.1728) < 0.0001);
-    assert(fabs(system5->getValue() - 16.4612) < 0.0001);
+    assert(fabs(system1->getValue() - 31.8513) < 0.00005);
+    assert(fabs(system2->getValue() - 18.4003) < 0.00005);
+    assert(fabs(system3->getValue() - 77.1143) < 0.00005);
+    assert(fabs(system4->getValue() - 56.1728) < 0.00005);
+    assert(fabs(system5->getValue() - 16.4612) < 0.00005);
 }

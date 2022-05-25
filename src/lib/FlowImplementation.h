@@ -48,12 +48,12 @@ public:
      * \param flow: Flow to copy from
      * \return Copied flow
     **/
-    FlowImplementation& operator=(const Flow& flow);
+    FlowImplementation& operator=(const FlowImplementation& flow);
 
     /**
      * Sets the expression of the flow
     **/
-    void expression() override = 0;
+    double expression() override = 0;
 
     /**
      * Get system name

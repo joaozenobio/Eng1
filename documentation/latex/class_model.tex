@@ -31,6 +31,10 @@ virtual void \mbox{\hyperlink{class_model_a210839e2d275d6821a8beac249470beb}{set
 virtual void \mbox{\hyperlink{class_model_a70362afdd9db6268b4adaedfeddb2935}{add}} (\mbox{\hyperlink{class_system}{System}} $\ast$)=0
 \item 
 virtual void \mbox{\hyperlink{class_model_ac1e19f5fcc4ced9defbfe2847a26ff33}{add}} (\mbox{\hyperlink{class_flow}{Flow}} $\ast$)=0
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_a5c96b2e11c6e198786975d38bf68cbd2}{get\+Systems\+Iterator}} ()=0
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_ada1bbb0bb655ca070d747a24c78f3622}{get\+Flows\+Iterator}} ()=0
 \end{DoxyCompactItemize}
 
 
@@ -41,7 +45,7 @@ virtual void \mbox{\hyperlink{class_model_ac1e19f5fcc4ced9defbfe2847a26ff33}{add
 \doxysubsubsection{\texorpdfstring{$\sim$Model()}{~Model()}}
 {\footnotesize\ttfamily virtual Model\+::$\sim$\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-
+Default destructor 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_model_ac1e19f5fcc4ced9defbfe2847a26ff33}\label{class_model_ac1e19f5fcc4ced9defbfe2847a26ff33}} 
@@ -50,6 +54,11 @@ virtual void \mbox{\hyperlink{class_model_ac1e19f5fcc4ced9defbfe2847a26ff33}{add
 \doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily virtual void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+Add a flow to the model 
+\begin{DoxyParams}{Parameters}
+{\em flow} & \mbox{\hyperlink{class_flow}{Flow}} to be added to the model \\
+\hline
+\end{DoxyParams}
 
 
 Implemented in \mbox{\hyperlink{class_model_implementation_a28f21761aecbef9c90395f3f2c7cb9c8}{Model\+Implementation}}.
@@ -60,9 +69,24 @@ Implemented in \mbox{\hyperlink{class_model_implementation_a28f21761aecbef9c9039
 \doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily virtual void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+Add a system to the model 
+\begin{DoxyParams}{Parameters}
+{\em system} & \mbox{\hyperlink{class_system}{System}} to be added to the model \\
+\hline
+\end{DoxyParams}
 
 
 Implemented in \mbox{\hyperlink{class_model_implementation_a8754857fc03af9624069749550f3e22f}{Model\+Implementation}}.
+
+\mbox{\Hypertarget{class_model_ada1bbb0bb655ca070d747a24c78f3622}\label{class_model_ada1bbb0bb655ca070d747a24c78f3622}} 
+\index{Model@{Model}!getFlowsIterator@{getFlowsIterator}}
+\index{getFlowsIterator@{getFlowsIterator}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getFlowsIterator()}{getFlowsIterator()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$\+::iterator Model\+::get\+Flows\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get model flows iterator 
+
+Implemented in \mbox{\hyperlink{class_model_implementation_ad8fedc8f40a94fae965071e922b2ca1b}{Model\+Implementation}}.
 
 \mbox{\Hypertarget{class_model_a17e89ca8d15af46d074423a47d3c6802}\label{class_model_a17e89ca8d15af46d074423a47d3c6802}} 
 \index{Model@{Model}!getName@{getName}}
@@ -70,9 +94,19 @@ Implemented in \mbox{\hyperlink{class_model_implementation_a8754857fc03af9624069
 \doxysubsubsection{\texorpdfstring{getName()}{getName()}}
 {\footnotesize\ttfamily virtual std\+::string Model\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
-
+Get model name 
 
 Implemented in \mbox{\hyperlink{class_model_implementation_afc943048167f4bd42a6311ee71aa6ab2}{Model\+Implementation}}.
+
+\mbox{\Hypertarget{class_model_a5c96b2e11c6e198786975d38bf68cbd2}\label{class_model_a5c96b2e11c6e198786975d38bf68cbd2}} 
+\index{Model@{Model}!getSystemsIterator@{getSystemsIterator}}
+\index{getSystemsIterator@{getSystemsIterator}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getSystemsIterator()}{getSystemsIterator()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$\+::iterator Model\+::get\+Systems\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get model systems iterator 
+
+Implemented in \mbox{\hyperlink{class_model_implementation_aa264a40bedfbf6d0094eae245deb7d22}{Model\+Implementation}}.
 
 \mbox{\Hypertarget{class_model_a41569269c162962571a791c0fe737bca}\label{class_model_a41569269c162962571a791c0fe737bca}} 
 \index{Model@{Model}!getTime@{getTime}}
@@ -80,7 +114,7 @@ Implemented in \mbox{\hyperlink{class_model_implementation_afc943048167f4bd42a63
 \doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
 {\footnotesize\ttfamily virtual double Model\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
-
+Get model time 
 
 Implemented in \mbox{\hyperlink{class_model_implementation_a4764f51274602af5ca5b81d74840d9e7}{Model\+Implementation}}.
 
@@ -90,6 +124,11 @@ Implemented in \mbox{\hyperlink{class_model_implementation_a4764f51274602af5ca5b
 \doxysubsubsection{\texorpdfstring{setName()}{setName()}}
 {\footnotesize\ttfamily virtual void Model\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+Set model name 
+\begin{DoxyParams}{Parameters}
+{\em n} & Name for the system \\
+\hline
+\end{DoxyParams}
 
 
 Implemented in \mbox{\hyperlink{class_model_implementation_a73d846c6a037eeb63a85e0496045fa7a}{Model\+Implementation}}.
@@ -100,6 +139,11 @@ Implemented in \mbox{\hyperlink{class_model_implementation_a73d846c6a037eeb63a85
 \doxysubsubsection{\texorpdfstring{setTime()}{setTime()}}
 {\footnotesize\ttfamily virtual void Model\+::set\+Time (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+Set model time 
+\begin{DoxyParams}{Parameters}
+{\em t} & Name for the system \\
+\hline
+\end{DoxyParams}
 
 
 Implemented in \mbox{\hyperlink{class_model_implementation_aefd2371433f227f37b05e6d5ed638594}{Model\+Implementation}}.
@@ -110,6 +154,15 @@ Implemented in \mbox{\hyperlink{class_model_implementation_aefd2371433f227f37b05
 \doxysubsubsection{\texorpdfstring{simulate()}{simulate()}}
 {\footnotesize\ttfamily virtual void Model\+::simulate (\begin{DoxyParamCaption}\item[{double}]{,  }\item[{double}]{,  }\item[{double}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+Simulates the model during a period of time between start and end time values with a specified timestep 
+\begin{DoxyParams}{Parameters}
+{\em start} & Time where the simulation starts \\
+\hline
+{\em end} & Time where the simulation ends \\
+\hline
+{\em timestep} & Timestep value to simulate with \\
+\hline
+\end{DoxyParams}
 
 
 Implemented in \mbox{\hyperlink{class_model_implementation_a6e4abe69f72c5797323d756a10f30ad3}{Model\+Implementation}}.

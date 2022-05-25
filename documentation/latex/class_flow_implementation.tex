@@ -10,7 +10,7 @@ Inheritance diagram for Flow\+Implementation\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=198pt]{class_flow_implementation__inherit__graph}
+\includegraphics[width=350pt]{class_flow_implementation__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -29,9 +29,9 @@ Collaboration diagram for Flow\+Implementation\+:\nopagebreak
 \item 
 \mbox{\hyperlink{class_flow_implementation_a79183f6fae1391c6be6e19b2711aa7b7}{Flow\+Implementation}} (std\+::string \mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, double \mbox{\hyperlink{class_flow_implementation_a6b2913c2fb6520fc5636fac156c12c1d}{value}}, \mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_implementation_a3543a5af064003b6597b68f6634e6509}{system\+Begin}}, \mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_implementation_aa39314b2c3bcffd52a71c1cbc952fb97}{system\+End}})
 \item 
-\mbox{\hyperlink{class_flow_implementation}{Flow\+Implementation}} \& \mbox{\hyperlink{class_flow_implementation_aa6b15bd2f9807cd6cf0d80b7f167f925}{operator=}} (const \mbox{\hyperlink{class_flow}{Flow}} \&flow)
+\mbox{\hyperlink{class_flow_implementation}{Flow\+Implementation}} \& \mbox{\hyperlink{class_flow_implementation_a29e6ec4770282c6e5f830d8c59329577}{operator=}} (const \mbox{\hyperlink{class_flow_implementation}{Flow\+Implementation}} \&flow)
 \item 
-void \mbox{\hyperlink{class_flow_implementation_a833ca4ff1dbdfa6723f9edabd9ed0adf}{expression}} () override=0
+double \mbox{\hyperlink{class_flow_implementation_a09ac4d7f3295d55d7956c9714fbe55c8}{expression}} () override=0
 \item 
 std\+::string \mbox{\hyperlink{class_flow_implementation_a045a2433eab6c12b4a1655a23d3e89b9}{get\+Name}} () const override
 \item 
@@ -95,15 +95,19 @@ Default constructor
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_flow_implementation_a833ca4ff1dbdfa6723f9edabd9ed0adf}\label{class_flow_implementation_a833ca4ff1dbdfa6723f9edabd9ed0adf}} 
+\mbox{\Hypertarget{class_flow_implementation_a09ac4d7f3295d55d7956c9714fbe55c8}\label{class_flow_implementation_a09ac4d7f3295d55d7956c9714fbe55c8}} 
 \index{FlowImplementation@{FlowImplementation}!expression@{expression}}
 \index{expression@{expression}!FlowImplementation@{FlowImplementation}}
 \doxysubsubsection{\texorpdfstring{expression()}{expression()}}
-{\footnotesize\ttfamily void Flow\+Implementation\+::expression (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily double Flow\+Implementation\+::expression (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
 
 Sets the expression of the flow 
 
-Implements \mbox{\hyperlink{class_flow_aa690a4df57320290f597985a6fcafd5d}{Flow}}.
+Implements \mbox{\hyperlink{class_flow_a333601aab8835fa31444e933b6b04fd4}{Flow}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_exponencial_flow_a3c306d181c9a18216dee34feb2cd58d5}{Exponencial\+Flow}}, \mbox{\hyperlink{class_logistical_flow_a0ef2b5cf0a47c5fe869fb9a2a2c82896}{Logistical\+Flow}}, \mbox{\hyperlink{class_complex_flow_ad47d5531e21f276404d0a80ac5122cf8}{Complex\+Flow}}, \mbox{\hyperlink{class_unit_test_flow_a36ebe1c6b628607b23f2c33630caac93}{Unit\+Test\+Flow}}, and \mbox{\hyperlink{class_unit_test_flow2_adfef0cb8986511503eab6d7227556b5e}{Unit\+Test\+Flow2}}.
 
 \mbox{\Hypertarget{class_flow_implementation_a045a2433eab6c12b4a1655a23d3e89b9}\label{class_flow_implementation_a045a2433eab6c12b4a1655a23d3e89b9}} 
 \index{FlowImplementation@{FlowImplementation}!getName@{getName}}
@@ -145,11 +149,11 @@ Get system value
 
 Implements \mbox{\hyperlink{class_flow_a8acd2815f580b2c0b29f7fd703b3cdc4}{Flow}}.
 
-\mbox{\Hypertarget{class_flow_implementation_aa6b15bd2f9807cd6cf0d80b7f167f925}\label{class_flow_implementation_aa6b15bd2f9807cd6cf0d80b7f167f925}} 
+\mbox{\Hypertarget{class_flow_implementation_a29e6ec4770282c6e5f830d8c59329577}\label{class_flow_implementation_a29e6ec4770282c6e5f830d8c59329577}} 
 \index{FlowImplementation@{FlowImplementation}!operator=@{operator=}}
 \index{operator=@{operator=}!FlowImplementation@{FlowImplementation}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_flow_implementation}{Flow\+Implementation}} \& Flow\+Implementation\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_flow}{Flow}} \&}]{flow }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_flow_implementation}{Flow\+Implementation}} \& Flow\+Implementation\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_flow_implementation}{Flow\+Implementation}} \&}]{flow }\end{DoxyParamCaption})}
 
 Copy Assignment Operator 
 \begin{DoxyParams}{Parameters}

@@ -1,0 +1,72 @@
+\hypertarget{class_complex_flow}{}\doxysection{Complex\+Flow Class Reference}
+\label{class_complex_flow}\index{ComplexFlow@{ComplexFlow}}
+
+
+Inheritance diagram for Complex\+Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_complex_flow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Complex\+Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_complex_flow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_complex_flow_a159db4d0d7fa00683dfba5e0270a17b9}{Complex\+Flow}} (std\+::string \mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, double \mbox{\hyperlink{class_flow_implementation_a6b2913c2fb6520fc5636fac156c12c1d}{value}}, \mbox{\hyperlink{class_system}{System}} $\ast$system\+Out, \mbox{\hyperlink{class_system}{System}} $\ast$system\+In)
+\item 
+double \mbox{\hyperlink{class_complex_flow_ad47d5531e21f276404d0a80ac5122cf8}{expression}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_flow}{Flow}} that converges energy from a model to another exponencialy with 1\% of the end system per timestep 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_complex_flow_a159db4d0d7fa00683dfba5e0270a17b9}\label{class_complex_flow_a159db4d0d7fa00683dfba5e0270a17b9}} 
+\index{ComplexFlow@{ComplexFlow}!ComplexFlow@{ComplexFlow}}
+\index{ComplexFlow@{ComplexFlow}!ComplexFlow@{ComplexFlow}}
+\doxysubsubsection{\texorpdfstring{ComplexFlow()}{ComplexFlow()}}
+{\footnotesize\ttfamily Complex\+Flow\+::\+Complex\+Flow (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{double}]{value,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system\+Out,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system\+In }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & Inital flow name \\
+\hline
+{\em value} & Inital flow value \\
+\hline
+{\em system\+Begin} & Inital system where the flow comes from \\
+\hline
+{\em system\+End} & Inital system where the flow goes to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Complex flow with initial name, value, system\+Begin and system\+End 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_complex_flow_ad47d5531e21f276404d0a80ac5122cf8}\label{class_complex_flow_ad47d5531e21f276404d0a80ac5122cf8}} 
+\index{ComplexFlow@{ComplexFlow}!expression@{expression}}
+\index{expression@{expression}!ComplexFlow@{ComplexFlow}}
+\doxysubsubsection{\texorpdfstring{expression()}{expression()}}
+{\footnotesize\ttfamily double Complex\+Flow\+::expression (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Complex expression 
+
+Implements \mbox{\hyperlink{class_flow_implementation_a09ac4d7f3295d55d7956c9714fbe55c8}{Flow\+Implementation}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+test/functional/\mbox{\hyperlink{_functional_tests_8cpp}{Functional\+Tests.\+cpp}}\end{DoxyCompactItemize}

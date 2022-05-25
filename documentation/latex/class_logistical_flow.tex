@@ -1,0 +1,72 @@
+\hypertarget{class_logistical_flow}{}\doxysection{Logistical\+Flow Class Reference}
+\label{class_logistical_flow}\index{LogisticalFlow@{LogisticalFlow}}
+
+
+Inheritance diagram for Logistical\+Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_logistical_flow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Logistical\+Flow\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_logistical_flow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_logistical_flow_a36ba624fc076fac19b8d7a134fa8a79c}{Logistical\+Flow}} (std\+::string \mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, double \mbox{\hyperlink{class_flow_implementation_a6b2913c2fb6520fc5636fac156c12c1d}{value}}, \mbox{\hyperlink{class_system}{System}} $\ast$system\+Out, \mbox{\hyperlink{class_system}{System}} $\ast$system\+In)
+\item 
+double \mbox{\hyperlink{class_logistical_flow_a0ef2b5cf0a47c5fe869fb9a2a2c82896}{expression}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_flow}{Flow}} that converges energy from a model to another exponencialy with 1\% of the end system per timestep times onde minus the end system divided by seventy 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_logistical_flow_a36ba624fc076fac19b8d7a134fa8a79c}\label{class_logistical_flow_a36ba624fc076fac19b8d7a134fa8a79c}} 
+\index{LogisticalFlow@{LogisticalFlow}!LogisticalFlow@{LogisticalFlow}}
+\index{LogisticalFlow@{LogisticalFlow}!LogisticalFlow@{LogisticalFlow}}
+\doxysubsubsection{\texorpdfstring{LogisticalFlow()}{LogisticalFlow()}}
+{\footnotesize\ttfamily Logistical\+Flow\+::\+Logistical\+Flow (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{double}]{value,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system\+Out,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system\+In }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & Inital flow name \\
+\hline
+{\em value} & Inital flow value \\
+\hline
+{\em system\+Begin} & Inital system where the flow comes from \\
+\hline
+{\em system\+End} & Inital system where the flow goes to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Logistical flow with initial name, value, system\+Begin and system\+End 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_logistical_flow_a0ef2b5cf0a47c5fe869fb9a2a2c82896}\label{class_logistical_flow_a0ef2b5cf0a47c5fe869fb9a2a2c82896}} 
+\index{LogisticalFlow@{LogisticalFlow}!expression@{expression}}
+\index{expression@{expression}!LogisticalFlow@{LogisticalFlow}}
+\doxysubsubsection{\texorpdfstring{expression()}{expression()}}
+{\footnotesize\ttfamily double Logistical\+Flow\+::expression (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Logistical expression 
+
+Implements \mbox{\hyperlink{class_flow_implementation_a09ac4d7f3295d55d7956c9714fbe55c8}{Flow\+Implementation}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+test/functional/\mbox{\hyperlink{_functional_tests_8cpp}{Functional\+Tests.\+cpp}}\end{DoxyCompactItemize}

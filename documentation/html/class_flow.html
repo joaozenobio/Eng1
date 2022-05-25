@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Software Documentation: Flow Class Reference</title>
+<title>MyVensim: Flow Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Software Documentation
+   <div id="projectname">MyVensim
    </div>
   </td>
  </tr>
@@ -75,8 +75,13 @@ Inheritance diagram for Flow:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_flow__inherit__graph.png" border="0" usemap="#a_flow_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_flow_inherit__map" id="a_flow_inherit__map">
-<area shape="rect" title=" " alt="" coords="57,5,111,32"/>
-<area shape="rect" href="class_flow_implementation.html" title=" " alt="" coords="5,80,163,107"/>
+<area shape="rect" title=" " alt="" coords="327,5,381,32"/>
+<area shape="rect" href="class_flow_implementation.html" title=" " alt="" coords="275,80,433,107"/>
+<area shape="rect" href="class_complex_flow.html" title=" " alt="" coords="5,155,116,181"/>
+<area shape="rect" href="class_exponencial_flow.html" title=" " alt="" coords="140,155,272,181"/>
+<area shape="rect" href="class_logistical_flow.html" title=" " alt="" coords="297,155,411,181"/>
+<area shape="rect" href="class_unit_test_flow.html" title=" " alt="" coords="435,155,542,181"/>
+<area shape="rect" href="class_unit_test_flow2.html" title=" " alt="" coords="566,155,681,181"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -92,8 +97,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8acd2815f580b2c0b29f7fd703b3cdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09ab3b09ccf70f5d6cfcffe2d1af1be0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a09ab3b09ccf70f5d6cfcffe2d1af1be0">setValue</a> (double)=0</td></tr>
 <tr class="separator:a09ab3b09ccf70f5d6cfcffe2d1af1be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa690a4df57320290f597985a6fcafd5d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#aa690a4df57320290f597985a6fcafd5d">expression</a> ()=0</td></tr>
-<tr class="separator:aa690a4df57320290f597985a6fcafd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333601aab8835fa31444e933b6b04fd4"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a333601aab8835fa31444e933b6b04fd4">expression</a> ()=0</td></tr>
+<tr class="separator:a333601aab8835fa31444e933b6b04fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a504a7a6039153b7a723ac43461978d56"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a504a7a6039153b7a723ac43461978d56">getSystemBegin</a> () const =0</td></tr>
 <tr class="separator:a504a7a6039153b7a723ac43461978d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2414f61bc74aa065b5e5ee5ea4d4801d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_flow.html#a2414f61bc74aa065b5e5ee5ea4d4801d">setSystemBegin</a> (<a class="el" href="class_system.html">System</a> *)=0</td></tr>
@@ -126,12 +131,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Default destructor </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa690a4df57320290f597985a6fcafd5d" name="aa690a4df57320290f597985a6fcafd5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa690a4df57320290f597985a6fcafd5d">&#9670;&nbsp;</a></span>expression()</h2>
+<a id="a333601aab8835fa31444e933b6b04fd4" name="a333601aab8835fa31444e933b6b04fd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a333601aab8835fa31444e933b6b04fd4">&#9670;&nbsp;</a></span>expression()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,7 +146,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Flow::expression </td>
+          <td class="memname">virtual double Flow::expression </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -152,8 +158,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Sets the expression of the flow </p>
 
-<p>Implemented in <a class="el" href="class_flow_implementation.html#a833ca4ff1dbdfa6723f9edabd9ed0adf">FlowImplementation</a>.</p>
+<p>Implemented in <a class="el" href="class_exponencial_flow.html#a3c306d181c9a18216dee34feb2cd58d5">ExponencialFlow</a>, <a class="el" href="class_logistical_flow.html#a0ef2b5cf0a47c5fe869fb9a2a2c82896">LogisticalFlow</a>, <a class="el" href="class_complex_flow.html#ad47d5531e21f276404d0a80ac5122cf8">ComplexFlow</a>, <a class="el" href="class_unit_test_flow.html#a36ebe1c6b628607b23f2c33630caac93">UnitTestFlow</a>, <a class="el" href="class_unit_test_flow2.html#adfef0cb8986511503eab6d7227556b5e">UnitTestFlow2</a>, and <a class="el" href="class_flow_implementation.html#a09ac4d7f3295d55d7956c9714fbe55c8">FlowImplementation</a>.</p>
 
 </div>
 </div>
@@ -179,6 +186,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get system name </p>
 
 <p>Implemented in <a class="el" href="class_flow_implementation.html#a045a2433eab6c12b4a1655a23d3e89b9">FlowImplementation</a>.</p>
 
@@ -206,6 +214,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get systemBegin </p>
 
 <p>Implemented in <a class="el" href="class_flow_implementation.html#a8be3ceb80c4090f09bffd850f24c92e6">FlowImplementation</a>.</p>
 
@@ -233,6 +242,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get systemEnd </p>
 
 <p>Implemented in <a class="el" href="class_flow_implementation.html#a21375e757d62d9d1416ddb7962e2b215">FlowImplementation</a>.</p>
 
@@ -260,6 +270,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get system value </p>
 
 <p>Implemented in <a class="el" href="class_flow_implementation.html#a203a5f4831e2f8be830ed8298080e536">FlowImplementation</a>.</p>
 
@@ -288,6 +299,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Set system name </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Name for the flow </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="class_flow_implementation.html#a91100bd7500050c33d10dc59bfdf7aff">FlowImplementation</a>.</p>
 
@@ -316,6 +333,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Set systemBegin </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">system</td><td>SystemBegin for the flow </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="class_flow_implementation.html#aea7e5af026738636b9aea92471e15295">FlowImplementation</a>.</p>
 
@@ -344,6 +367,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Set systemBegin </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">system</td><td>SystemEnd for the flow </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="class_flow_implementation.html#a788d57fd956a3448355a85a3c0f355ef">FlowImplementation</a>.</p>
 
@@ -372,6 +401,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Set system value </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Value for the flow </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="class_flow_implementation.html#a0856e8004ba047743c72700cd01764cb">FlowImplementation</a>.</p>
 

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Software Documentation: Model Class Reference</title>
+<title>MyVensim: Model Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Software Documentation
+   <div id="projectname">MyVensim
    </div>
   </td>
  </tr>
@@ -98,6 +98,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a70362afdd9db6268b4adaedfeddb2935"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1e19f5fcc4ced9defbfe2847a26ff33"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ac1e19f5fcc4ced9defbfe2847a26ff33">add</a> (<a class="el" href="class_flow.html">Flow</a> *)=0</td></tr>
 <tr class="separator:ac1e19f5fcc4ced9defbfe2847a26ff33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c96b2e11c6e198786975d38bf68cbd2"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="class_system.html">System</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a5c96b2e11c6e198786975d38bf68cbd2">getSystemsIterator</a> ()=0</td></tr>
+<tr class="separator:a5c96b2e11c6e198786975d38bf68cbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1bbb0bb655ca070d747a24c78f3622"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ada1bbb0bb655ca070d747a24c78f3622">getFlowsIterator</a> ()=0</td></tr>
+<tr class="separator:ada1bbb0bb655ca070d747a24c78f3622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2efbe4ec768191fa70ad86f260ec2fd6" name="a2efbe4ec768191fa70ad86f260ec2fd6"></a>
@@ -122,6 +126,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Default destructor </p>
 
 </div>
 </div>
@@ -149,6 +154,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Add a flow to the model </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flow</td><td><a class="el" href="class_flow.html">Flow</a> to be added to the model </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="class_model_implementation.html#a28f21761aecbef9c90395f3f2c7cb9c8">ModelImplementation</a>.</p>
 
@@ -177,8 +188,42 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Add a system to the model </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">system</td><td><a class="el" href="class_system.html">System</a> to be added to the model </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="class_model_implementation.html#a8754857fc03af9624069749550f3e22f">ModelImplementation</a>.</p>
+
+</div>
+</div>
+<a id="ada1bbb0bb655ca070d747a24c78f3622" name="ada1bbb0bb655ca070d747a24c78f3622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada1bbb0bb655ca070d747a24c78f3622">&#9670;&nbsp;</a></span>getFlowsIterator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;::iterator Model::getFlowsIterator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Get model flows iterator </p>
+
+<p>Implemented in <a class="el" href="class_model_implementation.html#ad8fedc8f40a94fae965071e922b2ca1b">ModelImplementation</a>.</p>
 
 </div>
 </div>
@@ -204,8 +249,37 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get model name </p>
 
 <p>Implemented in <a class="el" href="class_model_implementation.html#afc943048167f4bd42a6311ee71aa6ab2">ModelImplementation</a>.</p>
+
+</div>
+</div>
+<a id="a5c96b2e11c6e198786975d38bf68cbd2" name="a5c96b2e11c6e198786975d38bf68cbd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c96b2e11c6e198786975d38bf68cbd2">&#9670;&nbsp;</a></span>getSystemsIterator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt; <a class="el" href="class_system.html">System</a> * &gt;::iterator Model::getSystemsIterator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Get model systems iterator </p>
+
+<p>Implemented in <a class="el" href="class_model_implementation.html#aa264a40bedfbf6d0094eae245deb7d22">ModelImplementation</a>.</p>
 
 </div>
 </div>
@@ -231,6 +305,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Get model time </p>
 
 <p>Implemented in <a class="el" href="class_model_implementation.html#a4764f51274602af5ca5b81d74840d9e7">ModelImplementation</a>.</p>
 
@@ -259,6 +334,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Set model name </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Name for the system </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="class_model_implementation.html#a73d846c6a037eeb63a85e0496045fa7a">ModelImplementation</a>.</p>
 
@@ -287,6 +368,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Set model time </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Name for the system </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="class_model_implementation.html#aefd2371433f227f37b05e6d5ed638594">ModelImplementation</a>.</p>
 
@@ -331,6 +418,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Simulates the model during a period of time between start and end time values with a specified timestep </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>Time where the simulation starts </td></tr>
+    <tr><td class="paramname">end</td><td>Time where the simulation ends </td></tr>
+    <tr><td class="paramname">timestep</td><td>Timestep value to simulate with </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="class_model_implementation.html#a6e4abe69f72c5797323d756a10f30ad3">ModelImplementation</a>.</p>
 

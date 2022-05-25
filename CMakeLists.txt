@@ -21,4 +21,4 @@ add_executable(Eng1
         src/main.cpp
         test/functional/FunctionalTests.cpp
         test/functional/FunctionalTests.h
-        test/functional/main.cpp)
+        test/functional/main.cpp test/unit/main.cpp test/unit/unitTests.cpp test/unit/unitTests.h test/unit/unitSystem.cpp test/unit/unitSystem.h test/unit/unitModel.cpp test/unit/unitModel.h test/unit/unitFlow.cpp test/unit/unitFlow.h)
