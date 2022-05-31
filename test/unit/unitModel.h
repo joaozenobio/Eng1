@@ -24,9 +24,9 @@ public:
      * \param value: Inital flow value
      * \param systemBegin: Inital system where the flow comes from
      * \param systemEnd: Inital system where the flow goes to
-     * \return Flow with initial name, value, systemBegin and systemEnd
+     * \return UnitTestFlow2 with initial name, value, systemBegin and systemEnd
     **/
-    UnitTestFlow2(std::string name, double value, System* systemOut, System* systemIn) : FlowImplementation(name, value, systemOut, systemIn) {}
+    UnitTestFlow2(std::string name, System* systemBegin, System* systemEnd) : FlowImplementation(name, systemBegin, systemEnd) {}
     /**
      * Flow expression method implementation for testing
     **/
@@ -37,7 +37,6 @@ public:
 
 void unitModelDestructor();
 void unitModelDefaultConstructor();
-void unitModelAssignmentOperator();
 void unitModelSimulate();
 void unitModelGetName();
 void unitModelSetName();

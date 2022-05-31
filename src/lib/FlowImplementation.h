@@ -41,7 +41,7 @@ public:
      * \param systemEnd: Inital system where the flow goes to
      * \return Flow with initial name, value, systemBegin and systemEnd
     **/
-    FlowImplementation(std::string name, double value, System* systemBegin, System* systemEnd);
+    FlowImplementation(std::string name, System* systemBegin, System* systemEnd);
 
     /**
      * Copy Assignment Operator

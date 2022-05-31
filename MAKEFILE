@@ -1,22 +1,19 @@
-all: ./bin/unitTest ./bin/functionalTest ./bin/executable
+all: ./bin/MyVensim.so ./bin/unitTest ./bin/functionalTest ./bin/executable
+	rm -rf ./bin/*.o *~
 
 ./documentation: ./bin/executable
 	doxygen ./documentation/doxygen/.cfg
 	cd ./documentation/latex && make
 	cp ./documentation/latex/refman.pdf ./documentation/manual.pdf
 
-./bin/executable: ./bin/base.so
-	cd ./bin/ && g++ -std=c++11 -fPIC ../src/main.cpp -o ./executable -L . -lbase -Wl,-rpath .
-	rm -rf ./bin/*.o *~
+./bin/executable:
+	cd ./bin/ && g++ -std=c++11 -fPIC ../src/main.cpp -o ./executable -L . -lMyVensim -Wl,-rpath .
 
-./bin/functionalTest: ./test/functional/main.cpp test/functional/FunctionalTests.cpp test/functional/FunctionalTests.h ./bin/base.so
-	cd ./bin/ && g++ -std=c++11 -fPIC ../test/functional/main.cpp ../test/functional/FunctionalTests.cpp -o ./functionalTest -L . -lbase -Wl,-rpath .
+./bin/functionalTest: ./test/functional/main.cpp test/functional/FunctionalTests.cpp test/functional/FunctionalTests.h
+	cd ./bin/ && g++ -std=c++11 -fPIC ../test/functional/main.cpp ../test/functional/FunctionalTests.cpp -o ./functionalTest -L . -lMyVensim -Wl,-rpath .
 
-./bin/unitTest: ./test/unit/main.cpp test/unit/unitTests.cpp test/unit/unitTests.h ./bin/unitBase.so
-	cd ./bin/ && g++ -std=c++11 -fPIC ../test/unit/main.cpp ../test/unit/unitTests.cpp -o ./unitTest -L . -lunitBase -Wl,-rpath .
-
-./bin/unitBase.so: ./bin/unitModel.o ./bin/unitFlow.o ./bin/unitSystem.o ./bin/base.so
-	cd ./bin/ && g++ -std=c++11 -fPIC -shared ./unitModel.o ./unitFlow.o ./unitSystem.o -o ./libunitBase.so -L . -lbase -Wl,-rpath .
+./bin/unitTest: ./test/unit/main.cpp test/unit/unitTests.cpp test/unit/unitTests.h ./bin/unitModel.o ./bin/unitFlow.o ./bin/unitSystem.o
+	cd ./bin/ && g++ -std=c++11 -fPIC ../test/unit/main.cpp ../test/unit/unitTests.cpp ./unitModel.o ./unitFlow.o ./unitSystem.o -o ./unitTest -L . -lMyVensim -Wl,-rpath .
 
 ./bin/unitModel.o: ./test/unit/unitModel.cpp ./test/unit/unitModel.h
 	cd ./bin/ && g++ -std=c++11 -fPIC -c ../test/unit/unitModel.cpp -o ./unitModel.o
@@ -27,8 +24,8 @@ all: ./bin/unitTest ./bin/functionalTest ./bin/executable
 ./bin/unitSystem.o: ./test/unit/unitSystem.cpp ./test/unit/unitSystem.h
 	cd ./bin/ && g++ -std=c++11 -fPIC -c ../test/unit/unitSystem.cpp -o ./unitSystem.o
 
-./bin/base.so: ./bin/model.o ./bin/flow.o ./bin/system.o
-	g++ -std=c++11 -fPIC -shared ./bin/model.o ./bin/flow.o ./bin/system.o -o ./bin/libbase.so
+./bin/MyVensim.so: ./bin/model.o ./bin/flow.o ./bin/system.o
+	g++ -std=c++11 -fPIC -shared ./bin/model.o ./bin/flow.o ./bin/system.o -o ./bin/libMyVensim.so
 
 ./bin/model.o: ./src/lib/ModelImplementation.cpp ./src/lib/ModelImplementation.h ./src/lib/Model.h ./bin/flow.o ./bin/system.o
 	g++ -std=c++11 -fPIC -c ./src/lib/ModelImplementation.cpp -o ./bin/model.o
@@ -40,4 +37,4 @@ all: ./bin/unitTest ./bin/functionalTest ./bin/executable
 	g++ -std=c++11 -fPIC -c ./src/lib/SystemImplementation.cpp -o ./bin/system.o
 
 clean:
-	rm -rf ./bin/*.o *~
+	rm -rf ./bin/*.o ./bin/*~ ./bin/*.so

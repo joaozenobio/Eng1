@@ -2,6 +2,7 @@
 // Created by joaozenobio on 19/05/22.
 //
 
+#include <iostream>
 #include "unitSystem.h"
 
 /**
@@ -22,12 +23,14 @@ void unitSystemDefaultConstructor(){
  * Tests System assignment operator
  */
 void unitSystemAssignmentOperator(){
-    System* system1 = new SystemImplementation("system", 10);
-    System* system2 = system1;
-    system1->setName("Original");
+    SystemImplementation* system1 = new SystemImplementation("Original", 10);
+    SystemImplementation* system2 = new SystemImplementation("Teste", 0);
+    *system2 = *system1;
+    system1->setName("Original teste");
     system1->setValue(100.0);
+    std::cout << system2->getName() << "\n";
     assert(system2->getName() == "Original");
-    assert(system2->getValue() == 100.0);
+    assert(system2->getValue() == 10);
 }
 
 /**

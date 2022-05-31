@@ -19,24 +19,12 @@ void unitModelDefaultConstructor(){
 }
 
 /**
- * Tests Model assignment operator
- */
-void unitModelAssignmentOperator(){
-    Model* model1 = new ModelImplementation("", 10);
-    Model* model2 = model1;
-    model1->setName("Original");
-    model1->setTime(100.0);
-    assert(model2->getName() == "Original");
-    assert(model2->getTime() == 100.0);
-}
-
-/**
  * Tests Model simluate method
  */
 void unitModelSimulate() {
     System* system1 = new SystemImplementation("", 100);
     System* system2 = new SystemImplementation("", 0);
-    Flow* flow = new UnitTestFlow2("", 0, system1, system2);
+    Flow* flow = new UnitTestFlow2("", system1, system2);
     Model* model = new ModelImplementation("", 0);
     model->add(system1);
     model->add(system2);
@@ -96,7 +84,7 @@ void unitModeladdSystem() {
 void unitModeladdFlow() {
     System* system1 = new SystemImplementation("", 100);
     System* system2 = new SystemImplementation("", 0);
-    Flow* flow = new UnitTestFlow2("", 0, system1, system2);
+    Flow* flow = new UnitTestFlow2("", system1, system2);
     Model* model = new ModelImplementation("", 0);
     model->add(flow);
     assert((*(model->getFlowsIterator()))->getName() == flow->getName());
@@ -108,7 +96,6 @@ void unitModeladdFlow() {
 void runUnitTestsModel() {
     unitModelDestructor();
     unitModelDefaultConstructor();
-    unitModelAssignmentOperator();
     unitModelSimulate();
     unitModelGetName();
     unitModelSetName();

@@ -23,9 +23,9 @@ public:
      * \param value: Inital flow value
      * \param systemBegin: Inital system where the flow comes from
      * \param systemEnd: Inital system where the flow goes to
-     * \return Flow with initial name, value, systemBegin and systemEnd
+     * \return UnitTestFlow with initial name, value, systemBegin and systemEnd
     **/
-    UnitTestFlow(std::string name, double value, System* systemOut, System* systemIn) : FlowImplementation(name, value, systemOut, systemIn) {}
+    UnitTestFlow(std::string name, System* systemBegin, System* systemEnd) : FlowImplementation(name, systemBegin, systemEnd) {}
     /**
      * Flow expression method implementation for testing
     **/

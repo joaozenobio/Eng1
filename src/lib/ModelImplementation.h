@@ -21,11 +21,19 @@ private:
     **/
     ModelImplementation(const ModelImplementation& model);
 
+    /**
+     * Copy Assignment Operator
+     * \param model: Model to copy from
+     * \return Copied model
+    **/
+    ModelImplementation& operator=(const ModelImplementation& model);
+
 protected:
     std::string name;
     double time;
     std::vector<System*> systems;
     std::vector<Flow*> flows;
+    static std::vector<Model*> models;
 
 public:
     /**
@@ -40,13 +48,6 @@ public:
      * \return Model with initial name and time
     **/
     ModelImplementation(std::string name, double time);
-
-    /**
-     * Copy Assignment Operator
-     * \param model: Model to copy from
-     * \return Copied model
-    **/
-    ModelImplementation& operator=(const ModelImplementation& model);
 
     /**
      * Simulates the model during a period of time between start and end time values with a specified timestep
@@ -99,6 +100,30 @@ public:
      * Get model flows iterator
     **/
     std::vector<Flow*>::iterator getFlowsIterator() override;
+
+    std::vector<System*>::iterator beginSystems() override;
+
+    std::vector<System*>::iterator endSystems() override;
+
+    std::vector<Flow*>::iterator beginFlows() override;
+
+    std::vector<Flow*>::iterator endFlows() override;
+
+    std::vector<Model*>::iterator beginModels() override;
+
+    std::vector<Model*>::iterator endModels() override;
+
+    System* createSystem(std::string name, double value) override;
+
+//    System* getSystemBegin(Flow* flow) override;
+//
+//    void setSystemBegin(Flow* flow, System* finalSystem) override;
+//
+//    System* getSystemEnd(Flow* flow) override;
+//
+//    void setSystemEnd(Flow* flow, System* finalSystem) override;
+
+    static Model* createModel(std::string name, double time);
 };
 
 

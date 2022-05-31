@@ -5,10 +5,29 @@
 #include <iostream>
 
 #include "ModelImplementation.h"
+#include "SystemImplementation.h"
 
-ModelImplementation::~ModelImplementation() {
-    flows.clear();
-    systems.clear();
+ModelImplementation::~ModelImplementation(){    /*!destrutor padrao */
+    if(!flows.empty()){
+        for (Flow* item : flows) {
+            delete (item);
+        }
+        flows.clear();
+    }
+    if(!systems.empty()){
+        for (System* item : systems) {
+            delete (item);
+        }
+        systems.clear();
+    }
+    auto i = beginModels();
+    for (Model* item : models){
+        if (this == item){
+            models.erase(i);
+            break;
+        }
+        ++i;
+    }
 }
 
 ModelImplementation::ModelImplementation(std::string name, double time) : name(name), time(time) {}
@@ -80,4 +99,46 @@ std::vector<System *>::iterator ModelImplementation::getSystemsIterator() {
 
 std::vector<Flow *>::iterator ModelImplementation::getFlowsIterator() {
     return flows.begin();
+}
+
+std::vector<System*>::iterator ModelImplementation::beginSystems(){
+    return systems.begin();
+}
+
+std::vector<System*>::iterator ModelImplementation::endSystems(){
+    return systems.end();
+}
+
+std::vector<Flow*>::iterator ModelImplementation::beginFlows(){
+    return flows.begin();
+}
+
+std::vector<Flow*>::iterator ModelImplementation::endFlows(){
+    return flows.end();
+}
+
+std::vector<Model*>::iterator ModelImplementation::beginModels(){
+    return models.begin();
+}
+
+std::vector<Model*>::iterator ModelImplementation::endModels(){
+    return models.end();
+}
+
+System* ModelImplementation::createSystem(std::string name, double value){
+    System* system = new SystemImplementation(name, value);
+    add(system);
+    return system;
+}
+
+Model* Model::createModel(std::string name, double time){
+    return ModelImplementation::createModel(name, time);
+}
+
+std::vector<Model*> ModelImplementation::models;
+
+Model* ModelImplementation::createModel(std::string name, double time){
+    Model* model = new ModelImplementation(name, time);
+    models.push_back(model);
+    return model;
 }

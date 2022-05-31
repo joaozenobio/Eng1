@@ -6,7 +6,9 @@
 
 FlowImplementation::~FlowImplementation() = default;
 
-FlowImplementation::FlowImplementation(std::string name, double value, System* systemBegin, System* systemEnd) : name(name), value(value), systemBegin(systemBegin), systemEnd(systemEnd) {}
+FlowImplementation::FlowImplementation(std::string name, System* systemBegin, System* systemEnd) : name(name), systemBegin(systemBegin), systemEnd(systemEnd) {
+    value = 0;
+}
 
 FlowImplementation::FlowImplementation(const FlowImplementation& flow) {
     name = flow.name;

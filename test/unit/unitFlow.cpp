@@ -13,7 +13,7 @@ void unitFlowDestructor(){};
  * Tests Flow default constructor
  */
 void unitFlowDefaultConstructor(){
-    Flow* flow = new UnitTestFlow("", 0, NULL, NULL);
+    Flow* flow = new UnitTestFlow("", NULL, NULL);
     assert(flow->getValue() == 0.0);
     assert(flow->getName() == "");
 }
@@ -22,12 +22,13 @@ void unitFlowDefaultConstructor(){
  * Tests Flow assignment operator
  */
 void unitFlowAssignmentOperator(){
-    Flow* flow1 = new UnitTestFlow("", 0, NULL, NULL);
-    Flow* flow2 = *(&flow1);
-    flow1->setName("Original");
+    FlowImplementation* flow1 = new UnitTestFlow("Original", NULL, NULL);
+    FlowImplementation* flow2 = new UnitTestFlow("Teste", NULL, NULL);;
+    *flow2 = *flow1;
+    flow1->setName("Original Teste");
     flow1->setValue(100.0);
     assert(flow2->getName() == "Original");
-    assert(flow2->getValue() == 100.0);
+    assert(flow2->getValue() == 0);
 }
 
 /**
@@ -36,7 +37,7 @@ void unitFlowAssignmentOperator(){
 void unitFlowExpression() {
     System* system1 = new SystemImplementation("system1", 10);
     System* system2 = new SystemImplementation("system2", 0);
-    Flow* flow = new UnitTestFlow("", 0, system1, system2);
+    Flow* flow = new UnitTestFlow("", system1, system2);
     assert(fabs(flow->expression() - 0.1) < 0.00005);
 }
 
@@ -44,7 +45,7 @@ void unitFlowExpression() {
  * Tests Flow getName method
  */
 void unitFlowGetName(){
-    Flow* flow = new UnitTestFlow("flow", 0, NULL, NULL);
+    Flow* flow = new UnitTestFlow("flow", NULL, NULL);
     assert(flow->getName() == "flow");
 }
 
@@ -52,7 +53,7 @@ void unitFlowGetName(){
  * Tests Flow setName method
  */
 void unitFlowSetName( ) {
-    Flow* flow = new UnitTestFlow("", 0, NULL, NULL);
+    Flow* flow = new UnitTestFlow("", NULL, NULL);
     flow->setName("test");
     assert(flow->getName() == "test");
 }
@@ -61,7 +62,8 @@ void unitFlowSetName( ) {
  * Tests Flow getValue method
  */
 void unitFlowGetValue(){
-    Flow* flow = new UnitTestFlow("", 10, NULL, NULL);
+    Flow* flow = new UnitTestFlow("", NULL, NULL);
+    flow->setValue(10);
     assert(flow->getValue() == 10);
 }
 
@@ -69,7 +71,7 @@ void unitFlowGetValue(){
  * Tests Flow setValue method
  */
 void unitFlowSetValue( ) {
-    Flow* flow = new UnitTestFlow("", 0, NULL, NULL);
+    Flow* flow = new UnitTestFlow("", NULL, NULL);
     flow->setValue(20);
     assert(flow->getValue() == 20);
 }
@@ -79,7 +81,7 @@ void unitFlowSetValue( ) {
  */
 void unitFlowGetSystemBegin() {
     System* system1 = new SystemImplementation("system1", 10);
-    Flow* flow = new UnitTestFlow("", 0, system1, NULL);
+    Flow* flow = new UnitTestFlow("", system1, NULL);
     System* system2 = flow->getSystemBegin();
     assert(system2->getName() == "system1");
     assert(system2->getValue() == 10);
@@ -89,7 +91,7 @@ void unitFlowGetSystemBegin() {
  * Tests Flow setSystemBegin method
  */
 void unitFlowSetSystemBegin() {
-    Flow* flow = new UnitTestFlow("", 0, NULL, NULL);
+    Flow* flow = new UnitTestFlow("", NULL, NULL);
     System* system1 = new SystemImplementation("system1", 10);
     flow->setSystemBegin(system1);
     System* system2 = flow->getSystemBegin();
@@ -102,7 +104,7 @@ void unitFlowSetSystemBegin() {
  */
 void unitFlowGetSystemEnd() {
     System* system1 = new SystemImplementation("system1", 10);
-    Flow* flow = new UnitTestFlow("", 0, NULL, system1);
+    Flow* flow = new UnitTestFlow("", NULL, system1);
     System* system2 = flow->getSystemEnd();
     assert(system2->getName() == "system1");
     assert(system2->getValue() == 10);
@@ -112,7 +114,7 @@ void unitFlowGetSystemEnd() {
  * Tests Flow setSystemEnd method
  */
 void unitFlowSetSystemEnd() {
-    Flow* flow = new UnitTestFlow("", 0, NULL, NULL);
+    Flow* flow = new UnitTestFlow("", NULL, NULL);
     System* system1 = new SystemImplementation("system1", 10);
     flow->setSystemEnd(system1);
     System* system2 = flow->getSystemEnd();
