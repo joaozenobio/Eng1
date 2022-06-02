@@ -7,6 +7,8 @@
 #include "ModelImplementation.h"
 #include "SystemImplementation.h"
 
+std::vector<Model*> ModelImplementation::models;
+
 ModelImplementation::~ModelImplementation(){    /*!destrutor padrao */
     if(!flows.empty()){
         for (Flow* item : flows) {
@@ -20,11 +22,10 @@ ModelImplementation::~ModelImplementation(){    /*!destrutor padrao */
         }
         systems.clear();
     }
-    auto i = beginModels();
+    auto i = getModelsIterator();
     for (Model* item : models){
         if (this == item){
             models.erase(i);
-            break;
         }
         ++i;
     }
@@ -101,24 +102,16 @@ std::vector<Flow *>::iterator ModelImplementation::getFlowsIterator() {
     return flows.begin();
 }
 
-std::vector<System*>::iterator ModelImplementation::beginSystems(){
-    return systems.begin();
+std::vector<Model *>::iterator ModelImplementation::getModelsIterator() {
+    return models.begin();
 }
 
 std::vector<System*>::iterator ModelImplementation::endSystems(){
     return systems.end();
 }
 
-std::vector<Flow*>::iterator ModelImplementation::beginFlows(){
-    return flows.begin();
-}
-
 std::vector<Flow*>::iterator ModelImplementation::endFlows(){
     return flows.end();
-}
-
-std::vector<Model*>::iterator ModelImplementation::beginModels(){
-    return models.begin();
 }
 
 std::vector<Model*>::iterator ModelImplementation::endModels(){
@@ -134,8 +127,6 @@ System* ModelImplementation::createSystem(std::string name, double value){
 Model* Model::createModel(std::string name, double time){
     return ModelImplementation::createModel(name, time);
 }
-
-std::vector<Model*> ModelImplementation::models;
 
 Model* ModelImplementation::createModel(std::string name, double time){
     Model* model = new ModelImplementation(name, time);

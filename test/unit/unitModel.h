@@ -9,9 +9,8 @@
 #include <cassert>
 #include <cmath>
 
-#include "../../src/lib/SystemImplementation.h"
+#include "../../src/lib/Model.h"
 #include "../../src/lib/FlowImplementation.h"
-#include "../../src/lib/ModelImplementation.h"
 
 /**
  * Flow used for testing
@@ -42,8 +41,11 @@ void unitModelGetName();
 void unitModelSetName();
 void unitModelGetTime();
 void unitModelSetTime();
-void unitModeladdSystem();
-void unitModeladdFlow();
+void unitModelAddSystem();
+void unitModelAddFlow();
+void unitModelCreateSystem();
+void unitModelCreateFlow();
+void unitModelCreateModel();
 void runUnitTestsModel();
 
 

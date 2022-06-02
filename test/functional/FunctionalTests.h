@@ -9,9 +9,8 @@
 #include <cassert>
 #include <cmath>
 
-#include "../../src/lib/System.h"
-#include "../../src/lib/FlowImplementation.h"
 #include "../../src/lib/Model.h"
+#include "../../src/lib/FlowImplementation.h"
 
 /**
  * Flow that converges energy from a model to another exponencialy with 1% of the initial system per timestep

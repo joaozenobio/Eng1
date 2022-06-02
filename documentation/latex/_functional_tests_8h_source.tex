@@ -13,14 +13,37 @@
 \DoxyCodeLine{9 \textcolor{preprocessor}{\#include <cassert>}}
 \DoxyCodeLine{10 \textcolor{preprocessor}{\#include <cmath>}}
 \DoxyCodeLine{11 }
-\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}../../src/lib/SystemImplementation.h"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}../../src/lib/Model.h"{}}}
 \DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}../../src/lib/FlowImplementation.h"{}}}
-\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}../../src/lib/ModelImplementation.h"{}}}
-\DoxyCodeLine{15 }
-\DoxyCodeLine{16 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functional_tests_8h_a1e9f7731a581329586520a1dfa3f2d84}{ExponencialTest}}();}
-\DoxyCodeLine{17 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functional_tests_8h_a40c27f6257ef18f593ea10182bf9e5be}{ComplexTest}}();}
-\DoxyCodeLine{18 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functional_tests_8h_ab0c1ff4e88a6ef4ca52552f14be18337}{LogisticalTest}}();}
-\DoxyCodeLine{19 }
-\DoxyCodeLine{20 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//ENG1\_FUNCTIONALTESTS\_H}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}\{}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_exponencial_flow_ab521aea18d7dcd41e7219e13bcf19813}{ExponencialFlow}}(std::string \mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, \mbox{\hyperlink{class_system}{System}}* systemOut, \mbox{\hyperlink{class_system}{System}}* systemIn) : \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}(\mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, systemOut, systemIn) \{\}}
+\DoxyCodeLine{32     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_exponencial_flow_a3c306d181c9a18216dee34feb2cd58d5}{expression}}()\textcolor{keyword}{ override }\{}
+\DoxyCodeLine{33         \textcolor{keywordflow}{return} 0.01 * \mbox{\hyperlink{class_flow_implementation_a8be3ceb80c4090f09bffd850f24c92e6}{getSystemBegin}}()-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
+\DoxyCodeLine{34     \}}
+\DoxyCodeLine{35 \};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{41 \textcolor{keyword}{class }\mbox{\hyperlink{class_logistical_flow}{LogisticalFlow}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}\{}
+\DoxyCodeLine{42 \textcolor{keyword}{public}:}
+\DoxyCodeLine{51     \mbox{\hyperlink{class_logistical_flow_a1b147037f791e578a8e42e06c57071f3}{LogisticalFlow}}(std::string \mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, \mbox{\hyperlink{class_system}{System}}* systemOut, \mbox{\hyperlink{class_system}{System}}* systemIn) : \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}(\mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, systemOut, systemIn) \{\}}
+\DoxyCodeLine{55     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_logistical_flow_a0ef2b5cf0a47c5fe869fb9a2a2c82896}{expression}}()\textcolor{keyword}{ override }\{}
+\DoxyCodeLine{56         \textcolor{keywordflow}{return} 0.01 * this-\/>\mbox{\hyperlink{class_flow_implementation_a21375e757d62d9d1416ddb7962e2b215}{getSystemEnd}}()-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}() * (1 -\/ this-\/>\mbox{\hyperlink{class_flow_implementation_a21375e757d62d9d1416ddb7962e2b215}{getSystemEnd}}()-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}() / 70);}
+\DoxyCodeLine{57     \}}
+\DoxyCodeLine{58 \};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{63 \textcolor{keyword}{class }\mbox{\hyperlink{class_complex_flow}{ComplexFlow}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}\{}
+\DoxyCodeLine{64 \textcolor{keyword}{public}:}
+\DoxyCodeLine{73     \mbox{\hyperlink{class_complex_flow_af82ab591964ff1ffeb4e49971162edc4}{ComplexFlow}}(std::string \mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, \mbox{\hyperlink{class_system}{System}}* systemOut, \mbox{\hyperlink{class_system}{System}}* systemIn) : \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}(\mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, systemOut, systemIn) \{\}}
+\DoxyCodeLine{77     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_complex_flow_ad47d5531e21f276404d0a80ac5122cf8}{expression}}()\textcolor{keyword}{ override }\{}
+\DoxyCodeLine{78         \textcolor{keywordflow}{return} 0.01 * \mbox{\hyperlink{class_flow_implementation_a8be3ceb80c4090f09bffd850f24c92e6}{getSystemBegin}}()-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
+\DoxyCodeLine{79     \}}
+\DoxyCodeLine{80 \};}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functional_tests_8h_a1e9f7731a581329586520a1dfa3f2d84}{ExponencialTest}}();}
+\DoxyCodeLine{83 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functional_tests_8h_a40c27f6257ef18f593ea10182bf9e5be}{ComplexTest}}();}
+\DoxyCodeLine{84 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functional_tests_8h_ab0c1ff4e88a6ef4ca52552f14be18337}{LogisticalTest}}();}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//ENG1\_FUNCTIONALTESTS\_H}}
 
 \end{DoxyCode}

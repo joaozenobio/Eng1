@@ -28,9 +28,27 @@
 \DoxyCodeLine{55     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_ac1e19f5fcc4ced9defbfe2847a26ff33}{add}}(\mbox{\hyperlink{class_flow}{Flow}}*) = 0;}
 \DoxyCodeLine{59     \textcolor{keyword}{virtual} std::vector<System*>::iterator \mbox{\hyperlink{class_model_a5c96b2e11c6e198786975d38bf68cbd2}{getSystemsIterator}}() = 0;}
 \DoxyCodeLine{63     \textcolor{keyword}{virtual} std::vector<Flow*>::iterator \mbox{\hyperlink{class_model_ada1bbb0bb655ca070d747a24c78f3622}{getFlowsIterator}}() = 0;}
-\DoxyCodeLine{64 \};}
-\DoxyCodeLine{65 }
-\DoxyCodeLine{66 }
-\DoxyCodeLine{67 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//ENG1\_MODEL\_H}}
+\DoxyCodeLine{67     \textcolor{keyword}{virtual} std::vector<Model*>::iterator \mbox{\hyperlink{class_model_aca41c06c39cfebf28040c426d0a5cc97}{getModelsIterator}}() = 0;}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     \textcolor{keyword}{virtual} std::vector<System*>::iterator \mbox{\hyperlink{class_model_a241dd719ebc31f3c66ecbc1e76185809}{endSystems}}() = 0;}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     \textcolor{keyword}{virtual} std::vector<Flow*>::iterator \mbox{\hyperlink{class_model_a60756bd2d10f18e66bd2828a6f131c16}{endFlows}}() = 0;}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73     \textcolor{keyword}{virtual} std::vector<Model*>::iterator \mbox{\hyperlink{class_model_aa06dc98db8f390e9f801b79ff0e22834}{endModels}}() = 0;}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_model_afb83fc80a9aa5fb9ade329a726d65277}{createSystem}}(std::string name, \textcolor{keywordtype}{double} value) = 0;}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77     \textcolor{keyword}{template}<\textcolor{keyword}{typename} FlowType>}
+\DoxyCodeLine{78     \mbox{\hyperlink{class_flow}{Flow}}* \mbox{\hyperlink{class_model_a1848fba3e35d9f24d072063b319234b5}{createFlow}}(std::string name, \mbox{\hyperlink{class_system}{System}}* systemBegin, \mbox{\hyperlink{class_system}{System}}* systemEnd)\{}
+\DoxyCodeLine{79         \mbox{\hyperlink{class_flow}{Flow}}* flow = \textcolor{keyword}{new} FlowType(name, systemBegin, systemEnd);}
+\DoxyCodeLine{80         \mbox{\hyperlink{class_model_a70362afdd9db6268b4adaedfeddb2935}{add}}(flow);}
+\DoxyCodeLine{81         \textcolor{keywordflow}{return} flow;}
+\DoxyCodeLine{82     \}}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84     \textcolor{keyword}{static} \mbox{\hyperlink{class_model}{Model}}* \mbox{\hyperlink{class_model_a9a84b16e442c804a8381e4b2fb6169d9}{createModel}}(std::string name, \textcolor{keywordtype}{double} time);}
+\DoxyCodeLine{85 \};}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//ENG1\_MODEL\_H}}
 
 \end{DoxyCode}

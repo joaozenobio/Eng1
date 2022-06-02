@@ -9,7 +9,7 @@
 #include <cassert>
 #include <cmath>
 
-#include "../../src/lib/SystemImplementation.h"
+#include "../../src/lib/Model.h"
 #include "../../src/lib/FlowImplementation.h"
 
 /**
@@ -36,7 +36,6 @@ public:
 
 void unitFlowDestructor();
 void unitFlowDefaultConstructor();
-void unitFlowAssignmentOperator();
 void unitFlowExpression();
 void unitFlowGetName();
 void unitFlowSetName();

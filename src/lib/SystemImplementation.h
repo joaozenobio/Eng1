@@ -20,6 +20,13 @@ private:
     **/
     SystemImplementation(const SystemImplementation& system);
 
+    /**
+     * Copy Assignment Operator
+     * \param system: System to copy from
+     * \return Copied system
+    **/
+    SystemImplementation& operator=(const SystemImplementation& system);
+
 protected:
     std::string name;
     double value;
@@ -37,13 +44,6 @@ public:
      * \return System with initial name and value
     **/
     SystemImplementation(std::string name, double value);
-
-    /**
-     * Copy Assignment Operator
-     * \param system: System to copy from
-     * \return Copied system
-    **/
-    SystemImplementation& operator=(const SystemImplementation& system);
 
     /**
      * Get system name

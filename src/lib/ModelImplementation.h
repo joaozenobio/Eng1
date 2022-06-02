@@ -34,6 +34,17 @@ protected:
     std::vector<System*> systems;
     std::vector<Flow*> flows;
     static std::vector<Model*> models;
+    /**
+     * Add a system to the model
+     * \param system: System to be added to the model
+    **/
+    void add(System* system) override;
+
+    /**
+     * Add a flow to the model
+     * \param flow: Flow to be added to the model
+    **/
+    void add(Flow* flow) override;
 
 public:
     /**
@@ -80,18 +91,6 @@ public:
     void setTime(double t) override;
 
     /**
-     * Add a system to the model
-     * \param system: System to be added to the model
-    **/
-    void add(System* system) override;
-
-    /**
-     * Add a flow to the model
-     * \param flow: Flow to be added to the model
-    **/
-    void add(Flow* flow) override;
-
-    /**
      * Get model systems iterator
     **/
     std::vector<System*>::iterator getSystemsIterator() override;
@@ -101,27 +100,18 @@ public:
     **/
     std::vector<Flow*>::iterator getFlowsIterator() override;
 
-    std::vector<System*>::iterator beginSystems() override;
+    /**
+     * Get model models iterator
+    **/
+    std::vector<Model*>::iterator getModelsIterator() override;
 
     std::vector<System*>::iterator endSystems() override;
 
-    std::vector<Flow*>::iterator beginFlows() override;
-
     std::vector<Flow*>::iterator endFlows() override;
-
-    std::vector<Model*>::iterator beginModels() override;
 
     std::vector<Model*>::iterator endModels() override;
 
     System* createSystem(std::string name, double value) override;
-
-//    System* getSystemBegin(Flow* flow) override;
-//
-//    void setSystemBegin(Flow* flow, System* finalSystem) override;
-//
-//    System* getSystemEnd(Flow* flow) override;
-//
-//    void setSystemEnd(Flow* flow, System* finalSystem) override;
 
     static Model* createModel(std::string name, double time);
 };

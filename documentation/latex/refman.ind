@@ -1,112 +1,129 @@
 \begin{theindex}
 
   \item {\_\_has\_include}
-    \subitem {CMakeCCompilerId.c}, \hyperpage{45}
-    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{49}
+    \subitem {CMakeCCompilerId.c}, \hyperpage{47}
+    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{51}
   \item {$\sim$Flow}
     \subitem {Flow}, \hyperpage{14}
   \item {$\sim$FlowImplementation}
     \subitem {FlowImplementation}, \hyperpage{19}
   \item {$\sim$Model}
-    \subitem {Model}, \hyperpage{26}
+    \subitem {Model}, \hyperpage{25}
   \item {$\sim$ModelImplementation}
-    \subitem {ModelImplementation}, \hyperpage{30}
+    \subitem {ModelImplementation}, \hyperpage{31}
   \item {$\sim$System}
-    \subitem {System}, \hyperpage{34}
+    \subitem {System}, \hyperpage{36}
   \item {$\sim$SystemImplementation}
-    \subitem {SystemImplementation}, \hyperpage{37}
+    \subitem {SystemImplementation}, \hyperpage{39}
 
   \indexspace
 
   \item {add}
     \subitem {Model}, \hyperpage{26}
-    \subitem {ModelImplementation}, \hyperpage{30, 31}
+    \subitem {ModelImplementation}, \hyperpage{32}
   \item {ARCHITECTURE\_ID}
-    \subitem {CMakeCCompilerId.c}, \hyperpage{46}
-    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{49}
+    \subitem {CMakeCCompilerId.c}, \hyperpage{48}
+    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{51}
 
   \indexspace
 
   \item {C\_VERSION}
-    \subitem {CMakeCCompilerId.c}, \hyperpage{46}
-  \item {cmake-\/build-\/debug/CMakeCache.txt}, \hyperpage{45}
+    \subitem {CMakeCCompilerId.c}, \hyperpage{48}
+  \item {cmake-\/build-\/debug/CMakeCache.txt}, \hyperpage{47}
   \item {cmake-\/build-\/debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.c}, 
-		\hyperpage{45}
+		\hyperpage{47}
   \item {cmake-\/build-\/debug/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.cpp}, 
-		\hyperpage{48}
+		\hyperpage{50}
   \item {cmake-\/build-\/debug/CMakeFiles/clion-\/environment.txt}, 
-		\hyperpage{52}
+		\hyperpage{54}
   \item {cmake-\/build-\/debug/CMakeFiles/clion-\/log.txt}, 
-		\hyperpage{52}
+		\hyperpage{54}
   \item {cmake-\/build-\/debug/CMakeFiles/TargetDirectories.txt}, 
-		\hyperpage{52}
+		\hyperpage{54}
   \item {CMakeCCompilerId.c}
-    \subitem {\_\_has\_include}, \hyperpage{45}
-    \subitem {ARCHITECTURE\_ID}, \hyperpage{46}
-    \subitem {C\_VERSION}, \hyperpage{46}
-    \subitem {COMPILER\_ID}, \hyperpage{46}
-    \subitem {DEC}, \hyperpage{46}
-    \subitem {HEX}, \hyperpage{46}
-    \subitem {info\_arch}, \hyperpage{47}
-    \subitem {info\_compiler}, \hyperpage{47}
-    \subitem {info\_language\_extensions\_default}, \hyperpage{47}
-    \subitem {info\_language\_standard\_default}, \hyperpage{48}
-    \subitem {info\_platform}, \hyperpage{48}
-    \subitem {main}, \hyperpage{47}
-    \subitem {PLATFORM\_ID}, \hyperpage{46}
-    \subitem {STRINGIFY}, \hyperpage{47}
-    \subitem {STRINGIFY\_HELPER}, \hyperpage{47}
+    \subitem {\_\_has\_include}, \hyperpage{47}
+    \subitem {ARCHITECTURE\_ID}, \hyperpage{48}
+    \subitem {C\_VERSION}, \hyperpage{48}
+    \subitem {COMPILER\_ID}, \hyperpage{48}
+    \subitem {DEC}, \hyperpage{48}
+    \subitem {HEX}, \hyperpage{48}
+    \subitem {info\_arch}, \hyperpage{49}
+    \subitem {info\_compiler}, \hyperpage{49}
+    \subitem {info\_language\_extensions\_default}, \hyperpage{49}
+    \subitem {info\_language\_standard\_default}, \hyperpage{50}
+    \subitem {info\_platform}, \hyperpage{50}
+    \subitem {main}, \hyperpage{49}
+    \subitem {PLATFORM\_ID}, \hyperpage{48}
+    \subitem {STRINGIFY}, \hyperpage{49}
+    \subitem {STRINGIFY\_HELPER}, \hyperpage{49}
   \item {CMakeCXXCompilerId.cpp}
-    \subitem {\_\_has\_include}, \hyperpage{49}
-    \subitem {ARCHITECTURE\_ID}, \hyperpage{49}
-    \subitem {COMPILER\_ID}, \hyperpage{49}
-    \subitem {CXX\_STD}, \hyperpage{49}
-    \subitem {DEC}, \hyperpage{49}
-    \subitem {HEX}, \hyperpage{49}
-    \subitem {info\_arch}, \hyperpage{50}
-    \subitem {info\_compiler}, \hyperpage{51}
-    \subitem {info\_language\_extensions\_default}, \hyperpage{51}
-    \subitem {info\_language\_standard\_default}, \hyperpage{51}
-    \subitem {info\_platform}, \hyperpage{51}
-    \subitem {main}, \hyperpage{50}
-    \subitem {PLATFORM\_ID}, \hyperpage{50}
-    \subitem {STRINGIFY}, \hyperpage{50}
-    \subitem {STRINGIFY\_HELPER}, \hyperpage{50}
-  \item {CMakeLists.txt}, \hyperpage{52}
+    \subitem {\_\_has\_include}, \hyperpage{51}
+    \subitem {ARCHITECTURE\_ID}, \hyperpage{51}
+    \subitem {COMPILER\_ID}, \hyperpage{51}
+    \subitem {CXX\_STD}, \hyperpage{51}
+    \subitem {DEC}, \hyperpage{51}
+    \subitem {HEX}, \hyperpage{51}
+    \subitem {info\_arch}, \hyperpage{52}
+    \subitem {info\_compiler}, \hyperpage{53}
+    \subitem {info\_language\_extensions\_default}, \hyperpage{53}
+    \subitem {info\_language\_standard\_default}, \hyperpage{53}
+    \subitem {info\_platform}, \hyperpage{53}
+    \subitem {main}, \hyperpage{52}
+    \subitem {PLATFORM\_ID}, \hyperpage{52}
+    \subitem {STRINGIFY}, \hyperpage{52}
+    \subitem {STRINGIFY\_HELPER}, \hyperpage{52}
+  \item {CMakeLists.txt}, \hyperpage{54}
   \item {COMPILER\_ID}
-    \subitem {CMakeCCompilerId.c}, \hyperpage{46}
-    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{49}
+    \subitem {CMakeCCompilerId.c}, \hyperpage{48}
+    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{51}
   \item {ComplexFlow}, \hyperpage{9}
     \subitem {ComplexFlow}, \hyperpage{10}
     \subitem {expression}, \hyperpage{11}
   \item {ComplexTest}
-    \subitem {FunctionalTests.cpp}, \hyperpage{67}
-    \subitem {FunctionalTests.h}, \hyperpage{69}
+    \subitem {FunctionalTests.cpp}, \hyperpage{70}
+    \subitem {FunctionalTests.h}, \hyperpage{72}
+  \item {createFlow}
+    \subitem {Model}, \hyperpage{26}
+  \item {createModel}
+    \subitem {Model}, \hyperpage{26}
+    \subitem {ModelImplementation}, \hyperpage{32}
+  \item {createSystem}
+    \subitem {Model}, \hyperpage{27}
+    \subitem {ModelImplementation}, \hyperpage{32}
   \item {CXX\_STD}
-    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{49}
+    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{51}
 
   \indexspace
 
   \item {DEC}
-    \subitem {CMakeCCompilerId.c}, \hyperpage{46}
-    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{49}
+    \subitem {CMakeCCompilerId.c}, \hyperpage{48}
+    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{51}
 
   \indexspace
 
+  \item {endFlows}
+    \subitem {Model}, \hyperpage{27}
+    \subitem {ModelImplementation}, \hyperpage{33}
+  \item {endModels}
+    \subitem {Model}, \hyperpage{27}
+    \subitem {ModelImplementation}, \hyperpage{33}
+  \item {endSystems}
+    \subitem {Model}, \hyperpage{27}
+    \subitem {ModelImplementation}, \hyperpage{33}
   \item {ExponencialFlow}, \hyperpage{11}
     \subitem {ExponencialFlow}, \hyperpage{12}
     \subitem {expression}, \hyperpage{13}
   \item {ExponencialTest}
-    \subitem {FunctionalTests.cpp}, \hyperpage{67}
-    \subitem {FunctionalTests.h}, \hyperpage{69}
+    \subitem {FunctionalTests.cpp}, \hyperpage{70}
+    \subitem {FunctionalTests.h}, \hyperpage{72}
   \item {expression}
     \subitem {ComplexFlow}, \hyperpage{11}
     \subitem {ExponencialFlow}, \hyperpage{13}
     \subitem {Flow}, \hyperpage{14}
     \subitem {FlowImplementation}, \hyperpage{19}
-    \subitem {LogisticalFlow}, \hyperpage{25}
-    \subitem {UnitTestFlow}, \hyperpage{41}
-    \subitem {UnitTestFlow2}, \hyperpage{43}
+    \subitem {LogisticalFlow}, \hyperpage{24}
+    \subitem {UnitTestFlow}, \hyperpage{43}
+    \subitem {UnitTestFlow2}, \hyperpage{45}
 
   \indexspace
 
@@ -130,37 +147,39 @@
     \subitem {getSystemEnd}, \hyperpage{20}
     \subitem {getValue}, \hyperpage{20}
     \subitem {name}, \hyperpage{22}
-    \subitem {operator=}, \hyperpage{20}
-    \subitem {setName}, \hyperpage{21}
+    \subitem {setName}, \hyperpage{20}
     \subitem {setSystemBegin}, \hyperpage{21}
     \subitem {setSystemEnd}, \hyperpage{21}
-    \subitem {setValue}, \hyperpage{22}
+    \subitem {setValue}, \hyperpage{21}
     \subitem {systemBegin}, \hyperpage{22}
     \subitem {systemEnd}, \hyperpage{22}
     \subitem {value}, \hyperpage{22}
   \item {flows}
-    \subitem {ModelImplementation}, \hyperpage{33}
+    \subitem {ModelImplementation}, \hyperpage{35}
   \item {FunctionalTests.cpp}
-    \subitem {ComplexTest}, \hyperpage{67}
-    \subitem {ExponencialTest}, \hyperpage{67}
-    \subitem {LogisticalTest}, \hyperpage{68}
+    \subitem {ComplexTest}, \hyperpage{70}
+    \subitem {ExponencialTest}, \hyperpage{70}
+    \subitem {LogisticalTest}, \hyperpage{70}
   \item {FunctionalTests.h}
-    \subitem {ComplexTest}, \hyperpage{69}
-    \subitem {ExponencialTest}, \hyperpage{69}
-    \subitem {LogisticalTest}, \hyperpage{69}
+    \subitem {ComplexTest}, \hyperpage{72}
+    \subitem {ExponencialTest}, \hyperpage{72}
+    \subitem {LogisticalTest}, \hyperpage{72}
 
   \indexspace
 
   \item {getFlowsIterator}
     \subitem {Model}, \hyperpage{27}
-    \subitem {ModelImplementation}, \hyperpage{31}
+    \subitem {ModelImplementation}, \hyperpage{33}
+  \item {getModelsIterator}
+    \subitem {Model}, \hyperpage{27}
+    \subitem {ModelImplementation}, \hyperpage{33}
   \item {getName}
     \subitem {Flow}, \hyperpage{14}
     \subitem {FlowImplementation}, \hyperpage{20}
-    \subitem {Model}, \hyperpage{27}
-    \subitem {ModelImplementation}, \hyperpage{31}
-    \subitem {System}, \hyperpage{35}
-    \subitem {SystemImplementation}, \hyperpage{38}
+    \subitem {Model}, \hyperpage{28}
+    \subitem {ModelImplementation}, \hyperpage{33}
+    \subitem {System}, \hyperpage{37}
+    \subitem {SystemImplementation}, \hyperpage{40}
   \item {getSystemBegin}
     \subitem {Flow}, \hyperpage{14}
     \subitem {FlowImplementation}, \hyperpage{20}
@@ -168,130 +187,138 @@
     \subitem {Flow}, \hyperpage{15}
     \subitem {FlowImplementation}, \hyperpage{20}
   \item {getSystemsIterator}
-    \subitem {Model}, \hyperpage{27}
-    \subitem {ModelImplementation}, \hyperpage{31}
+    \subitem {Model}, \hyperpage{28}
+    \subitem {ModelImplementation}, \hyperpage{34}
   \item {getTime}
-    \subitem {Model}, \hyperpage{27}
-    \subitem {ModelImplementation}, \hyperpage{31}
+    \subitem {Model}, \hyperpage{28}
+    \subitem {ModelImplementation}, \hyperpage{34}
   \item {getValue}
     \subitem {Flow}, \hyperpage{15}
     \subitem {FlowImplementation}, \hyperpage{20}
-    \subitem {System}, \hyperpage{35}
-    \subitem {SystemImplementation}, \hyperpage{38}
+    \subitem {System}, \hyperpage{37}
+    \subitem {SystemImplementation}, \hyperpage{40}
 
   \indexspace
 
   \item {HEX}
-    \subitem {CMakeCCompilerId.c}, \hyperpage{46}
-    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{49}
+    \subitem {CMakeCCompilerId.c}, \hyperpage{48}
+    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{51}
 
   \indexspace
 
   \item {info\_arch}
-    \subitem {CMakeCCompilerId.c}, \hyperpage{47}
-    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{50}
+    \subitem {CMakeCCompilerId.c}, \hyperpage{49}
+    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{52}
   \item {info\_compiler}
-    \subitem {CMakeCCompilerId.c}, \hyperpage{47}
-    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{51}
+    \subitem {CMakeCCompilerId.c}, \hyperpage{49}
+    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{53}
   \item {info\_language\_extensions\_default}
-    \subitem {CMakeCCompilerId.c}, \hyperpage{47}
-    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{51}
+    \subitem {CMakeCCompilerId.c}, \hyperpage{49}
+    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{53}
   \item {info\_language\_standard\_default}
-    \subitem {CMakeCCompilerId.c}, \hyperpage{48}
-    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{51}
+    \subitem {CMakeCCompilerId.c}, \hyperpage{50}
+    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{53}
   \item {info\_platform}
-    \subitem {CMakeCCompilerId.c}, \hyperpage{48}
-    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{51}
+    \subitem {CMakeCCompilerId.c}, \hyperpage{50}
+    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{53}
 
   \indexspace
 
   \item {LogisticalFlow}, \hyperpage{23}
-    \subitem {expression}, \hyperpage{25}
+    \subitem {expression}, \hyperpage{24}
     \subitem {LogisticalFlow}, \hyperpage{24}
   \item {LogisticalTest}
-    \subitem {FunctionalTests.cpp}, \hyperpage{68}
-    \subitem {FunctionalTests.h}, \hyperpage{69}
+    \subitem {FunctionalTests.cpp}, \hyperpage{70}
+    \subitem {FunctionalTests.h}, \hyperpage{72}
 
   \indexspace
 
   \item {main}
-    \subitem {CMakeCCompilerId.c}, \hyperpage{47}
-    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{50}
-    \subitem {main.cpp}, \hyperpage{64--66}
+    \subitem {CMakeCCompilerId.c}, \hyperpage{49}
+    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{52}
+    \subitem {main.cpp}, \hyperpage{67--69}
   \item {main.cpp}
-    \subitem {main}, \hyperpage{64--66}
+    \subitem {main}, \hyperpage{67--69}
   \item {Model}, \hyperpage{25}
-    \subitem {$\sim$Model}, \hyperpage{26}
+    \subitem {$\sim$Model}, \hyperpage{25}
     \subitem {add}, \hyperpage{26}
+    \subitem {createFlow}, \hyperpage{26}
+    \subitem {createModel}, \hyperpage{26}
+    \subitem {createSystem}, \hyperpage{27}
+    \subitem {endFlows}, \hyperpage{27}
+    \subitem {endModels}, \hyperpage{27}
+    \subitem {endSystems}, \hyperpage{27}
     \subitem {getFlowsIterator}, \hyperpage{27}
-    \subitem {getName}, \hyperpage{27}
-    \subitem {getSystemsIterator}, \hyperpage{27}
-    \subitem {getTime}, \hyperpage{27}
-    \subitem {setName}, \hyperpage{27}
-    \subitem {setTime}, \hyperpage{28}
-    \subitem {simulate}, \hyperpage{28}
-  \item {ModelImplementation}, \hyperpage{28}
-    \subitem {$\sim$ModelImplementation}, \hyperpage{30}
-    \subitem {add}, \hyperpage{30, 31}
-    \subitem {flows}, \hyperpage{33}
-    \subitem {getFlowsIterator}, \hyperpage{31}
-    \subitem {getName}, \hyperpage{31}
-    \subitem {getSystemsIterator}, \hyperpage{31}
-    \subitem {getTime}, \hyperpage{31}
-    \subitem {ModelImplementation}, \hyperpage{30}
-    \subitem {name}, \hyperpage{33}
-    \subitem {operator=}, \hyperpage{32}
-    \subitem {setName}, \hyperpage{32}
-    \subitem {setTime}, \hyperpage{32}
-    \subitem {simulate}, \hyperpage{33}
-    \subitem {systems}, \hyperpage{33}
-    \subitem {time}, \hyperpage{33}
+    \subitem {getModelsIterator}, \hyperpage{27}
+    \subitem {getName}, \hyperpage{28}
+    \subitem {getSystemsIterator}, \hyperpage{28}
+    \subitem {getTime}, \hyperpage{28}
+    \subitem {setName}, \hyperpage{28}
+    \subitem {setTime}, \hyperpage{29}
+    \subitem {simulate}, \hyperpage{29}
+  \item {ModelImplementation}, \hyperpage{29}
+    \subitem {$\sim$ModelImplementation}, \hyperpage{31}
+    \subitem {add}, \hyperpage{32}
+    \subitem {createModel}, \hyperpage{32}
+    \subitem {createSystem}, \hyperpage{32}
+    \subitem {endFlows}, \hyperpage{33}
+    \subitem {endModels}, \hyperpage{33}
+    \subitem {endSystems}, \hyperpage{33}
+    \subitem {flows}, \hyperpage{35}
+    \subitem {getFlowsIterator}, \hyperpage{33}
+    \subitem {getModelsIterator}, \hyperpage{33}
+    \subitem {getName}, \hyperpage{33}
+    \subitem {getSystemsIterator}, \hyperpage{34}
+    \subitem {getTime}, \hyperpage{34}
+    \subitem {ModelImplementation}, \hyperpage{31}
+    \subitem {models}, \hyperpage{35}
+    \subitem {name}, \hyperpage{35}
+    \subitem {setName}, \hyperpage{34}
+    \subitem {setTime}, \hyperpage{34}
+    \subitem {simulate}, \hyperpage{35}
+    \subitem {systems}, \hyperpage{35}
+    \subitem {time}, \hyperpage{36}
+  \item {models}
+    \subitem {ModelImplementation}, \hyperpage{35}
 
   \indexspace
 
   \item {name}
     \subitem {FlowImplementation}, \hyperpage{22}
-    \subitem {ModelImplementation}, \hyperpage{33}
-    \subitem {SystemImplementation}, \hyperpage{39}
-
-  \indexspace
-
-  \item {operator=}
-    \subitem {FlowImplementation}, \hyperpage{20}
-    \subitem {ModelImplementation}, \hyperpage{32}
-    \subitem {SystemImplementation}, \hyperpage{38}
+    \subitem {ModelImplementation}, \hyperpage{35}
+    \subitem {SystemImplementation}, \hyperpage{41}
 
   \indexspace
 
   \item {PLATFORM\_ID}
-    \subitem {CMakeCCompilerId.c}, \hyperpage{46}
-    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{50}
+    \subitem {CMakeCCompilerId.c}, \hyperpage{48}
+    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{52}
 
   \indexspace
 
-  \item {README.md}, \hyperpage{52}
+  \item {README.md}, \hyperpage{54}
   \item {runGlobal}
-    \subitem {unitTests.cpp}, \hyperpage{88}
-    \subitem {unitTests.h}, \hyperpage{89}
+    \subitem {unitTests.cpp}, \hyperpage{91}
+    \subitem {unitTests.h}, \hyperpage{92}
   \item {runUnitTestsFlow}
-    \subitem {unitFlow.cpp}, \hyperpage{71}
-    \subitem {unitFlow.h}, \hyperpage{74}
+    \subitem {unitFlow.cpp}, \hyperpage{74}
+    \subitem {unitFlow.h}, \hyperpage{77}
   \item {runUnitTestsModel}
-    \subitem {unitModel.cpp}, \hyperpage{77}
-    \subitem {unitModel.h}, \hyperpage{80}
+    \subitem {unitModel.cpp}, \hyperpage{80}
+    \subitem {unitModel.h}, \hyperpage{83}
   \item {runUnitTestsSystem}
-    \subitem {unitSystem.cpp}, \hyperpage{83}
-    \subitem {unitSystem.h}, \hyperpage{86}
+    \subitem {unitSystem.cpp}, \hyperpage{86}
+    \subitem {unitSystem.h}, \hyperpage{89}
 
   \indexspace
 
   \item {setName}
     \subitem {Flow}, \hyperpage{15}
-    \subitem {FlowImplementation}, \hyperpage{21}
-    \subitem {Model}, \hyperpage{27}
-    \subitem {ModelImplementation}, \hyperpage{32}
-    \subitem {System}, \hyperpage{35}
-    \subitem {SystemImplementation}, \hyperpage{38}
+    \subitem {FlowImplementation}, \hyperpage{20}
+    \subitem {Model}, \hyperpage{28}
+    \subitem {ModelImplementation}, \hyperpage{34}
+    \subitem {System}, \hyperpage{37}
+    \subitem {SystemImplementation}, \hyperpage{40}
   \item {setSystemBegin}
     \subitem {Flow}, \hyperpage{15}
     \subitem {FlowImplementation}, \hyperpage{21}
@@ -299,156 +326,139 @@
     \subitem {Flow}, \hyperpage{17}
     \subitem {FlowImplementation}, \hyperpage{21}
   \item {setTime}
-    \subitem {Model}, \hyperpage{28}
-    \subitem {ModelImplementation}, \hyperpage{32}
+    \subitem {Model}, \hyperpage{29}
+    \subitem {ModelImplementation}, \hyperpage{34}
   \item {setValue}
     \subitem {Flow}, \hyperpage{17}
-    \subitem {FlowImplementation}, \hyperpage{22}
-    \subitem {System}, \hyperpage{35}
-    \subitem {SystemImplementation}, \hyperpage{39}
+    \subitem {FlowImplementation}, \hyperpage{21}
+    \subitem {System}, \hyperpage{37}
+    \subitem {SystemImplementation}, \hyperpage{40}
   \item {simulate}
-    \subitem {Model}, \hyperpage{28}
-    \subitem {ModelImplementation}, \hyperpage{33}
-  \item {src/lib/Flow.h}, \hyperpage{52, 53}
-  \item {src/lib/FlowImplementation.cpp}, \hyperpage{54}
-  \item {src/lib/FlowImplementation.h}, \hyperpage{55}
-  \item {src/lib/Model.h}, \hyperpage{56, 57}
-  \item {src/lib/ModelImplementation.cpp}, \hyperpage{58}
-  \item {src/lib/ModelImplementation.h}, \hyperpage{59, 60}
-  \item {src/lib/System.h}, \hyperpage{60, 61}
-  \item {src/lib/SystemImplementation.cpp}, \hyperpage{62}
-  \item {src/lib/SystemImplementation.h}, \hyperpage{62, 63}
-  \item {src/main.cpp}, \hyperpage{64}
+    \subitem {Model}, \hyperpage{29}
+    \subitem {ModelImplementation}, \hyperpage{35}
+  \item {src/lib/Flow.h}, \hyperpage{54, 55}
+  \item {src/lib/FlowImplementation.cpp}, \hyperpage{56}
+  \item {src/lib/FlowImplementation.h}, \hyperpage{57}
+  \item {src/lib/Model.h}, \hyperpage{58, 59}
+  \item {src/lib/ModelImplementation.cpp}, \hyperpage{60}
+  \item {src/lib/ModelImplementation.h}, \hyperpage{62, 63}
+  \item {src/lib/System.h}, \hyperpage{64}
+  \item {src/lib/SystemImplementation.cpp}, \hyperpage{65}
+  \item {src/lib/SystemImplementation.h}, \hyperpage{65, 66}
+  \item {src/main.cpp}, \hyperpage{67}
   \item {STRINGIFY}
-    \subitem {CMakeCCompilerId.c}, \hyperpage{47}
-    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{50}
+    \subitem {CMakeCCompilerId.c}, \hyperpage{49}
+    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{52}
   \item {STRINGIFY\_HELPER}
-    \subitem {CMakeCCompilerId.c}, \hyperpage{47}
-    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{50}
-  \item {System}, \hyperpage{34}
-    \subitem {$\sim$System}, \hyperpage{34}
-    \subitem {getName}, \hyperpage{35}
-    \subitem {getValue}, \hyperpage{35}
-    \subitem {setName}, \hyperpage{35}
-    \subitem {setValue}, \hyperpage{35}
+    \subitem {CMakeCCompilerId.c}, \hyperpage{49}
+    \subitem {CMakeCXXCompilerId.cpp}, \hyperpage{52}
+  \item {System}, \hyperpage{36}
+    \subitem {$\sim$System}, \hyperpage{36}
+    \subitem {getName}, \hyperpage{37}
+    \subitem {getValue}, \hyperpage{37}
+    \subitem {setName}, \hyperpage{37}
+    \subitem {setValue}, \hyperpage{37}
   \item {systemBegin}
     \subitem {FlowImplementation}, \hyperpage{22}
   \item {systemEnd}
     \subitem {FlowImplementation}, \hyperpage{22}
-  \item {SystemImplementation}, \hyperpage{36}
-    \subitem {$\sim$SystemImplementation}, \hyperpage{37}
-    \subitem {getName}, \hyperpage{38}
-    \subitem {getValue}, \hyperpage{38}
-    \subitem {name}, \hyperpage{39}
-    \subitem {operator=}, \hyperpage{38}
-    \subitem {setName}, \hyperpage{38}
-    \subitem {setValue}, \hyperpage{39}
-    \subitem {SystemImplementation}, \hyperpage{37}
-    \subitem {value}, \hyperpage{39}
+  \item {SystemImplementation}, \hyperpage{38}
+    \subitem {$\sim$SystemImplementation}, \hyperpage{39}
+    \subitem {getName}, \hyperpage{40}
+    \subitem {getValue}, \hyperpage{40}
+    \subitem {name}, \hyperpage{41}
+    \subitem {setName}, \hyperpage{40}
+    \subitem {setValue}, \hyperpage{40}
+    \subitem {SystemImplementation}, \hyperpage{39}
+    \subitem {value}, \hyperpage{41}
   \item {systems}
-    \subitem {ModelImplementation}, \hyperpage{33}
+    \subitem {ModelImplementation}, \hyperpage{35}
 
   \indexspace
 
-  \item {test/functional/FunctionalTests.cpp}, \hyperpage{67}
-  \item {test/functional/FunctionalTests.h}, \hyperpage{68}, 
-		\hyperpage{70}
-  \item {test/functional/main.cpp}, \hyperpage{64}
-  \item {test/unit/main.cpp}, \hyperpage{65}
-  \item {test/unit/unitFlow.cpp}, \hyperpage{70}
-  \item {test/unit/unitFlow.h}, \hyperpage{73}, \hyperpage{76}
-  \item {test/unit/unitModel.cpp}, \hyperpage{77}
-  \item {test/unit/unitModel.h}, \hyperpage{79}, \hyperpage{82}
-  \item {test/unit/unitSystem.cpp}, \hyperpage{83}
-  \item {test/unit/unitSystem.h}, \hyperpage{85}, \hyperpage{87}
-  \item {test/unit/unitTests.cpp}, \hyperpage{87}
-  \item {test/unit/unitTests.h}, \hyperpage{88, 89}
+  \item {test/functional/FunctionalTests.cpp}, \hyperpage{70}
+  \item {test/functional/FunctionalTests.h}, \hyperpage{71, 72}
+  \item {test/functional/main.cpp}, \hyperpage{67}
+  \item {test/unit/main.cpp}, \hyperpage{68}
+  \item {test/unit/unitFlow.cpp}, \hyperpage{73}
+  \item {test/unit/unitFlow.h}, \hyperpage{76}, \hyperpage{79}
+  \item {test/unit/unitModel.cpp}, \hyperpage{79}
+  \item {test/unit/unitModel.h}, \hyperpage{82}, \hyperpage{85}
+  \item {test/unit/unitSystem.cpp}, \hyperpage{85}
+  \item {test/unit/unitSystem.h}, \hyperpage{88}, \hyperpage{90}
+  \item {test/unit/unitTests.cpp}, \hyperpage{90}
+  \item {test/unit/unitTests.h}, \hyperpage{91, 92}
   \item {time}
-    \subitem {ModelImplementation}, \hyperpage{33}
+    \subitem {ModelImplementation}, \hyperpage{36}
 
   \indexspace
 
   \item {unitFlow.cpp}
-    \subitem {runUnitTestsFlow}, \hyperpage{71}
-    \subitem {unitFlowAssignmentOperator}, \hyperpage{71}
-    \subitem {unitFlowDefaultConstructor}, \hyperpage{71}
-    \subitem {unitFlowDestructor}, \hyperpage{71}
-    \subitem {unitFlowExpression}, \hyperpage{71}
-    \subitem {unitFlowGetName}, \hyperpage{71}
-    \subitem {unitFlowGetSystemBegin}, \hyperpage{72}
-    \subitem {unitFlowGetSystemEnd}, \hyperpage{72}
-    \subitem {unitFlowGetValue}, \hyperpage{72}
-    \subitem {unitFlowSetName}, \hyperpage{72}
-    \subitem {unitFlowSetSystemBegin}, \hyperpage{72}
-    \subitem {unitFlowSetSystemEnd}, \hyperpage{72}
-    \subitem {unitFlowSetValue}, \hyperpage{72}
-  \item {unitFlow.h}
     \subitem {runUnitTestsFlow}, \hyperpage{74}
-    \subitem {unitFlowAssignmentOperator}, \hyperpage{74}
     \subitem {unitFlowDefaultConstructor}, \hyperpage{74}
     \subitem {unitFlowDestructor}, \hyperpage{74}
     \subitem {unitFlowExpression}, \hyperpage{74}
     \subitem {unitFlowGetName}, \hyperpage{74}
-    \subitem {unitFlowGetSystemBegin}, \hyperpage{75}
-    \subitem {unitFlowGetSystemEnd}, \hyperpage{75}
+    \subitem {unitFlowGetSystemBegin}, \hyperpage{74}
+    \subitem {unitFlowGetSystemEnd}, \hyperpage{74}
     \subitem {unitFlowGetValue}, \hyperpage{75}
     \subitem {unitFlowSetName}, \hyperpage{75}
     \subitem {unitFlowSetSystemBegin}, \hyperpage{75}
     \subitem {unitFlowSetSystemEnd}, \hyperpage{75}
     \subitem {unitFlowSetValue}, \hyperpage{75}
-  \item {unitFlowAssignmentOperator}
-    \subitem {unitFlow.cpp}, \hyperpage{71}
-    \subitem {unitFlow.h}, \hyperpage{74}
+  \item {unitFlow.h}
+    \subitem {runUnitTestsFlow}, \hyperpage{77}
+    \subitem {unitFlowDefaultConstructor}, \hyperpage{77}
+    \subitem {unitFlowDestructor}, \hyperpage{77}
+    \subitem {unitFlowExpression}, \hyperpage{77}
+    \subitem {unitFlowGetName}, \hyperpage{77}
+    \subitem {unitFlowGetSystemBegin}, \hyperpage{77}
+    \subitem {unitFlowGetSystemEnd}, \hyperpage{78}
+    \subitem {unitFlowGetValue}, \hyperpage{78}
+    \subitem {unitFlowSetName}, \hyperpage{78}
+    \subitem {unitFlowSetSystemBegin}, \hyperpage{78}
+    \subitem {unitFlowSetSystemEnd}, \hyperpage{78}
+    \subitem {unitFlowSetValue}, \hyperpage{78}
   \item {unitFlowDefaultConstructor}
-    \subitem {unitFlow.cpp}, \hyperpage{71}
-    \subitem {unitFlow.h}, \hyperpage{74}
+    \subitem {unitFlow.cpp}, \hyperpage{74}
+    \subitem {unitFlow.h}, \hyperpage{77}
   \item {unitFlowDestructor}
-    \subitem {unitFlow.cpp}, \hyperpage{71}
-    \subitem {unitFlow.h}, \hyperpage{74}
+    \subitem {unitFlow.cpp}, \hyperpage{74}
+    \subitem {unitFlow.h}, \hyperpage{77}
   \item {unitFlowExpression}
-    \subitem {unitFlow.cpp}, \hyperpage{71}
-    \subitem {unitFlow.h}, \hyperpage{74}
+    \subitem {unitFlow.cpp}, \hyperpage{74}
+    \subitem {unitFlow.h}, \hyperpage{77}
   \item {unitFlowGetName}
-    \subitem {unitFlow.cpp}, \hyperpage{71}
-    \subitem {unitFlow.h}, \hyperpage{74}
+    \subitem {unitFlow.cpp}, \hyperpage{74}
+    \subitem {unitFlow.h}, \hyperpage{77}
   \item {unitFlowGetSystemBegin}
-    \subitem {unitFlow.cpp}, \hyperpage{72}
-    \subitem {unitFlow.h}, \hyperpage{75}
+    \subitem {unitFlow.cpp}, \hyperpage{74}
+    \subitem {unitFlow.h}, \hyperpage{77}
   \item {unitFlowGetSystemEnd}
-    \subitem {unitFlow.cpp}, \hyperpage{72}
-    \subitem {unitFlow.h}, \hyperpage{75}
+    \subitem {unitFlow.cpp}, \hyperpage{74}
+    \subitem {unitFlow.h}, \hyperpage{78}
   \item {unitFlowGetValue}
-    \subitem {unitFlow.cpp}, \hyperpage{72}
-    \subitem {unitFlow.h}, \hyperpage{75}
+    \subitem {unitFlow.cpp}, \hyperpage{75}
+    \subitem {unitFlow.h}, \hyperpage{78}
   \item {unitFlowSetName}
-    \subitem {unitFlow.cpp}, \hyperpage{72}
-    \subitem {unitFlow.h}, \hyperpage{75}
+    \subitem {unitFlow.cpp}, \hyperpage{75}
+    \subitem {unitFlow.h}, \hyperpage{78}
   \item {unitFlowSetSystemBegin}
-    \subitem {unitFlow.cpp}, \hyperpage{72}
-    \subitem {unitFlow.h}, \hyperpage{75}
+    \subitem {unitFlow.cpp}, \hyperpage{75}
+    \subitem {unitFlow.h}, \hyperpage{78}
   \item {unitFlowSetSystemEnd}
-    \subitem {unitFlow.cpp}, \hyperpage{72}
-    \subitem {unitFlow.h}, \hyperpage{75}
+    \subitem {unitFlow.cpp}, \hyperpage{75}
+    \subitem {unitFlow.h}, \hyperpage{78}
   \item {unitFlowSetValue}
-    \subitem {unitFlow.cpp}, \hyperpage{72}
-    \subitem {unitFlow.h}, \hyperpage{75}
+    \subitem {unitFlow.cpp}, \hyperpage{75}
+    \subitem {unitFlow.h}, \hyperpage{78}
   \item {unitModel.cpp}
-    \subitem {runUnitTestsModel}, \hyperpage{77}
-    \subitem {unitModeladdFlow}, \hyperpage{77}
-    \subitem {unitModeladdSystem}, \hyperpage{78}
-    \subitem {unitModelAssignmentOperator}, \hyperpage{78}
-    \subitem {unitModelDefaultConstructor}, \hyperpage{78}
-    \subitem {unitModelDestructor}, \hyperpage{78}
-    \subitem {unitModelGetName}, \hyperpage{78}
-    \subitem {unitModelGetTime}, \hyperpage{78}
-    \subitem {unitModelSetName}, \hyperpage{78}
-    \subitem {unitModelSetTime}, \hyperpage{78}
-    \subitem {unitModelSimulate}, \hyperpage{79}
-  \item {unitModel.h}
     \subitem {runUnitTestsModel}, \hyperpage{80}
-    \subitem {unitModeladdFlow}, \hyperpage{80}
-    \subitem {unitModeladdSystem}, \hyperpage{80}
-    \subitem {unitModelAssignmentOperator}, \hyperpage{81}
+    \subitem {unitModelAddFlow}, \hyperpage{80}
+    \subitem {unitModelAddSystem}, \hyperpage{80}
+    \subitem {unitModelCreateFlow}, \hyperpage{80}
+    \subitem {unitModelCreateModel}, \hyperpage{80}
+    \subitem {unitModelCreateSystem}, \hyperpage{80}
     \subitem {unitModelDefaultConstructor}, \hyperpage{81}
     \subitem {unitModelDestructor}, \hyperpage{81}
     \subitem {unitModelGetName}, \hyperpage{81}
@@ -456,90 +466,105 @@
     \subitem {unitModelSetName}, \hyperpage{81}
     \subitem {unitModelSetTime}, \hyperpage{81}
     \subitem {unitModelSimulate}, \hyperpage{81}
-  \item {unitModeladdFlow}
-    \subitem {unitModel.cpp}, \hyperpage{77}
-    \subitem {unitModel.h}, \hyperpage{80}
-  \item {unitModeladdSystem}
-    \subitem {unitModel.cpp}, \hyperpage{78}
-    \subitem {unitModel.h}, \hyperpage{80}
-  \item {unitModelAssignmentOperator}
-    \subitem {unitModel.cpp}, \hyperpage{78}
-    \subitem {unitModel.h}, \hyperpage{81}
+  \item {unitModel.h}
+    \subitem {runUnitTestsModel}, \hyperpage{83}
+    \subitem {unitModelAddFlow}, \hyperpage{83}
+    \subitem {unitModelAddSystem}, \hyperpage{83}
+    \subitem {unitModelCreateFlow}, \hyperpage{83}
+    \subitem {unitModelCreateModel}, \hyperpage{83}
+    \subitem {unitModelCreateSystem}, \hyperpage{83}
+    \subitem {unitModelDefaultConstructor}, \hyperpage{84}
+    \subitem {unitModelDestructor}, \hyperpage{84}
+    \subitem {unitModelGetName}, \hyperpage{84}
+    \subitem {unitModelGetTime}, \hyperpage{84}
+    \subitem {unitModelSetName}, \hyperpage{84}
+    \subitem {unitModelSetTime}, \hyperpage{84}
+    \subitem {unitModelSimulate}, \hyperpage{84}
+  \item {unitModelAddFlow}
+    \subitem {unitModel.cpp}, \hyperpage{80}
+    \subitem {unitModel.h}, \hyperpage{83}
+  \item {unitModelAddSystem}
+    \subitem {unitModel.cpp}, \hyperpage{80}
+    \subitem {unitModel.h}, \hyperpage{83}
+  \item {unitModelCreateFlow}
+    \subitem {unitModel.cpp}, \hyperpage{80}
+    \subitem {unitModel.h}, \hyperpage{83}
+  \item {unitModelCreateModel}
+    \subitem {unitModel.cpp}, \hyperpage{80}
+    \subitem {unitModel.h}, \hyperpage{83}
+  \item {unitModelCreateSystem}
+    \subitem {unitModel.cpp}, \hyperpage{80}
+    \subitem {unitModel.h}, \hyperpage{83}
   \item {unitModelDefaultConstructor}
-    \subitem {unitModel.cpp}, \hyperpage{78}
-    \subitem {unitModel.h}, \hyperpage{81}
+    \subitem {unitModel.cpp}, \hyperpage{81}
+    \subitem {unitModel.h}, \hyperpage{84}
   \item {unitModelDestructor}
-    \subitem {unitModel.cpp}, \hyperpage{78}
-    \subitem {unitModel.h}, \hyperpage{81}
+    \subitem {unitModel.cpp}, \hyperpage{81}
+    \subitem {unitModel.h}, \hyperpage{84}
   \item {unitModelGetName}
-    \subitem {unitModel.cpp}, \hyperpage{78}
-    \subitem {unitModel.h}, \hyperpage{81}
+    \subitem {unitModel.cpp}, \hyperpage{81}
+    \subitem {unitModel.h}, \hyperpage{84}
   \item {unitModelGetTime}
-    \subitem {unitModel.cpp}, \hyperpage{78}
-    \subitem {unitModel.h}, \hyperpage{81}
+    \subitem {unitModel.cpp}, \hyperpage{81}
+    \subitem {unitModel.h}, \hyperpage{84}
   \item {unitModelSetName}
-    \subitem {unitModel.cpp}, \hyperpage{78}
-    \subitem {unitModel.h}, \hyperpage{81}
+    \subitem {unitModel.cpp}, \hyperpage{81}
+    \subitem {unitModel.h}, \hyperpage{84}
   \item {unitModelSetTime}
-    \subitem {unitModel.cpp}, \hyperpage{78}
-    \subitem {unitModel.h}, \hyperpage{81}
+    \subitem {unitModel.cpp}, \hyperpage{81}
+    \subitem {unitModel.h}, \hyperpage{84}
   \item {unitModelSimulate}
-    \subitem {unitModel.cpp}, \hyperpage{79}
-    \subitem {unitModel.h}, \hyperpage{81}
+    \subitem {unitModel.cpp}, \hyperpage{81}
+    \subitem {unitModel.h}, \hyperpage{84}
   \item {unitSystem.cpp}
-    \subitem {runUnitTestsSystem}, \hyperpage{83}
-    \subitem {unitSystemAssignmentOperator}, \hyperpage{83}
-    \subitem {unitSystemDefaultConstructor}, \hyperpage{84}
-    \subitem {unitSystemDestructor}, \hyperpage{84}
-    \subitem {unitSystemGetName}, \hyperpage{84}
-    \subitem {unitSystemGetValue}, \hyperpage{84}
-    \subitem {unitSystemSetName}, \hyperpage{84}
-    \subitem {unitSystemSetValue}, \hyperpage{84}
-  \item {unitSystem.h}
     \subitem {runUnitTestsSystem}, \hyperpage{86}
-    \subitem {unitSystemAssignmentOperator}, \hyperpage{86}
     \subitem {unitSystemDefaultConstructor}, \hyperpage{86}
-    \subitem {unitSystemDestructor}, \hyperpage{86}
-    \subitem {unitSystemGetName}, \hyperpage{86}
-    \subitem {unitSystemGetValue}, \hyperpage{86}
-    \subitem {unitSystemSetName}, \hyperpage{86}
+    \subitem {unitSystemDestructor}, \hyperpage{87}
+    \subitem {unitSystemGetName}, \hyperpage{87}
+    \subitem {unitSystemGetValue}, \hyperpage{87}
+    \subitem {unitSystemSetName}, \hyperpage{87}
     \subitem {unitSystemSetValue}, \hyperpage{87}
-  \item {unitSystemAssignmentOperator}
-    \subitem {unitSystem.cpp}, \hyperpage{83}
-    \subitem {unitSystem.h}, \hyperpage{86}
+  \item {unitSystem.h}
+    \subitem {runUnitTestsSystem}, \hyperpage{89}
+    \subitem {unitSystemDefaultConstructor}, \hyperpage{89}
+    \subitem {unitSystemDestructor}, \hyperpage{89}
+    \subitem {unitSystemGetName}, \hyperpage{89}
+    \subitem {unitSystemGetValue}, \hyperpage{89}
+    \subitem {unitSystemSetName}, \hyperpage{89}
+    \subitem {unitSystemSetValue}, \hyperpage{89}
   \item {unitSystemDefaultConstructor}
-    \subitem {unitSystem.cpp}, \hyperpage{84}
-    \subitem {unitSystem.h}, \hyperpage{86}
+    \subitem {unitSystem.cpp}, \hyperpage{86}
+    \subitem {unitSystem.h}, \hyperpage{89}
   \item {unitSystemDestructor}
-    \subitem {unitSystem.cpp}, \hyperpage{84}
-    \subitem {unitSystem.h}, \hyperpage{86}
+    \subitem {unitSystem.cpp}, \hyperpage{87}
+    \subitem {unitSystem.h}, \hyperpage{89}
   \item {unitSystemGetName}
-    \subitem {unitSystem.cpp}, \hyperpage{84}
-    \subitem {unitSystem.h}, \hyperpage{86}
+    \subitem {unitSystem.cpp}, \hyperpage{87}
+    \subitem {unitSystem.h}, \hyperpage{89}
   \item {unitSystemGetValue}
-    \subitem {unitSystem.cpp}, \hyperpage{84}
-    \subitem {unitSystem.h}, \hyperpage{86}
+    \subitem {unitSystem.cpp}, \hyperpage{87}
+    \subitem {unitSystem.h}, \hyperpage{89}
   \item {unitSystemSetName}
-    \subitem {unitSystem.cpp}, \hyperpage{84}
-    \subitem {unitSystem.h}, \hyperpage{86}
+    \subitem {unitSystem.cpp}, \hyperpage{87}
+    \subitem {unitSystem.h}, \hyperpage{89}
   \item {unitSystemSetValue}
-    \subitem {unitSystem.cpp}, \hyperpage{84}
-    \subitem {unitSystem.h}, \hyperpage{87}
-  \item {UnitTestFlow}, \hyperpage{40}
-    \subitem {expression}, \hyperpage{41}
-    \subitem {UnitTestFlow}, \hyperpage{41}
-  \item {UnitTestFlow2}, \hyperpage{42}
+    \subitem {unitSystem.cpp}, \hyperpage{87}
+    \subitem {unitSystem.h}, \hyperpage{89}
+  \item {UnitTestFlow}, \hyperpage{41}
     \subitem {expression}, \hyperpage{43}
-    \subitem {UnitTestFlow2}, \hyperpage{43}
+    \subitem {UnitTestFlow}, \hyperpage{42}
+  \item {UnitTestFlow2}, \hyperpage{43}
+    \subitem {expression}, \hyperpage{45}
+    \subitem {UnitTestFlow2}, \hyperpage{44}
   \item {unitTests.cpp}
-    \subitem {runGlobal}, \hyperpage{88}
+    \subitem {runGlobal}, \hyperpage{91}
   \item {unitTests.h}
-    \subitem {runGlobal}, \hyperpage{89}
+    \subitem {runGlobal}, \hyperpage{92}
 
   \indexspace
 
   \item {value}
     \subitem {FlowImplementation}, \hyperpage{22}
-    \subitem {SystemImplementation}, \hyperpage{39}
+    \subitem {SystemImplementation}, \hyperpage{41}
 
 \end{theindex}

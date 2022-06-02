@@ -7,11 +7,10 @@
 
 #include <cassert>
 
-#include "../../src/lib/SystemImplementation.h"
+#include "../../src/lib/Model.h"
 
 void unitSystemDestructor();
 void unitSystemDefaultConstructor();
-void unitSystemAssignmentOperator();
 void unitSystemGetName();
 void unitSystemSetName();
 void unitSystemGetValue();

@@ -21,6 +21,13 @@ private:
     **/
     FlowImplementation(const FlowImplementation& flow);
 
+    /**
+     * Copy Assignment Operator
+     * \param flow: Flow to copy from
+     * \return Copied flow
+    **/
+    FlowImplementation& operator=(const FlowImplementation& flow);
+
 protected:
     std::string name;
     double value;
@@ -42,13 +49,6 @@ public:
      * \return Flow with initial name, value, systemBegin and systemEnd
     **/
     FlowImplementation(std::string name, System* systemBegin, System* systemEnd);
-
-    /**
-     * Copy Assignment Operator
-     * \param flow: Flow to copy from
-     * \return Copied flow
-    **/
-    FlowImplementation& operator=(const FlowImplementation& flow);
 
     /**
      * Sets the expression of the flow

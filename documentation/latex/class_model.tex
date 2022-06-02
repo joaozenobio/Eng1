@@ -35,6 +35,23 @@ virtual void \mbox{\hyperlink{class_model_ac1e19f5fcc4ced9defbfe2847a26ff33}{add
 virtual std\+::vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_a5c96b2e11c6e198786975d38bf68cbd2}{get\+Systems\+Iterator}} ()=0
 \item 
 virtual std\+::vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_ada1bbb0bb655ca070d747a24c78f3622}{get\+Flows\+Iterator}} ()=0
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_model}{Model}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_aca41c06c39cfebf28040c426d0a5cc97}{get\+Models\+Iterator}} ()=0
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_a241dd719ebc31f3c66ecbc1e76185809}{end\+Systems}} ()=0
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_a60756bd2d10f18e66bd2828a6f131c16}{end\+Flows}} ()=0
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{class_model}{Model}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_aa06dc98db8f390e9f801b79ff0e22834}{end\+Models}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_model_afb83fc80a9aa5fb9ade329a726d65277}{create\+System}} (std\+::string name, double value)=0
+\item 
+{\footnotesize template$<$typename Flow\+Type $>$ }\\\mbox{\hyperlink{class_flow}{Flow}} $\ast$ \mbox{\hyperlink{class_model_a1848fba3e35d9f24d072063b319234b5}{create\+Flow}} (std\+::string name, \mbox{\hyperlink{class_system}{System}} $\ast$system\+Begin, \mbox{\hyperlink{class_system}{System}} $\ast$system\+End)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_model}{Model}} $\ast$ \mbox{\hyperlink{class_model_a9a84b16e442c804a8381e4b2fb6169d9}{create\+Model}} (std\+::string name, double time)
 \end{DoxyCompactItemize}
 
 
@@ -78,6 +95,59 @@ Add a system to the model
 
 Implemented in \mbox{\hyperlink{class_model_implementation_a8754857fc03af9624069749550f3e22f}{Model\+Implementation}}.
 
+\mbox{\Hypertarget{class_model_a1848fba3e35d9f24d072063b319234b5}\label{class_model_a1848fba3e35d9f24d072063b319234b5}} 
+\index{Model@{Model}!createFlow@{createFlow}}
+\index{createFlow@{createFlow}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{createFlow()}{createFlow()}}
+{\footnotesize\ttfamily template$<$typename Flow\+Type $>$ \\
+\mbox{\hyperlink{class_flow}{Flow}} $\ast$ Model\+::create\+Flow (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system\+Begin,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system\+End }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_model_a9a84b16e442c804a8381e4b2fb6169d9}\label{class_model_a9a84b16e442c804a8381e4b2fb6169d9}} 
+\index{Model@{Model}!createModel@{createModel}}
+\index{createModel@{createModel}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{createModel()}{createModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model}{Model}} $\ast$ Model\+::create\+Model (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{double}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_model_afb83fc80a9aa5fb9ade329a726d65277}\label{class_model_afb83fc80a9aa5fb9ade329a726d65277}} 
+\index{Model@{Model}!createSystem@{createSystem}}
+\index{createSystem@{createSystem}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{createSystem()}{createSystem()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_system}{System}} $\ast$ Model\+::create\+System (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_model_implementation_a9ed80dde50264f89bf177cf5b542fc65}{Model\+Implementation}}.
+
+\mbox{\Hypertarget{class_model_a60756bd2d10f18e66bd2828a6f131c16}\label{class_model_a60756bd2d10f18e66bd2828a6f131c16}} 
+\index{Model@{Model}!endFlows@{endFlows}}
+\index{endFlows@{endFlows}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{endFlows()}{endFlows()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$\+::iterator Model\+::end\+Flows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_model_implementation_a3402b015fdaaddbf23bd5e64b063ea6c}{Model\+Implementation}}.
+
+\mbox{\Hypertarget{class_model_aa06dc98db8f390e9f801b79ff0e22834}\label{class_model_aa06dc98db8f390e9f801b79ff0e22834}} 
+\index{Model@{Model}!endModels@{endModels}}
+\index{endModels@{endModels}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{endModels()}{endModels()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$ \mbox{\hyperlink{class_model}{Model}} $\ast$ $>$\+::iterator Model\+::end\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_model_implementation_ab4205b9450a6afb08dc7fa814850c1f4}{Model\+Implementation}}.
+
+\mbox{\Hypertarget{class_model_a241dd719ebc31f3c66ecbc1e76185809}\label{class_model_a241dd719ebc31f3c66ecbc1e76185809}} 
+\index{Model@{Model}!endSystems@{endSystems}}
+\index{endSystems@{endSystems}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{endSystems()}{endSystems()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$\+::iterator Model\+::end\+Systems (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_model_implementation_a3a705399b51a96fda9b5eda89f9d330e}{Model\+Implementation}}.
+
 \mbox{\Hypertarget{class_model_ada1bbb0bb655ca070d747a24c78f3622}\label{class_model_ada1bbb0bb655ca070d747a24c78f3622}} 
 \index{Model@{Model}!getFlowsIterator@{getFlowsIterator}}
 \index{getFlowsIterator@{getFlowsIterator}!Model@{Model}}
@@ -87,6 +157,16 @@ Implemented in \mbox{\hyperlink{class_model_implementation_a8754857fc03af9624069
 Get model flows iterator 
 
 Implemented in \mbox{\hyperlink{class_model_implementation_ad8fedc8f40a94fae965071e922b2ca1b}{Model\+Implementation}}.
+
+\mbox{\Hypertarget{class_model_aca41c06c39cfebf28040c426d0a5cc97}\label{class_model_aca41c06c39cfebf28040c426d0a5cc97}} 
+\index{Model@{Model}!getModelsIterator@{getModelsIterator}}
+\index{getModelsIterator@{getModelsIterator}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getModelsIterator()}{getModelsIterator()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$ \mbox{\hyperlink{class_model}{Model}} $\ast$ $>$\+::iterator Model\+::get\+Models\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get model models iterator 
+
+Implemented in \mbox{\hyperlink{class_model_implementation_afef6a3706e9da16019a43353da2eff5c}{Model\+Implementation}}.
 
 \mbox{\Hypertarget{class_model_a17e89ca8d15af46d074423a47d3c6802}\label{class_model_a17e89ca8d15af46d074423a47d3c6802}} 
 \index{Model@{Model}!getName@{getName}}
@@ -169,6 +249,7 @@ Implemented in \mbox{\hyperlink{class_model_implementation_a6e4abe69f72c5797323d
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-src/lib/\mbox{\hyperlink{_model_8h}{Model.\+h}}\end{DoxyCompactItemize}
+src/lib/\mbox{\hyperlink{_model_8h}{Model.\+h}}\item 
+src/lib/\mbox{\hyperlink{_model_implementation_8cpp}{Model\+Implementation.\+cpp}}\end{DoxyCompactItemize}

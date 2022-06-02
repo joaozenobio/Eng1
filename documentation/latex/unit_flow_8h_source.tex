@@ -13,12 +13,12 @@
 \DoxyCodeLine{9 \textcolor{preprocessor}{\#include <cassert>}}
 \DoxyCodeLine{10 \textcolor{preprocessor}{\#include <cmath>}}
 \DoxyCodeLine{11 }
-\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}../../src/lib/SystemImplementation.h"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}../../src/lib/Model.h"{}}}
 \DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}../../src/lib/FlowImplementation.h"{}}}
 \DoxyCodeLine{14 }
 \DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{class_unit_test_flow}{UnitTestFlow}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}\{}
 \DoxyCodeLine{19 \textcolor{keyword}{public}:}
-\DoxyCodeLine{28     \mbox{\hyperlink{class_unit_test_flow_a07bca6644b6d159effe360cd7d1afdaf}{UnitTestFlow}}(std::string \mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, \textcolor{keywordtype}{double} \mbox{\hyperlink{class_flow_implementation_a6b2913c2fb6520fc5636fac156c12c1d}{value}}, \mbox{\hyperlink{class_system}{System}}* systemOut, \mbox{\hyperlink{class_system}{System}}* systemIn) : \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}(\mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, \mbox{\hyperlink{class_flow_implementation_a6b2913c2fb6520fc5636fac156c12c1d}{value}}, systemOut, systemIn) \{\}}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_unit_test_flow_a666f5e64befa3e7cb07f515bd33535fc}{UnitTestFlow}}(std::string \mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, \mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_flow_implementation_a3543a5af064003b6597b68f6634e6509}{systemBegin}}, \mbox{\hyperlink{class_system}{System}}* \mbox{\hyperlink{class_flow_implementation_aa39314b2c3bcffd52a71c1cbc952fb97}{systemEnd}}) : \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}(\mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, \mbox{\hyperlink{class_flow_implementation_a3543a5af064003b6597b68f6634e6509}{systemBegin}}, \mbox{\hyperlink{class_flow_implementation_aa39314b2c3bcffd52a71c1cbc952fb97}{systemEnd}}) \{\}}
 \DoxyCodeLine{32     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_unit_test_flow_a36ebe1c6b628607b23f2c33630caac93}{expression}}()\textcolor{keyword}{ override }\{}
 \DoxyCodeLine{33         \textcolor{keywordflow}{return} 0.01 * \mbox{\hyperlink{class_flow_implementation_a8be3ceb80c4090f09bffd850f24c92e6}{getSystemBegin}}()-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
 \DoxyCodeLine{34     \}}
@@ -26,19 +26,18 @@
 \DoxyCodeLine{36 }
 \DoxyCodeLine{37 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_a41a3abd67601a19ace0b8a3b67e5b871}{unitFlowDestructor}}();}
 \DoxyCodeLine{38 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_a09b8619ee4719ed66ece638e86527c38}{unitFlowDefaultConstructor}}();}
-\DoxyCodeLine{39 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_a403511d08a675c2880243c69a2e3c123}{unitFlowAssignmentOperator}}();}
-\DoxyCodeLine{40 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_a430c9106f36d7ab5fa6d86b37eb4ea79}{unitFlowExpression}}();}
-\DoxyCodeLine{41 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_aab3b11bcbf4add902eeee6d39f2f99a3}{unitFlowGetName}}();}
-\DoxyCodeLine{42 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_aeaf6aacf45f87c414aae0b71a553608f}{unitFlowSetName}}();}
-\DoxyCodeLine{43 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_a5ebe09638cd308a61c31f5cf0f5c2e6f}{unitFlowGetValue}}();}
-\DoxyCodeLine{44 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_a40964f7c5d6473a9d45fc05466b48e8d}{unitFlowSetValue}}();}
-\DoxyCodeLine{45 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_ac912e3eb957ff32fd53e768cd9ccaefc}{unitFlowGetSystemBegin}}();}
-\DoxyCodeLine{46 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_ace917004b70b1008dfedaaa8ecb0b48a}{unitFlowSetSystemBegin}}();}
-\DoxyCodeLine{47 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_ae3d9bbcbfd53a91f1828ef4dea17d75b}{unitFlowGetSystemEnd}}();}
-\DoxyCodeLine{48 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_a09e0376c3863e717beae571dda41e78f}{unitFlowSetSystemEnd}}();}
-\DoxyCodeLine{49 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_aba7817b5d26cd40a4f0b70bc8ce6ef25}{runUnitTestsFlow}}();}
+\DoxyCodeLine{39 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_a430c9106f36d7ab5fa6d86b37eb4ea79}{unitFlowExpression}}();}
+\DoxyCodeLine{40 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_aab3b11bcbf4add902eeee6d39f2f99a3}{unitFlowGetName}}();}
+\DoxyCodeLine{41 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_aeaf6aacf45f87c414aae0b71a553608f}{unitFlowSetName}}();}
+\DoxyCodeLine{42 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_a5ebe09638cd308a61c31f5cf0f5c2e6f}{unitFlowGetValue}}();}
+\DoxyCodeLine{43 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_a40964f7c5d6473a9d45fc05466b48e8d}{unitFlowSetValue}}();}
+\DoxyCodeLine{44 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_ac912e3eb957ff32fd53e768cd9ccaefc}{unitFlowGetSystemBegin}}();}
+\DoxyCodeLine{45 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_ace917004b70b1008dfedaaa8ecb0b48a}{unitFlowSetSystemBegin}}();}
+\DoxyCodeLine{46 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_ae3d9bbcbfd53a91f1828ef4dea17d75b}{unitFlowGetSystemEnd}}();}
+\DoxyCodeLine{47 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_a09e0376c3863e717beae571dda41e78f}{unitFlowSetSystemEnd}}();}
+\DoxyCodeLine{48 \textcolor{keywordtype}{void} \mbox{\hyperlink{unit_flow_8h_aba7817b5d26cd40a4f0b70bc8ce6ef25}{runUnitTestsFlow}}();}
+\DoxyCodeLine{49 }
 \DoxyCodeLine{50 }
-\DoxyCodeLine{51 }
-\DoxyCodeLine{52 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//ENG1\_UNITFLOW\_H}}
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//ENG1\_UNITFLOW\_H}}
 
 \end{DoxyCode}

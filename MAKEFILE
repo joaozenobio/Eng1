@@ -1,5 +1,5 @@
 all: ./bin/MyVensim.so ./bin/unitTest ./bin/functionalTest ./bin/executable
-	rm -rf ./bin/*.o *~
+	rm -rf ./bin/*.o ./bin/*~
 
 ./documentation: ./bin/executable
 	doxygen ./documentation/doxygen/.cfg

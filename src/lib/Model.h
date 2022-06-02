@@ -61,16 +61,14 @@ public:
      * Get model flows iterator
     **/
     virtual std::vector<Flow*>::iterator getFlowsIterator() = 0;
-
-    virtual std::vector<System*>::iterator beginSystems() = 0;
+    /**
+     * Get model models iterator
+    **/
+    virtual std::vector<Model*>::iterator getModelsIterator() = 0;
 
     virtual std::vector<System*>::iterator endSystems() = 0;
 
-    virtual std::vector<Flow*>::iterator beginFlows() = 0;
-
     virtual std::vector<Flow*>::iterator endFlows() = 0;
-
-    virtual std::vector<Model*>::iterator beginModels() = 0;
 
     virtual std::vector<Model*>::iterator endModels() = 0;
 
@@ -82,14 +80,6 @@ public:
         add(flow);
         return flow;
     }
-
-//    virtual System* getSystemBegin(Flow* flow) = 0;
-//
-//    virtual void setSystemBegin(Flow* flow, System* finalSystem) = 0;
-//
-//    virtual System* getSystemEnd(Flow* flow) = 0;
-//
-//    virtual void setSystemEnd(Flow* flow, System* finalSystem) = 0;
 
     static Model* createModel(std::string name, double time);
 };

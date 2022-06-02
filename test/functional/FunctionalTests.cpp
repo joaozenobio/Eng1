@@ -29,7 +29,7 @@ void ExponencialTest() {
     assert(fabs(system2->getValue() - 63.3968) < 0.00005);
     assert(fabs(exponencialModel->getTime() - 100) < 0.00005);
 
-    free(exponencialModel);
+    delete(exponencialModel);
 }
 
 /**
@@ -57,6 +57,8 @@ void LogisticalTest() {
     assert(fabs(system1->getValue() - 88.2167) < 0.00005);
     assert(fabs(system2->getValue() - 21.7833) < 0.00005);
     assert(fabs(logisticalModel->getTime() - 100) < 0.00005);
+
+    delete(logisticalModel);
 }
 
 /**
@@ -106,4 +108,6 @@ void ComplexTest() {
     assert(fabs(system4->getValue() - 56.1728) < 0.00005);
     assert(fabs(system5->getValue() - 16.4612) < 0.00005);
     assert(fabs(complexModel->getTime() - 100) < 0.00005);
+
+    delete(complexModel);
 }
