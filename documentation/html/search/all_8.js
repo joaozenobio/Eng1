@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['info_5farch_0',['info_arch',['../_c_make_c_compiler_id_8c.html#a59647e99d304ed33b15cb284c27ed391',1,'info_arch():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a59647e99d304ed33b15cb284c27ed391',1,'info_arch():&#160;CMakeCXXCompilerId.cpp']]],
-  ['info_5fcompiler_1',['info_compiler',['../_c_make_c_compiler_id_8c.html#a4b0efeb7a5d59313986b3a0390f050f6',1,'info_compiler():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a4b0efeb7a5d59313986b3a0390f050f6',1,'info_compiler():&#160;CMakeCXXCompilerId.cpp']]],
-  ['info_5flanguage_5fextensions_5fdefault_2',['info_language_extensions_default',['../_c_make_c_compiler_id_8c.html#a0f46a8a39e09d9b803c4766904fd7e99',1,'info_language_extensions_default():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a0f46a8a39e09d9b803c4766904fd7e99',1,'info_language_extensions_default():&#160;CMakeCXXCompilerId.cpp']]],
-  ['info_5flanguage_5fstandard_5fdefault_3',['info_language_standard_default',['../_c_make_c_compiler_id_8c.html#a4607cccf070750927b458473ca82c090',1,'info_language_standard_default():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a4607cccf070750927b458473ca82c090',1,'info_language_standard_default():&#160;CMakeCXXCompilerId.cpp']]],
-  ['info_5fplatform_4',['info_platform',['../_c_make_c_compiler_id_8c.html#a2321403dee54ee23f0c2fa849c60f7d4',1,'info_platform():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a2321403dee54ee23f0c2fa849c60f7d4',1,'info_platform():&#160;CMakeCXXCompilerId.cpp']]]
+  ['handle_0',['Handle',['../class_handle.html',1,'Handle&lt; T &gt;'],['../class_handle.html#a6a72028918adf79c0ff8d9996e5e4107',1,'Handle::Handle()'],['../class_handle.html#af304e7014a2e600e235140d246783f85',1,'Handle::Handle(const Handle &amp;hd)']]],
+  ['handle_3c_20flow_5fimpl_20_3e_1',['Handle&lt; Flow_IMPL &gt;',['../class_handle.html',1,'']]],
+  ['handle_3c_20modelbody_20_3e_2',['Handle&lt; ModelBody &gt;',['../class_handle.html',1,'']]],
+  ['handle_3c_20systembody_20_3e_3',['Handle&lt; SystemBody &gt;',['../class_handle.html',1,'']]],
+  ['handlebody_2eh_4',['handlebody.h',['../handlebody_8h.html',1,'']]],
+  ['hex_5',['HEX',['../_c_make_c_compiler_id_8c.html#a46d5d95daa1bef867bd0179594310ed5',1,'HEX():&#160;CMakeCCompilerId.c'],['../_c_make_c_x_x_compiler_id_8cpp.html#a46d5d95daa1bef867bd0179594310ed5',1,'HEX():&#160;CMakeCXXCompilerId.cpp']]]
 ];

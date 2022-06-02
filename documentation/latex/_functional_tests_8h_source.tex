@@ -14,36 +14,35 @@
 \DoxyCodeLine{10 \textcolor{preprocessor}{\#include <cmath>}}
 \DoxyCodeLine{11 }
 \DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}../../src/lib/Model.h"{}}}
-\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}../../src/lib/FlowImplementation.h"{}}}
-\DoxyCodeLine{14 }
-\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}\{}
-\DoxyCodeLine{19 \textcolor{keyword}{public}:}
-\DoxyCodeLine{28     \mbox{\hyperlink{class_exponencial_flow_ab521aea18d7dcd41e7219e13bcf19813}{ExponencialFlow}}(std::string \mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, \mbox{\hyperlink{class_system}{System}}* systemOut, \mbox{\hyperlink{class_system}{System}}* systemIn) : \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}(\mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, systemOut, systemIn) \{\}}
-\DoxyCodeLine{32     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_exponencial_flow_a3c306d181c9a18216dee34feb2cd58d5}{expression}}()\textcolor{keyword}{ override }\{}
-\DoxyCodeLine{33         \textcolor{keywordflow}{return} 0.01 * \mbox{\hyperlink{class_flow_implementation_a8be3ceb80c4090f09bffd850f24c92e6}{getSystemBegin}}()-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
-\DoxyCodeLine{34     \}}
-\DoxyCodeLine{35 \};}
-\DoxyCodeLine{36 }
-\DoxyCodeLine{41 \textcolor{keyword}{class }\mbox{\hyperlink{class_logistical_flow}{LogisticalFlow}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}\{}
-\DoxyCodeLine{42 \textcolor{keyword}{public}:}
-\DoxyCodeLine{51     \mbox{\hyperlink{class_logistical_flow_a1b147037f791e578a8e42e06c57071f3}{LogisticalFlow}}(std::string \mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, \mbox{\hyperlink{class_system}{System}}* systemOut, \mbox{\hyperlink{class_system}{System}}* systemIn) : \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}(\mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, systemOut, systemIn) \{\}}
-\DoxyCodeLine{55     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_logistical_flow_a0ef2b5cf0a47c5fe869fb9a2a2c82896}{expression}}()\textcolor{keyword}{ override }\{}
-\DoxyCodeLine{56         \textcolor{keywordflow}{return} 0.01 * this-\/>\mbox{\hyperlink{class_flow_implementation_a21375e757d62d9d1416ddb7962e2b215}{getSystemEnd}}()-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}() * (1 -\/ this-\/>\mbox{\hyperlink{class_flow_implementation_a21375e757d62d9d1416ddb7962e2b215}{getSystemEnd}}()-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}() / 70);}
-\DoxyCodeLine{57     \}}
-\DoxyCodeLine{58 \};}
-\DoxyCodeLine{59 }
-\DoxyCodeLine{63 \textcolor{keyword}{class }\mbox{\hyperlink{class_complex_flow}{ComplexFlow}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}\{}
-\DoxyCodeLine{64 \textcolor{keyword}{public}:}
-\DoxyCodeLine{73     \mbox{\hyperlink{class_complex_flow_af82ab591964ff1ffeb4e49971162edc4}{ComplexFlow}}(std::string \mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, \mbox{\hyperlink{class_system}{System}}* systemOut, \mbox{\hyperlink{class_system}{System}}* systemIn) : \mbox{\hyperlink{class_flow_implementation}{FlowImplementation}}(\mbox{\hyperlink{class_flow_implementation_a7185ca215f4621e6bd21cf71796cd9e1}{name}}, systemOut, systemIn) \{\}}
-\DoxyCodeLine{77     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_complex_flow_ad47d5531e21f276404d0a80ac5122cf8}{expression}}()\textcolor{keyword}{ override }\{}
-\DoxyCodeLine{78         \textcolor{keywordflow}{return} 0.01 * \mbox{\hyperlink{class_flow_implementation_a8be3ceb80c4090f09bffd850f24c92e6}{getSystemBegin}}()-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
-\DoxyCodeLine{79     \}}
-\DoxyCodeLine{80 \};}
-\DoxyCodeLine{81 }
-\DoxyCodeLine{82 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functional_tests_8h_a1e9f7731a581329586520a1dfa3f2d84}{ExponencialTest}}();}
-\DoxyCodeLine{83 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functional_tests_8h_a40c27f6257ef18f593ea10182bf9e5be}{ComplexTest}}();}
-\DoxyCodeLine{84 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functional_tests_8h_ab0c1ff4e88a6ef4ca52552f14be18337}{LogisticalTest}}();}
-\DoxyCodeLine{85 }
-\DoxyCodeLine{86 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//ENG1\_FUNCTIONALTESTS\_H}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_exponencial_flow}{ExponencialFlow}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flow_body}{FlowBody}}\{}
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_exponencial_flow_ae8fe65f6dc87fabfe34e73d08c63bca5}{ExponencialFlow}}(std::string \mbox{\hyperlink{class_flow_body_ab82748ef3d7db33d7963b7dfeb96564e}{name}}=\textcolor{stringliteral}{"{}"{}}, \mbox{\hyperlink{class_system}{System}}* systemOut=NULL, \mbox{\hyperlink{class_system}{System}}* systemIn=NULL) : \mbox{\hyperlink{class_flow_body}{FlowBody}}(\mbox{\hyperlink{class_flow_body_ab82748ef3d7db33d7963b7dfeb96564e}{name}}, systemOut, systemIn) \{\}}
+\DoxyCodeLine{31     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_exponencial_flow_a3c306d181c9a18216dee34feb2cd58d5}{expression}}()\textcolor{keyword}{ override }\{}
+\DoxyCodeLine{32         \textcolor{keywordflow}{return} 0.01 * \mbox{\hyperlink{class_flow_body_a477e7a714ed6fd228f5e6d2527beb0d6}{getSystemBegin}}()-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
+\DoxyCodeLine{33     \}}
+\DoxyCodeLine{34 \};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{40 \textcolor{keyword}{class }\mbox{\hyperlink{class_logistical_flow}{LogisticalFlow}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flow_body}{FlowBody}}\{}
+\DoxyCodeLine{41 \textcolor{keyword}{public}:}
+\DoxyCodeLine{50     \mbox{\hyperlink{class_logistical_flow_ab68679b5bec7995da797bf9479695a43}{LogisticalFlow}}(std::string \mbox{\hyperlink{class_flow_body_ab82748ef3d7db33d7963b7dfeb96564e}{name}}=\textcolor{stringliteral}{"{}"{}}, \mbox{\hyperlink{class_system}{System}}* systemOut=NULL, \mbox{\hyperlink{class_system}{System}}* systemIn=NULL) : \mbox{\hyperlink{class_flow_body}{FlowBody}}(\mbox{\hyperlink{class_flow_body_ab82748ef3d7db33d7963b7dfeb96564e}{name}}, systemOut, systemIn) \{\}}
+\DoxyCodeLine{54     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_logistical_flow_a0ef2b5cf0a47c5fe869fb9a2a2c82896}{expression}}()\textcolor{keyword}{ override }\{}
+\DoxyCodeLine{55         \textcolor{keywordflow}{return} 0.01 * this-\/>\mbox{\hyperlink{class_flow_body_ac8b70b2955affecc5d4a9f27d79141f2}{getSystemEnd}}()-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}() * (1 -\/ this-\/>\mbox{\hyperlink{class_flow_body_ac8b70b2955affecc5d4a9f27d79141f2}{getSystemEnd}}()-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}() / 70);}
+\DoxyCodeLine{56     \}}
+\DoxyCodeLine{57 \};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{62 \textcolor{keyword}{class }\mbox{\hyperlink{class_complex_flow}{ComplexFlow}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_flow_body}{FlowBody}}\{}
+\DoxyCodeLine{63 \textcolor{keyword}{public}:}
+\DoxyCodeLine{72     \mbox{\hyperlink{class_complex_flow_ae3ae642e23376a8bdf30e2ec481d1ea5}{ComplexFlow}}(std::string \mbox{\hyperlink{class_flow_body_ab82748ef3d7db33d7963b7dfeb96564e}{name}}=\textcolor{stringliteral}{"{}"{}}, \mbox{\hyperlink{class_system}{System}}* systemOut=NULL, \mbox{\hyperlink{class_system}{System}}* systemIn=NULL) : \mbox{\hyperlink{class_flow_body}{FlowBody}}(\mbox{\hyperlink{class_flow_body_ab82748ef3d7db33d7963b7dfeb96564e}{name}}, systemOut, systemIn) \{\}}
+\DoxyCodeLine{76     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_complex_flow_ad47d5531e21f276404d0a80ac5122cf8}{expression}}()\textcolor{keyword}{ override }\{}
+\DoxyCodeLine{77         \textcolor{keywordflow}{return} 0.01 * \mbox{\hyperlink{class_flow_body_a477e7a714ed6fd228f5e6d2527beb0d6}{getSystemBegin}}()-\/>\mbox{\hyperlink{class_system_a41b673faa6c199eb8e4f204639fab4f2}{getValue}}();}
+\DoxyCodeLine{78     \}}
+\DoxyCodeLine{79 \};}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functional_tests_8h_a1e9f7731a581329586520a1dfa3f2d84}{ExponencialTest}}();}
+\DoxyCodeLine{82 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functional_tests_8h_a40c27f6257ef18f593ea10182bf9e5be}{ComplexTest}}();}
+\DoxyCodeLine{83 \textcolor{keywordtype}{void} \mbox{\hyperlink{_functional_tests_8h_ab0c1ff4e88a6ef4ca52552f14be18337}{LogisticalTest}}();}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//ENG1\_FUNCTIONALTESTS\_H}}
 
 \end{DoxyCode}

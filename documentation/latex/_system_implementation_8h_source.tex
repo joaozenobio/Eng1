@@ -10,33 +10,57 @@
 \DoxyCodeLine{6 \textcolor{preprocessor}{\#define ENG1\_SYSTEMIMPLEMENTATION\_H}}
 \DoxyCodeLine{7 }
 \DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_system_8h}{System.h}}"{}}}
-\DoxyCodeLine{9 }
-\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_system_implementation}{SystemImplementation}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_system}{System}} \{}
-\DoxyCodeLine{14 }
-\DoxyCodeLine{15 \textcolor{keyword}{private}:}
-\DoxyCodeLine{21     \mbox{\hyperlink{class_system_implementation}{SystemImplementation}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_system_implementation}{SystemImplementation}}\& system);}
-\DoxyCodeLine{22 }
-\DoxyCodeLine{28     \mbox{\hyperlink{class_system_implementation}{SystemImplementation}}\& operator=(\textcolor{keyword}{const} \mbox{\hyperlink{class_system_implementation}{SystemImplementation}}\& system);}
-\DoxyCodeLine{29 }
-\DoxyCodeLine{30 \textcolor{keyword}{protected}:}
-\DoxyCodeLine{31     std::string \mbox{\hyperlink{class_system_implementation_af151ce35c028cccec920e03256ff55fd}{name}};}
-\DoxyCodeLine{32     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_implementation_afdef2d11c4f94321a9de2e5f082c7675}{value}};}
-\DoxyCodeLine{33 }
-\DoxyCodeLine{34 \textcolor{keyword}{public}:}
-\DoxyCodeLine{38     \mbox{\hyperlink{class_system_implementation_a2ca2a7e9876ec2d6d6854fb566341092}{\string~SystemImplementation}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{handlebody_8h}{handlebody.h}}"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_system_body}{SystemBody}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_body}{Body}} \{}
+\DoxyCodeLine{15 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{16     std::string \mbox{\hyperlink{class_system_body_a62da4563b8efd2a08f32c309e2790314}{name}};}
+\DoxyCodeLine{17     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_body_a82fcaefb88098be09dbc59bf8b012922}{value}};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_system_body_a4e3ea9e45568032d9cc586bddf85898b}{\string~SystemBody}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{31     \mbox{\hyperlink{class_system_body_a059d8a3c306bfda6a9ae47a9fcd7edc0}{SystemBody}}(std::string \mbox{\hyperlink{class_system_body_a62da4563b8efd2a08f32c309e2790314}{name}}=\textcolor{stringliteral}{"{}"{}}, \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_body_a82fcaefb88098be09dbc59bf8b012922}{value}}=0.0);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{38     \mbox{\hyperlink{class_system_body_a24ac2060bf8b2de2356d5b2d189a93bc}{SystemBody}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_system_body}{SystemBody}}\& system);}
 \DoxyCodeLine{39 }
-\DoxyCodeLine{46     \mbox{\hyperlink{class_system_implementation}{SystemImplementation}}(std::string \mbox{\hyperlink{class_system_implementation_af151ce35c028cccec920e03256ff55fd}{name}}, \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_implementation_afdef2d11c4f94321a9de2e5f082c7675}{value}});}
-\DoxyCodeLine{47 }
-\DoxyCodeLine{51     std::string \mbox{\hyperlink{class_system_implementation_ad64b6f24584bf593a0193f4e50e7068c}{getName}}() \textcolor{keyword}{const override};}
-\DoxyCodeLine{52 }
-\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_implementation_ae4f20947a3288faa1e2decdd63702d06}{setName}}(std::string n) \textcolor{keyword}{override};}
-\DoxyCodeLine{58 }
-\DoxyCodeLine{62     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_implementation_ae43c51519a0445e20ccfec7a573713c4}{getValue}}() \textcolor{keyword}{const override};}
-\DoxyCodeLine{63 }
-\DoxyCodeLine{68     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_implementation_a6f7a9497a014563f3276a72ff37a9b4c}{setValue}}(\textcolor{keywordtype}{double} v) \textcolor{keyword}{override};}
-\DoxyCodeLine{69 \};}
-\DoxyCodeLine{70 }
-\DoxyCodeLine{71 }
-\DoxyCodeLine{72 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//ENG1\_SYSTEMIMPLEMENTATION\_H}}
+\DoxyCodeLine{45     \mbox{\hyperlink{class_system_body}{SystemBody}}\& \mbox{\hyperlink{class_system_body_aa8958f0483b8b52dc2c9c1410b36dcda}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_system_body}{SystemBody}}\& system);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{50     std::string \mbox{\hyperlink{class_system_body_ade0121ff9741d3a8317a0343f4e95ea7}{getName}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_body_ad0463db170ee8430559f82797cba3608}{setName}}(std::string n);}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_body_aaa79b2b5454c81ffd4020de4d0b9da6a}{getValue}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_body_a37cf1492f14faef985225d833c3095f4}{setValue}}(\textcolor{keywordtype}{double} v);}
+\DoxyCodeLine{68 \};}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 \textcolor{keyword}{class }\mbox{\hyperlink{class_system_handle}{SystemHandle}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_handle}{Handle}}<SystemBody>, \textcolor{keyword}{public} \mbox{\hyperlink{class_system}{System}}\{}
+\DoxyCodeLine{71 \textcolor{keyword}{public}:}
+\DoxyCodeLine{72     \mbox{\hyperlink{class_system_handle_ab6fdb198899fbb27934f9bcd3c175bc9}{\string~SystemHandle}}() \textcolor{keyword}{override} = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     \mbox{\hyperlink{class_system_handle_a74fed219567fd2c51fbbba0fa23f6a72}{SystemHandle}}(std::string name=\textcolor{stringliteral}{"{}"{}}, \textcolor{keywordtype}{double} value=0.0)\{}
+\DoxyCodeLine{75         \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{class_system_body_ad0463db170ee8430559f82797cba3608}{setName}}(name);}
+\DoxyCodeLine{76         \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{class_system_body_a37cf1492f14faef985225d833c3095f4}{setValue}}(value);}
+\DoxyCodeLine{77     \}}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     std::string \mbox{\hyperlink{class_system_handle_a79cf0387d6e785f3998d7adae4471a7b}{getName}}()\textcolor{keyword}{ const override }\{}
+\DoxyCodeLine{80         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{class_system_body_ade0121ff9741d3a8317a0343f4e95ea7}{getName}}();}
+\DoxyCodeLine{81     \}}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_handle_a97b0149263998bd8e37c2b4594bd6c3c}{setName}}(std::string sysName)\textcolor{keyword}{ override }\{}
+\DoxyCodeLine{84         \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{class_system_body_ad0463db170ee8430559f82797cba3608}{setName}}(sysName);}
+\DoxyCodeLine{85     \}}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_system_handle_a5c59a67c5a07cdd4f6c60488aea4075a}{getValue}}()\textcolor{keyword}{ const override }\{}
+\DoxyCodeLine{88         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{class_system_body_aaa79b2b5454c81ffd4020de4d0b9da6a}{getValue}}();}
+\DoxyCodeLine{89     \}}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_system_handle_a902b125db0972185e7fa6803d3e85e3b}{setValue}}(\textcolor{keywordtype}{double} sysValue)\textcolor{keyword}{ override }\{}
+\DoxyCodeLine{92         \mbox{\hyperlink{class_handle_a16021e57596d7369dfa1a9fadc35c06f}{pImpl\_}}-\/>\mbox{\hyperlink{class_system_body_a37cf1492f14faef985225d833c3095f4}{setValue}}(sysValue);}
+\DoxyCodeLine{93     \}}
+\DoxyCodeLine{94 \};}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//ENG1\_SYSTEMIMPLEMENTATION\_H}}
 
 \end{DoxyCode}

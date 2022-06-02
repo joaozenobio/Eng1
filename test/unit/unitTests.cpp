@@ -4,8 +4,6 @@
 
 #include "unitTests.h"
 
-#include "unitTests.h"
-
 using namespace std;
 
 void runGlobal(){

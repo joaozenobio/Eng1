@@ -65,6 +65,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_model-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Model Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -76,8 +77,8 @@ Inheritance diagram for Model:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_model__inherit__graph.png" border="0" usemap="#a_model_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_model_inherit__map" id="a_model_inherit__map">
-<area shape="rect" title=" " alt="" coords="57,5,120,32"/>
-<area shape="rect" href="class_model_implementation.html" title=" " alt="" coords="5,80,172,107"/>
+<area shape="rect" title=" " alt="" coords="28,5,91,32"/>
+<area shape="rect" href="class_model_handle.html" title=" " alt="" coords="5,80,113,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -95,10 +96,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a41569269c162962571a791c0fe737bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a210839e2d275d6821a8beac249470beb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a210839e2d275d6821a8beac249470beb">setTime</a> (double)=0</td></tr>
 <tr class="separator:a210839e2d275d6821a8beac249470beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70362afdd9db6268b4adaedfeddb2935"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a70362afdd9db6268b4adaedfeddb2935">add</a> (<a class="el" href="class_system.html">System</a> *)=0</td></tr>
-<tr class="separator:a70362afdd9db6268b4adaedfeddb2935"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1e19f5fcc4ced9defbfe2847a26ff33"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ac1e19f5fcc4ced9defbfe2847a26ff33">add</a> (<a class="el" href="class_flow.html">Flow</a> *)=0</td></tr>
-<tr class="separator:ac1e19f5fcc4ced9defbfe2847a26ff33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c96b2e11c6e198786975d38bf68cbd2"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="class_system.html">System</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a5c96b2e11c6e198786975d38bf68cbd2">getSystemsIterator</a> ()=0</td></tr>
 <tr class="separator:a5c96b2e11c6e198786975d38bf68cbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada1bbb0bb655ca070d747a24c78f3622"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="class_flow.html">Flow</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ada1bbb0bb655ca070d747a24c78f3622">getFlowsIterator</a> ()=0</td></tr>
@@ -121,6 +118,13 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9a84b16e442c804a8381e4b2fb6169d9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a9a84b16e442c804a8381e4b2fb6169d9">createModel</a> (std::string name, double time)</td></tr>
 <tr class="separator:a9a84b16e442c804a8381e4b2fb6169d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a70362afdd9db6268b4adaedfeddb2935"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a70362afdd9db6268b4adaedfeddb2935">add</a> (<a class="el" href="class_system.html">System</a> *)=0</td></tr>
+<tr class="separator:a70362afdd9db6268b4adaedfeddb2935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1e19f5fcc4ced9defbfe2847a26ff33"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ac1e19f5fcc4ced9defbfe2847a26ff33">add</a> (<a class="el" href="class_flow.html">Flow</a> *)=0</td></tr>
+<tr class="separator:ac1e19f5fcc4ced9defbfe2847a26ff33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2efbe4ec768191fa70ad86f260ec2fd6" name="a2efbe4ec768191fa70ad86f260ec2fd6"></a>
@@ -169,7 +173,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -180,7 +184,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_model_implementation.html#a28f21761aecbef9c90395f3f2c7cb9c8">ModelImplementation</a>.</p>
+<p>Implemented in <a class="el" href="class_model_handle.html#a45c6d720aef9767633263bea1643aade">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -203,18 +207,18 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Add a system to the model </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Add a flow to the model </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">system</td><td><a class="el" href="class_system.html">System</a> to be added to the model </td></tr>
+    <tr><td class="paramname">flow</td><td><a class="el" href="class_flow.html">Flow</a> to be added to the model </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_model_implementation.html#a8754857fc03af9624069749550f3e22f">ModelImplementation</a>.</p>
+<p>Implemented in <a class="el" href="class_model_handle.html#a1a32a7853bb9b2f8ed83304d2ee14cb3">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -332,7 +336,7 @@ template&lt;typename FlowType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_model_implementation.html#a9ed80dde50264f89bf177cf5b542fc65">ModelImplementation</a>.</p>
+<p>Implemented in <a class="el" href="class_model_handle.html#a0aac88c3ecd66c298662816c46f6c9e3">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -359,7 +363,7 @@ template&lt;typename FlowType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_model_implementation.html#a3402b015fdaaddbf23bd5e64b063ea6c">ModelImplementation</a>.</p>
+<p>Implemented in <a class="el" href="class_model_handle.html#adfd8e2c6205e25aa6e11a0e8d98fbe42">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -386,7 +390,7 @@ template&lt;typename FlowType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_model_implementation.html#ab4205b9450a6afb08dc7fa814850c1f4">ModelImplementation</a>.</p>
+<p>Implemented in <a class="el" href="class_model_handle.html#a30d92021dc81e46cd66436d246afcacb">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -413,7 +417,7 @@ template&lt;typename FlowType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_model_implementation.html#a3a705399b51a96fda9b5eda89f9d330e">ModelImplementation</a>.</p>
+<p>Implemented in <a class="el" href="class_model_handle.html#a065a0be73f84bd87fd536123f3bc100d">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -441,7 +445,7 @@ template&lt;typename FlowType &gt; </div>
 </div><div class="memdoc">
 <p >Get model flows iterator </p>
 
-<p>Implemented in <a class="el" href="class_model_implementation.html#ad8fedc8f40a94fae965071e922b2ca1b">ModelImplementation</a>.</p>
+<p>Implemented in <a class="el" href="class_model_handle.html#a6681dc36ff0c1b482a7e4334cae3e1cb">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -469,7 +473,7 @@ template&lt;typename FlowType &gt; </div>
 </div><div class="memdoc">
 <p >Get model models iterator </p>
 
-<p>Implemented in <a class="el" href="class_model_implementation.html#afef6a3706e9da16019a43353da2eff5c">ModelImplementation</a>.</p>
+<p>Implemented in <a class="el" href="class_model_handle.html#ad20b12042d2f2e1007194fb7783bf5d7">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -497,7 +501,7 @@ template&lt;typename FlowType &gt; </div>
 </div><div class="memdoc">
 <p >Get model name </p>
 
-<p>Implemented in <a class="el" href="class_model_implementation.html#afc943048167f4bd42a6311ee71aa6ab2">ModelImplementation</a>.</p>
+<p>Implemented in <a class="el" href="class_model_handle.html#a46c2e64955c7d0f2515a310155252962">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -525,7 +529,7 @@ template&lt;typename FlowType &gt; </div>
 </div><div class="memdoc">
 <p >Get model systems iterator </p>
 
-<p>Implemented in <a class="el" href="class_model_implementation.html#aa264a40bedfbf6d0094eae245deb7d22">ModelImplementation</a>.</p>
+<p>Implemented in <a class="el" href="class_model_handle.html#abd0830b47f51267e66fdc59288d66401">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -553,7 +557,7 @@ template&lt;typename FlowType &gt; </div>
 </div><div class="memdoc">
 <p >Get model time </p>
 
-<p>Implemented in <a class="el" href="class_model_implementation.html#a4764f51274602af5ca5b81d74840d9e7">ModelImplementation</a>.</p>
+<p>Implemented in <a class="el" href="class_model_handle.html#a6037ca68e12e2cbeff9e7a26cb72d6a9">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -587,7 +591,7 @@ template&lt;typename FlowType &gt; </div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_model_implementation.html#a73d846c6a037eeb63a85e0496045fa7a">ModelImplementation</a>.</p>
+<p>Implemented in <a class="el" href="class_model_handle.html#a4687cde85c642c0ead99d8a07ecef4c2">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -621,7 +625,7 @@ template&lt;typename FlowType &gt; </div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_model_implementation.html#aefd2371433f227f37b05e6d5ed638594">ModelImplementation</a>.</p>
+<p>Implemented in <a class="el" href="class_model_handle.html#aad5b14bdd5e84a6ca85293ea413460b2">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -673,7 +677,7 @@ template&lt;typename FlowType &gt; </div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_model_implementation.html#a6e4abe69f72c5797323d756a10f30ad3">ModelImplementation</a>.</p>
+<p>Implemented in <a class="el" href="class_model_handle.html#a9ffdf08916ed4a03803bc1607ea8f12b">ModelHandle</a>.</p>
 
 </div>
 </div>

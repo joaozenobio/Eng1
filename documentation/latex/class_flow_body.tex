@@ -1,0 +1,240 @@
+\hypertarget{class_flow_body}{}\doxysection{Flow\+Body Class Reference}
+\label{class_flow_body}\index{FlowBody@{FlowBody}}
+
+
+{\ttfamily \#include $<$Flow\+Implementation.\+h$>$}
+
+
+
+Inheritance diagram for Flow\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_flow_body__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{class_flow_body__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_flow_body_a178e56af6c29c29b49c1f9f7af7d9311}{$\sim$\+Flow\+Body}} ()
+\item 
+\mbox{\hyperlink{class_flow_body_a0de40fccb8ec8edab8b53d71a82aa3be}{Flow\+Body}} (std\+::string \mbox{\hyperlink{class_flow_body_ab82748ef3d7db33d7963b7dfeb96564e}{name}}=\char`\"{}\char`\"{}, \mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_body_a5384931e9784560f98fd758aae32d88d}{system\+Begin}}=NULL, \mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_body_ad38b481471c0466892022f230696680b}{system\+End}}=NULL)
+\item 
+\mbox{\hyperlink{class_flow_body_acb0566960cbfa7d0f526a525f5f666b4}{Flow\+Body}} (const \mbox{\hyperlink{class_flow_body}{Flow\+Body}} \&flow)
+\item 
+\mbox{\hyperlink{class_flow_body}{Flow\+Body}} \& \mbox{\hyperlink{class_flow_body_a0c026f6787ebd1870f087a22e533ee52}{operator=}} (const \mbox{\hyperlink{class_flow_body}{Flow\+Body}} \&flow)
+\item 
+virtual double \mbox{\hyperlink{class_flow_body_a3d20d4942eda11b80377326cf42b5143}{expression}} ()=0
+\item 
+std\+::string \mbox{\hyperlink{class_flow_body_a29d6502cf501a418aec01312257a4b55}{get\+Name}} () const
+\item 
+void \mbox{\hyperlink{class_flow_body_a042accd3b1c843144c2935e31385e26c}{set\+Name}} (std\+::string n)
+\item 
+double \mbox{\hyperlink{class_flow_body_a409e7f60cf6ec1aca82756a9625225e7}{get\+Value}} () const
+\item 
+void \mbox{\hyperlink{class_flow_body_a7550682d57479ba81fd94a8bd6e40a41}{set\+Value}} (double v)
+\item 
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_body_a477e7a714ed6fd228f5e6d2527beb0d6}{get\+System\+Begin}} () const
+\item 
+void \mbox{\hyperlink{class_flow_body_a8e439ec4f9d7386c8aaa7d47dca9c540}{set\+System\+Begin}} (\mbox{\hyperlink{class_system}{System}} $\ast$system)
+\item 
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_body_ac8b70b2955affecc5d4a9f27d79141f2}{get\+System\+End}} () const
+\item 
+void \mbox{\hyperlink{class_flow_body_a2e72809bea03b29f75588c30b88f4b54}{set\+System\+End}} (\mbox{\hyperlink{class_system}{System}} $\ast$system)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_flow_body_ab82748ef3d7db33d7963b7dfeb96564e}{name}}
+\item 
+double \mbox{\hyperlink{class_flow_body_ab25276bad652ecae5f30c0de773bb33a}{value}}
+\item 
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_body_a5384931e9784560f98fd758aae32d88d}{system\+Begin}}
+\item 
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_body_ad38b481471c0466892022f230696680b}{system\+End}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_flow}{Flow}} that converges energy from a model to another 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_flow_body_a178e56af6c29c29b49c1f9f7af7d9311}\label{class_flow_body_a178e56af6c29c29b49c1f9f7af7d9311}} 
+\index{FlowBody@{FlowBody}!````~FlowBody@{$\sim$FlowBody}}
+\index{````~FlowBody@{$\sim$FlowBody}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{$\sim$FlowBody()}{~FlowBody()}}
+{\footnotesize\ttfamily Flow\+Body\+::$\sim$\+Flow\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{class_flow_body_a0de40fccb8ec8edab8b53d71a82aa3be}\label{class_flow_body_a0de40fccb8ec8edab8b53d71a82aa3be}} 
+\index{FlowBody@{FlowBody}!FlowBody@{FlowBody}}
+\index{FlowBody@{FlowBody}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{FlowBody()}{FlowBody()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Flow\+Body\+::\+Flow\+Body (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}\char`\"{}},  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system\+Begin = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system\+End = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+Default constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & Inital flow name \\
+\hline
+{\em value} & Inital flow value \\
+\hline
+{\em system\+Begin} & Inital system where the flow comes from \\
+\hline
+{\em system\+End} & Inital system where the flow goes to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_flow}{Flow}} with initial name, value, system\+Begin and system\+End 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_flow_body_acb0566960cbfa7d0f526a525f5f666b4}\label{class_flow_body_acb0566960cbfa7d0f526a525f5f666b4}} 
+\index{FlowBody@{FlowBody}!FlowBody@{FlowBody}}
+\index{FlowBody@{FlowBody}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{FlowBody()}{FlowBody()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Flow\+Body\+::\+Flow\+Body (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_flow_body}{Flow\+Body}} \&}]{flow }\end{DoxyParamCaption})}
+
+Copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em flow} & \mbox{\hyperlink{class_flow}{Flow}} to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Copied flow 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_flow_body_a3d20d4942eda11b80377326cf42b5143}\label{class_flow_body_a3d20d4942eda11b80377326cf42b5143}} 
+\index{FlowBody@{FlowBody}!expression@{expression}}
+\index{expression@{expression}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{expression()}{expression()}}
+{\footnotesize\ttfamily virtual double Flow\+Body\+::expression (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Sets the expression of the flow 
+
+Implemented in \mbox{\hyperlink{class_exponencial_flow_a3c306d181c9a18216dee34feb2cd58d5}{Exponencial\+Flow}}, \mbox{\hyperlink{class_logistical_flow_a0ef2b5cf0a47c5fe869fb9a2a2c82896}{Logistical\+Flow}}, \mbox{\hyperlink{class_complex_flow_ad47d5531e21f276404d0a80ac5122cf8}{Complex\+Flow}}, \mbox{\hyperlink{class_unit_test_flow_a36ebe1c6b628607b23f2c33630caac93}{Unit\+Test\+Flow}}, and \mbox{\hyperlink{class_unit_test_flow2_adfef0cb8986511503eab6d7227556b5e}{Unit\+Test\+Flow2}}.
+
+\mbox{\Hypertarget{class_flow_body_a29d6502cf501a418aec01312257a4b55}\label{class_flow_body_a29d6502cf501a418aec01312257a4b55}} 
+\index{FlowBody@{FlowBody}!getName@{getName}}
+\index{getName@{getName}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Flow\+Body\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get system name \mbox{\Hypertarget{class_flow_body_a477e7a714ed6fd228f5e6d2527beb0d6}\label{class_flow_body_a477e7a714ed6fd228f5e6d2527beb0d6}} 
+\index{FlowBody@{FlowBody}!getSystemBegin@{getSystemBegin}}
+\index{getSystemBegin@{getSystemBegin}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{getSystemBegin()}{getSystemBegin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}} $\ast$ Flow\+Body\+::get\+System\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get system\+Begin \mbox{\Hypertarget{class_flow_body_ac8b70b2955affecc5d4a9f27d79141f2}\label{class_flow_body_ac8b70b2955affecc5d4a9f27d79141f2}} 
+\index{FlowBody@{FlowBody}!getSystemEnd@{getSystemEnd}}
+\index{getSystemEnd@{getSystemEnd}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{getSystemEnd()}{getSystemEnd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}} $\ast$ Flow\+Body\+::get\+System\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get system\+End \mbox{\Hypertarget{class_flow_body_a409e7f60cf6ec1aca82756a9625225e7}\label{class_flow_body_a409e7f60cf6ec1aca82756a9625225e7}} 
+\index{FlowBody@{FlowBody}!getValue@{getValue}}
+\index{getValue@{getValue}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily double Flow\+Body\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get system value \mbox{\Hypertarget{class_flow_body_a0c026f6787ebd1870f087a22e533ee52}\label{class_flow_body_a0c026f6787ebd1870f087a22e533ee52}} 
+\index{FlowBody@{FlowBody}!operator=@{operator=}}
+\index{operator=@{operator=}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_flow_body}{Flow\+Body}} \& Flow\+Body\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_flow_body}{Flow\+Body}} \&}]{flow }\end{DoxyParamCaption})}
+
+Copy Assignment Operator 
+\begin{DoxyParams}{Parameters}
+{\em flow} & \mbox{\hyperlink{class_flow}{Flow}} to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Copied flow 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_flow_body_a042accd3b1c843144c2935e31385e26c}\label{class_flow_body_a042accd3b1c843144c2935e31385e26c}} 
+\index{FlowBody@{FlowBody}!setName@{setName}}
+\index{setName@{setName}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Flow\+Body\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{n }\end{DoxyParamCaption})}
+
+Set system name 
+\begin{DoxyParams}{Parameters}
+{\em n} & Name for the flow \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_flow_body_a8e439ec4f9d7386c8aaa7d47dca9c540}\label{class_flow_body_a8e439ec4f9d7386c8aaa7d47dca9c540}} 
+\index{FlowBody@{FlowBody}!setSystemBegin@{setSystemBegin}}
+\index{setSystemBegin@{setSystemBegin}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{setSystemBegin()}{setSystemBegin()}}
+{\footnotesize\ttfamily void Flow\+Body\+::set\+System\+Begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system }\end{DoxyParamCaption})}
+
+Set system\+Begin 
+\begin{DoxyParams}{Parameters}
+{\em system} & System\+Begin for the flow \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_flow_body_a2e72809bea03b29f75588c30b88f4b54}\label{class_flow_body_a2e72809bea03b29f75588c30b88f4b54}} 
+\index{FlowBody@{FlowBody}!setSystemEnd@{setSystemEnd}}
+\index{setSystemEnd@{setSystemEnd}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{setSystemEnd()}{setSystemEnd()}}
+{\footnotesize\ttfamily void Flow\+Body\+::set\+System\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system }\end{DoxyParamCaption})}
+
+Set system\+Begin 
+\begin{DoxyParams}{Parameters}
+{\em system} & System\+End for the flow \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_flow_body_a7550682d57479ba81fd94a8bd6e40a41}\label{class_flow_body_a7550682d57479ba81fd94a8bd6e40a41}} 
+\index{FlowBody@{FlowBody}!setValue@{setValue}}
+\index{setValue@{setValue}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily void Flow\+Body\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{v }\end{DoxyParamCaption})}
+
+Set system value 
+\begin{DoxyParams}{Parameters}
+{\em v} & Value for the flow \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_flow_body_ab82748ef3d7db33d7963b7dfeb96564e}\label{class_flow_body_ab82748ef3d7db33d7963b7dfeb96564e}} 
+\index{FlowBody@{FlowBody}!name@{name}}
+\index{name@{name}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Flow\+Body\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_flow_body_a5384931e9784560f98fd758aae32d88d}\label{class_flow_body_a5384931e9784560f98fd758aae32d88d}} 
+\index{FlowBody@{FlowBody}!systemBegin@{systemBegin}}
+\index{systemBegin@{systemBegin}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{systemBegin}{systemBegin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}}$\ast$ Flow\+Body\+::system\+Begin\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_flow_body_ad38b481471c0466892022f230696680b}\label{class_flow_body_ad38b481471c0466892022f230696680b}} 
+\index{FlowBody@{FlowBody}!systemEnd@{systemEnd}}
+\index{systemEnd@{systemEnd}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{systemEnd}{systemEnd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}}$\ast$ Flow\+Body\+::system\+End\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_flow_body_ab25276bad652ecae5f30c0de773bb33a}\label{class_flow_body_ab25276bad652ecae5f30c0de773bb33a}} 
+\index{FlowBody@{FlowBody}!value@{value}}
+\index{value@{value}!FlowBody@{FlowBody}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily double Flow\+Body\+::value\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/lib/\mbox{\hyperlink{_flow_implementation_8h}{Flow\+Implementation.\+h}}\item 
+src/lib/\mbox{\hyperlink{_flow_implementation_8cpp}{Flow\+Implementation.\+cpp}}\end{DoxyCompactItemize}

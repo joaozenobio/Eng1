@@ -1,5 +1,5 @@
 <map id="ExponencialFlow" name="ExponencialFlow">
-<area shape="rect" id="node1" title=" " alt="" coords="18,155,150,181"/>
-<area shape="rect" id="node2" href="$class_flow_implementation.html" title=" " alt="" coords="5,80,163,107"/>
-<area shape="rect" id="node3" href="$class_flow.html" title=" " alt="" coords="57,5,111,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,137,181"/>
+<area shape="rect" id="node2" href="$class_flow_body.html" title=" " alt="" coords="28,80,115,107"/>
+<area shape="rect" id="node3" href="$class_body.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="44,5,99,32"/>
 </map>

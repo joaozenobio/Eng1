@@ -6,11 +6,12 @@
 
 
 
-Inheritance diagram for Model\+:\nopagebreak
+Inheritance diagram for Model\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=205pt]{class_model__inherit__graph}
+\includegraphics[width=161pt]{class_model__inherit__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -27,10 +28,6 @@ virtual void \mbox{\hyperlink{class_model_a0418ba1c3f1016a13a2cbb4c1be5e43b}{set
 virtual double \mbox{\hyperlink{class_model_a41569269c162962571a791c0fe737bca}{get\+Time}} () const =0
 \item 
 virtual void \mbox{\hyperlink{class_model_a210839e2d275d6821a8beac249470beb}{set\+Time}} (double)=0
-\item 
-virtual void \mbox{\hyperlink{class_model_a70362afdd9db6268b4adaedfeddb2935}{add}} (\mbox{\hyperlink{class_system}{System}} $\ast$)=0
-\item 
-virtual void \mbox{\hyperlink{class_model_ac1e19f5fcc4ced9defbfe2847a26ff33}{add}} (\mbox{\hyperlink{class_flow}{Flow}} $\ast$)=0
 \item 
 virtual std\+::vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_a5c96b2e11c6e198786975d38bf68cbd2}{get\+Systems\+Iterator}} ()=0
 \item 
@@ -53,6 +50,13 @@ virtual \mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_mo
 \item 
 static \mbox{\hyperlink{class_model}{Model}} $\ast$ \mbox{\hyperlink{class_model_a9a84b16e442c804a8381e4b2fb6169d9}{create\+Model}} (std\+::string name, double time)
 \end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_model_a70362afdd9db6268b4adaedfeddb2935}{add}} (\mbox{\hyperlink{class_system}{System}} $\ast$)=0
+\item 
+virtual void \mbox{\hyperlink{class_model_ac1e19f5fcc4ced9defbfe2847a26ff33}{add}} (\mbox{\hyperlink{class_flow}{Flow}} $\ast$)=0
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -69,7 +73,7 @@ Default destructor
 \index{Model@{Model}!add@{add}}
 \index{add@{add}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily virtual void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
 
 Add a flow to the model 
 \begin{DoxyParams}{Parameters}
@@ -78,22 +82,22 @@ Add a flow to the model
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{class_model_implementation_a28f21761aecbef9c90395f3f2c7cb9c8}{Model\+Implementation}}.
+Implemented in \mbox{\hyperlink{class_model_handle_a45c6d720aef9767633263bea1643aade}{Model\+Handle}}.
 
 \mbox{\Hypertarget{class_model_a70362afdd9db6268b4adaedfeddb2935}\label{class_model_a70362afdd9db6268b4adaedfeddb2935}} 
 \index{Model@{Model}!add@{add}}
 \index{add@{add}!Model@{Model}}
 \doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
 
-Add a system to the model 
+Add a flow to the model 
 \begin{DoxyParams}{Parameters}
-{\em system} & \mbox{\hyperlink{class_system}{System}} to be added to the model \\
+{\em flow} & \mbox{\hyperlink{class_flow}{Flow}} to be added to the model \\
 \hline
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{class_model_implementation_a8754857fc03af9624069749550f3e22f}{Model\+Implementation}}.
+Implemented in \mbox{\hyperlink{class_model_handle_a1a32a7853bb9b2f8ed83304d2ee14cb3}{Model\+Handle}}.
 
 \mbox{\Hypertarget{class_model_a1848fba3e35d9f24d072063b319234b5}\label{class_model_a1848fba3e35d9f24d072063b319234b5}} 
 \index{Model@{Model}!createFlow@{createFlow}}
@@ -116,7 +120,7 @@ Implemented in \mbox{\hyperlink{class_model_implementation_a8754857fc03af9624069
 
 
 
-Implemented in \mbox{\hyperlink{class_model_implementation_a9ed80dde50264f89bf177cf5b542fc65}{Model\+Implementation}}.
+Implemented in \mbox{\hyperlink{class_model_handle_a0aac88c3ecd66c298662816c46f6c9e3}{Model\+Handle}}.
 
 \mbox{\Hypertarget{class_model_a60756bd2d10f18e66bd2828a6f131c16}\label{class_model_a60756bd2d10f18e66bd2828a6f131c16}} 
 \index{Model@{Model}!endFlows@{endFlows}}
@@ -126,7 +130,7 @@ Implemented in \mbox{\hyperlink{class_model_implementation_a9ed80dde50264f89bf17
 
 
 
-Implemented in \mbox{\hyperlink{class_model_implementation_a3402b015fdaaddbf23bd5e64b063ea6c}{Model\+Implementation}}.
+Implemented in \mbox{\hyperlink{class_model_handle_adfd8e2c6205e25aa6e11a0e8d98fbe42}{Model\+Handle}}.
 
 \mbox{\Hypertarget{class_model_aa06dc98db8f390e9f801b79ff0e22834}\label{class_model_aa06dc98db8f390e9f801b79ff0e22834}} 
 \index{Model@{Model}!endModels@{endModels}}
@@ -136,7 +140,7 @@ Implemented in \mbox{\hyperlink{class_model_implementation_a3402b015fdaaddbf23bd
 
 
 
-Implemented in \mbox{\hyperlink{class_model_implementation_ab4205b9450a6afb08dc7fa814850c1f4}{Model\+Implementation}}.
+Implemented in \mbox{\hyperlink{class_model_handle_a30d92021dc81e46cd66436d246afcacb}{Model\+Handle}}.
 
 \mbox{\Hypertarget{class_model_a241dd719ebc31f3c66ecbc1e76185809}\label{class_model_a241dd719ebc31f3c66ecbc1e76185809}} 
 \index{Model@{Model}!endSystems@{endSystems}}
@@ -146,7 +150,7 @@ Implemented in \mbox{\hyperlink{class_model_implementation_ab4205b9450a6afb08dc7
 
 
 
-Implemented in \mbox{\hyperlink{class_model_implementation_a3a705399b51a96fda9b5eda89f9d330e}{Model\+Implementation}}.
+Implemented in \mbox{\hyperlink{class_model_handle_a065a0be73f84bd87fd536123f3bc100d}{Model\+Handle}}.
 
 \mbox{\Hypertarget{class_model_ada1bbb0bb655ca070d747a24c78f3622}\label{class_model_ada1bbb0bb655ca070d747a24c78f3622}} 
 \index{Model@{Model}!getFlowsIterator@{getFlowsIterator}}
@@ -156,7 +160,7 @@ Implemented in \mbox{\hyperlink{class_model_implementation_a3a705399b51a96fda9b5
 
 Get model flows iterator 
 
-Implemented in \mbox{\hyperlink{class_model_implementation_ad8fedc8f40a94fae965071e922b2ca1b}{Model\+Implementation}}.
+Implemented in \mbox{\hyperlink{class_model_handle_a6681dc36ff0c1b482a7e4334cae3e1cb}{Model\+Handle}}.
 
 \mbox{\Hypertarget{class_model_aca41c06c39cfebf28040c426d0a5cc97}\label{class_model_aca41c06c39cfebf28040c426d0a5cc97}} 
 \index{Model@{Model}!getModelsIterator@{getModelsIterator}}
@@ -166,7 +170,7 @@ Implemented in \mbox{\hyperlink{class_model_implementation_ad8fedc8f40a94fae9650
 
 Get model models iterator 
 
-Implemented in \mbox{\hyperlink{class_model_implementation_afef6a3706e9da16019a43353da2eff5c}{Model\+Implementation}}.
+Implemented in \mbox{\hyperlink{class_model_handle_ad20b12042d2f2e1007194fb7783bf5d7}{Model\+Handle}}.
 
 \mbox{\Hypertarget{class_model_a17e89ca8d15af46d074423a47d3c6802}\label{class_model_a17e89ca8d15af46d074423a47d3c6802}} 
 \index{Model@{Model}!getName@{getName}}
@@ -176,7 +180,7 @@ Implemented in \mbox{\hyperlink{class_model_implementation_afef6a3706e9da16019a4
 
 Get model name 
 
-Implemented in \mbox{\hyperlink{class_model_implementation_afc943048167f4bd42a6311ee71aa6ab2}{Model\+Implementation}}.
+Implemented in \mbox{\hyperlink{class_model_handle_a46c2e64955c7d0f2515a310155252962}{Model\+Handle}}.
 
 \mbox{\Hypertarget{class_model_a5c96b2e11c6e198786975d38bf68cbd2}\label{class_model_a5c96b2e11c6e198786975d38bf68cbd2}} 
 \index{Model@{Model}!getSystemsIterator@{getSystemsIterator}}
@@ -186,7 +190,7 @@ Implemented in \mbox{\hyperlink{class_model_implementation_afc943048167f4bd42a63
 
 Get model systems iterator 
 
-Implemented in \mbox{\hyperlink{class_model_implementation_aa264a40bedfbf6d0094eae245deb7d22}{Model\+Implementation}}.
+Implemented in \mbox{\hyperlink{class_model_handle_abd0830b47f51267e66fdc59288d66401}{Model\+Handle}}.
 
 \mbox{\Hypertarget{class_model_a41569269c162962571a791c0fe737bca}\label{class_model_a41569269c162962571a791c0fe737bca}} 
 \index{Model@{Model}!getTime@{getTime}}
@@ -196,7 +200,7 @@ Implemented in \mbox{\hyperlink{class_model_implementation_aa264a40bedfbf6d0094e
 
 Get model time 
 
-Implemented in \mbox{\hyperlink{class_model_implementation_a4764f51274602af5ca5b81d74840d9e7}{Model\+Implementation}}.
+Implemented in \mbox{\hyperlink{class_model_handle_a6037ca68e12e2cbeff9e7a26cb72d6a9}{Model\+Handle}}.
 
 \mbox{\Hypertarget{class_model_a0418ba1c3f1016a13a2cbb4c1be5e43b}\label{class_model_a0418ba1c3f1016a13a2cbb4c1be5e43b}} 
 \index{Model@{Model}!setName@{setName}}
@@ -211,7 +215,7 @@ Set model name
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{class_model_implementation_a73d846c6a037eeb63a85e0496045fa7a}{Model\+Implementation}}.
+Implemented in \mbox{\hyperlink{class_model_handle_a4687cde85c642c0ead99d8a07ecef4c2}{Model\+Handle}}.
 
 \mbox{\Hypertarget{class_model_a210839e2d275d6821a8beac249470beb}\label{class_model_a210839e2d275d6821a8beac249470beb}} 
 \index{Model@{Model}!setTime@{setTime}}
@@ -226,7 +230,7 @@ Set model time
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{class_model_implementation_aefd2371433f227f37b05e6d5ed638594}{Model\+Implementation}}.
+Implemented in \mbox{\hyperlink{class_model_handle_aad5b14bdd5e84a6ca85293ea413460b2}{Model\+Handle}}.
 
 \mbox{\Hypertarget{class_model_afca9a2fd8a1ccc1ac0a67116cc0ae8fb}\label{class_model_afca9a2fd8a1ccc1ac0a67116cc0ae8fb}} 
 \index{Model@{Model}!simulate@{simulate}}
@@ -245,7 +249,7 @@ Simulates the model during a period of time between start and end time values wi
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{class_model_implementation_a6e4abe69f72c5797323d756a10f30ad3}{Model\+Implementation}}.
+Implemented in \mbox{\hyperlink{class_model_handle_a9ffdf08916ed4a03803bc1607ea8f12b}{Model\+Handle}}.
 
 
 

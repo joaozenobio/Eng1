@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['logisticalflow_0',['LogisticalFlow',['../class_logistical_flow.html#a1b147037f791e578a8e42e06c57071f3',1,'LogisticalFlow']]],
-  ['logisticaltest_1',['LogisticalTest',['../_functional_tests_8cpp.html#ab0c1ff4e88a6ef4ca52552f14be18337',1,'LogisticalTest():&#160;FunctionalTests.cpp'],['../_functional_tests_8h.html#ab0c1ff4e88a6ef4ca52552f14be18337',1,'LogisticalTest():&#160;FunctionalTests.cpp']]]
+  ['flowbody_0',['FlowBody',['../class_flow_body.html#a0de40fccb8ec8edab8b53d71a82aa3be',1,'FlowBody::FlowBody(std::string name=&quot;&quot;, System *systemBegin=NULL, System *systemEnd=NULL)'],['../class_flow_body.html#acb0566960cbfa7d0f526a525f5f666b4',1,'FlowBody::FlowBody(const FlowBody &amp;flow)']]],
+  ['flowhandle_1',['FlowHandle',['../class_flow_handle.html#a9f5a188d19a3dcc52f82bb2d0273a3a1',1,'FlowHandle']]]
 ];

@@ -1,0 +1,271 @@
+\hypertarget{class_model_body}{}\doxysection{Model\+Body Class Reference}
+\label{class_model_body}\index{ModelBody@{ModelBody}}
+
+
+{\ttfamily \#include $<$Model\+Implementation.\+h$>$}
+
+
+
+Inheritance diagram for Model\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{class_model_body__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Model\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_body__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_model_body_a61bb091ef404a3615bace348e2071809}{$\sim$\+Model\+Body}} ()
+\item 
+\mbox{\hyperlink{class_model_body_a3c970ef8aabd582491b87f13c0c3aa97}{Model\+Body}} (std\+::string \mbox{\hyperlink{class_model_body_a962d3fee42955ed8a9cc2ec8df50ca25}{name}}=\char`\"{}\char`\"{}, double \mbox{\hyperlink{class_model_body_a190b4c5dc2628825a6071e492ca244ab}{time}}=0.\+0)
+\item 
+void \mbox{\hyperlink{class_model_body_a5b496c6c9bb19b6b9e625651725e8bd9}{simulate}} (double start, double end, double timestep)
+\item 
+std\+::string \mbox{\hyperlink{class_model_body_abc8878749ffac28158b810ee86df30e5}{get\+Name}} () const
+\item 
+void \mbox{\hyperlink{class_model_body_a077662978644577f3a17df208418e653}{set\+Name}} (std\+::string n)
+\item 
+double \mbox{\hyperlink{class_model_body_ab6a894eb19ac75aea41e0680e2a5639c}{get\+Time}} () const
+\item 
+void \mbox{\hyperlink{class_model_body_ada0f688edc39713cf083fce0e68cee5a}{set\+Time}} (double t)
+\item 
+void \mbox{\hyperlink{class_model_body_a792d303ccb76e2c6755d17a1d8f51d15}{add}} (\mbox{\hyperlink{class_system}{System}} $\ast$system)
+\item 
+void \mbox{\hyperlink{class_model_body_aa970c15679b82c7d265f04f5bbf737e4}{add}} (\mbox{\hyperlink{class_flow}{Flow}} $\ast$flow)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_body_af34f115680cdac8c641ae3e305a3edae}{get\+Systems\+Iterator}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_body_aac66754e85c699f59ef54e484873b077}{get\+Flows\+Iterator}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_body_a131318da4e17af8d0e17e426182e7f36}{end\+Systems}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_body_ac39c3ad65c1fdc99bedf2d13eed4c2ad}{end\+Flows}} ()
+\item 
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_model_body_a0edbc2624d6e15ad4f23eac268eedd1d}{create\+System}} (std\+::string \mbox{\hyperlink{class_model_body_a962d3fee42955ed8a9cc2ec8df50ca25}{name}}, double value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_model}{Model}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_body_a855664c4f7bc5bd4e4c7cfa93bf3014a}{get\+Models\+Iterator}} ()
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_model}{Model}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_body_a00f96deb535ca6f4bce25a1eafd44334}{end\+Models}} ()
+\item 
+static \mbox{\hyperlink{class_model}{Model}} $\ast$ \mbox{\hyperlink{class_model_body_a7647e12930545ffc45a81f175ab4d569}{create\+Model}} (std\+::string \mbox{\hyperlink{class_model_body_a962d3fee42955ed8a9cc2ec8df50ca25}{name}}, double \mbox{\hyperlink{class_model_body_a190b4c5dc2628825a6071e492ca244ab}{time}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_model_body_a962d3fee42955ed8a9cc2ec8df50ca25}{name}}
+\item 
+double \mbox{\hyperlink{class_model_body_a190b4c5dc2628825a6071e492ca244ab}{time}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$ \mbox{\hyperlink{class_model_body_ad0a483f555d5c300dd13f239313f4f06}{systems}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$ \mbox{\hyperlink{class_model_body_a565c4351d526fde92ebdbcb38dbbc017}{flows}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_model}{Model}} $\ast$ $>$ \mbox{\hyperlink{class_model_body_a9777af6f2cff1ead431b0b6c90914779}{models}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_model}{Model}} that simulates the energy flow through models 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_model_body_a61bb091ef404a3615bace348e2071809}\label{class_model_body_a61bb091ef404a3615bace348e2071809}} 
+\index{ModelBody@{ModelBody}!````~ModelBody@{$\sim$ModelBody}}
+\index{````~ModelBody@{$\sim$ModelBody}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{$\sim$ModelBody()}{~ModelBody()}}
+{\footnotesize\ttfamily Model\+Body\+::$\sim$\+Model\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Default destructor destrutor padrao\mbox{\Hypertarget{class_model_body_a3c970ef8aabd582491b87f13c0c3aa97}\label{class_model_body_a3c970ef8aabd582491b87f13c0c3aa97}} 
+\index{ModelBody@{ModelBody}!ModelBody@{ModelBody}}
+\index{ModelBody@{ModelBody}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{ModelBody()}{ModelBody()}}
+{\footnotesize\ttfamily Model\+Body\+::\+Model\+Body (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}\char`\"{}},  }\item[{double}]{time = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+Default constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & Inital model name \\
+\hline
+{\em time} & Inital model time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_model}{Model}} with initial name and time 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_model_body_aa970c15679b82c7d265f04f5bbf737e4}\label{class_model_body_aa970c15679b82c7d265f04f5bbf737e4}} 
+\index{ModelBody@{ModelBody}!add@{add}}
+\index{add@{add}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Model\+Body\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} $\ast$}]{flow }\end{DoxyParamCaption})}
+
+Add a flow to the model 
+\begin{DoxyParams}{Parameters}
+{\em flow} & \mbox{\hyperlink{class_flow}{Flow}} to be added to the model \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_body_a792d303ccb76e2c6755d17a1d8f51d15}\label{class_model_body_a792d303ccb76e2c6755d17a1d8f51d15}} 
+\index{ModelBody@{ModelBody}!add@{add}}
+\index{add@{add}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Model\+Body\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system }\end{DoxyParamCaption})}
+
+Add a system to the model 
+\begin{DoxyParams}{Parameters}
+{\em system} & \mbox{\hyperlink{class_system}{System}} to be added to the model \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_body_a7647e12930545ffc45a81f175ab4d569}\label{class_model_body_a7647e12930545ffc45a81f175ab4d569}} 
+\index{ModelBody@{ModelBody}!createModel@{createModel}}
+\index{createModel@{createModel}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{createModel()}{createModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model}{Model}} $\ast$ Model\+Body\+::create\+Model (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{double}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_model_body_a0edbc2624d6e15ad4f23eac268eedd1d}\label{class_model_body_a0edbc2624d6e15ad4f23eac268eedd1d}} 
+\index{ModelBody@{ModelBody}!createSystem@{createSystem}}
+\index{createSystem@{createSystem}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{createSystem()}{createSystem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}} $\ast$ Model\+Body\+::create\+System (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_model_body_ac39c3ad65c1fdc99bedf2d13eed4c2ad}\label{class_model_body_ac39c3ad65c1fdc99bedf2d13eed4c2ad}} 
+\index{ModelBody@{ModelBody}!endFlows@{endFlows}}
+\index{endFlows@{endFlows}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{endFlows()}{endFlows()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$\+::iterator Model\+Body\+::end\+Flows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_model_body_a00f96deb535ca6f4bce25a1eafd44334}\label{class_model_body_a00f96deb535ca6f4bce25a1eafd44334}} 
+\index{ModelBody@{ModelBody}!endModels@{endModels}}
+\index{endModels@{endModels}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{endModels()}{endModels()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_model}{Model}} $\ast$ $>$\+::iterator Model\+Body\+::end\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_model_body_a131318da4e17af8d0e17e426182e7f36}\label{class_model_body_a131318da4e17af8d0e17e426182e7f36}} 
+\index{ModelBody@{ModelBody}!endSystems@{endSystems}}
+\index{endSystems@{endSystems}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{endSystems()}{endSystems()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$\+::iterator Model\+Body\+::end\+Systems (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_model_body_aac66754e85c699f59ef54e484873b077}\label{class_model_body_aac66754e85c699f59ef54e484873b077}} 
+\index{ModelBody@{ModelBody}!getFlowsIterator@{getFlowsIterator}}
+\index{getFlowsIterator@{getFlowsIterator}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{getFlowsIterator()}{getFlowsIterator()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$\+::iterator Model\+Body\+::get\+Flows\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get model flows iterator \mbox{\Hypertarget{class_model_body_a855664c4f7bc5bd4e4c7cfa93bf3014a}\label{class_model_body_a855664c4f7bc5bd4e4c7cfa93bf3014a}} 
+\index{ModelBody@{ModelBody}!getModelsIterator@{getModelsIterator}}
+\index{getModelsIterator@{getModelsIterator}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{getModelsIterator()}{getModelsIterator()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_model}{Model}} $\ast$ $>$\+::iterator Model\+Body\+::get\+Models\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get model models iterator \mbox{\Hypertarget{class_model_body_abc8878749ffac28158b810ee86df30e5}\label{class_model_body_abc8878749ffac28158b810ee86df30e5}} 
+\index{ModelBody@{ModelBody}!getName@{getName}}
+\index{getName@{getName}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Model\+Body\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get model name \mbox{\Hypertarget{class_model_body_af34f115680cdac8c641ae3e305a3edae}\label{class_model_body_af34f115680cdac8c641ae3e305a3edae}} 
+\index{ModelBody@{ModelBody}!getSystemsIterator@{getSystemsIterator}}
+\index{getSystemsIterator@{getSystemsIterator}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{getSystemsIterator()}{getSystemsIterator()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$\+::iterator Model\+Body\+::get\+Systems\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get model systems iterator \mbox{\Hypertarget{class_model_body_ab6a894eb19ac75aea41e0680e2a5639c}\label{class_model_body_ab6a894eb19ac75aea41e0680e2a5639c}} 
+\index{ModelBody@{ModelBody}!getTime@{getTime}}
+\index{getTime@{getTime}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily double Model\+Body\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get model time \mbox{\Hypertarget{class_model_body_a077662978644577f3a17df208418e653}\label{class_model_body_a077662978644577f3a17df208418e653}} 
+\index{ModelBody@{ModelBody}!setName@{setName}}
+\index{setName@{setName}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Model\+Body\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{n }\end{DoxyParamCaption})}
+
+Set model name 
+\begin{DoxyParams}{Parameters}
+{\em n} & Name for the system \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_body_ada0f688edc39713cf083fce0e68cee5a}\label{class_model_body_ada0f688edc39713cf083fce0e68cee5a}} 
+\index{ModelBody@{ModelBody}!setTime@{setTime}}
+\index{setTime@{setTime}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{setTime()}{setTime()}}
+{\footnotesize\ttfamily void Model\+Body\+::set\+Time (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})}
+
+Set model time 
+\begin{DoxyParams}{Parameters}
+{\em t} & Name for the system \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_body_a5b496c6c9bb19b6b9e625651725e8bd9}\label{class_model_body_a5b496c6c9bb19b6b9e625651725e8bd9}} 
+\index{ModelBody@{ModelBody}!simulate@{simulate}}
+\index{simulate@{simulate}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily void Model\+Body\+::simulate (\begin{DoxyParamCaption}\item[{double}]{start,  }\item[{double}]{end,  }\item[{double}]{timestep }\end{DoxyParamCaption})}
+
+Simulates the model during a period of time between start and end time values with a specified timestep 
+\begin{DoxyParams}{Parameters}
+{\em start} & Time where the simulation starts \\
+\hline
+{\em end} & Time where the simulation ends \\
+\hline
+{\em timestep} & Timestep value to simulate with \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_model_body_a565c4351d526fde92ebdbcb38dbbc017}\label{class_model_body_a565c4351d526fde92ebdbcb38dbbc017}} 
+\index{ModelBody@{ModelBody}!flows@{flows}}
+\index{flows@{flows}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{flows}{flows}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_flow}{Flow}}$\ast$$>$ Model\+Body\+::flows\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_model_body_a9777af6f2cff1ead431b0b6c90914779}\label{class_model_body_a9777af6f2cff1ead431b0b6c90914779}} 
+\index{ModelBody@{ModelBody}!models@{models}}
+\index{models@{models}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{models}{models}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_model}{Model}} $\ast$ $>$ Model\+Body\+::models\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_model_body_a962d3fee42955ed8a9cc2ec8df50ca25}\label{class_model_body_a962d3fee42955ed8a9cc2ec8df50ca25}} 
+\index{ModelBody@{ModelBody}!name@{name}}
+\index{name@{name}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Model\+Body\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_model_body_ad0a483f555d5c300dd13f239313f4f06}\label{class_model_body_ad0a483f555d5c300dd13f239313f4f06}} 
+\index{ModelBody@{ModelBody}!systems@{systems}}
+\index{systems@{systems}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{systems}{systems}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_system}{System}}$\ast$$>$ Model\+Body\+::systems\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_model_body_a190b4c5dc2628825a6071e492ca244ab}\label{class_model_body_a190b4c5dc2628825a6071e492ca244ab}} 
+\index{ModelBody@{ModelBody}!time@{time}}
+\index{time@{time}!ModelBody@{ModelBody}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily double Model\+Body\+::time\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/lib/\mbox{\hyperlink{_model_implementation_8h}{Model\+Implementation.\+h}}\item 
+src/lib/\mbox{\hyperlink{_model_implementation_8cpp}{Model\+Implementation.\+cpp}}\end{DoxyCompactItemize}

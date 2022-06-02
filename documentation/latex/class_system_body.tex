@@ -1,0 +1,166 @@
+\hypertarget{class_system_body}{}\doxysection{System\+Body Class Reference}
+\label{class_system_body}\index{SystemBody@{SystemBody}}
+
+
+{\ttfamily \#include $<$System\+Implementation.\+h$>$}
+
+
+
+Inheritance diagram for System\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_system_body__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for System\+Body\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{class_system_body__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_system_body_a4e3ea9e45568032d9cc586bddf85898b}{$\sim$\+System\+Body}} () override
+\item 
+\mbox{\hyperlink{class_system_body_a059d8a3c306bfda6a9ae47a9fcd7edc0}{System\+Body}} (std\+::string \mbox{\hyperlink{class_system_body_a62da4563b8efd2a08f32c309e2790314}{name}}=\char`\"{}\char`\"{}, double \mbox{\hyperlink{class_system_body_a82fcaefb88098be09dbc59bf8b012922}{value}}=0.\+0)
+\item 
+\mbox{\hyperlink{class_system_body_a24ac2060bf8b2de2356d5b2d189a93bc}{System\+Body}} (const \mbox{\hyperlink{class_system_body}{System\+Body}} \&system)
+\item 
+\mbox{\hyperlink{class_system_body}{System\+Body}} \& \mbox{\hyperlink{class_system_body_aa8958f0483b8b52dc2c9c1410b36dcda}{operator=}} (const \mbox{\hyperlink{class_system_body}{System\+Body}} \&system)
+\item 
+std\+::string \mbox{\hyperlink{class_system_body_ade0121ff9741d3a8317a0343f4e95ea7}{get\+Name}} () const
+\item 
+void \mbox{\hyperlink{class_system_body_ad0463db170ee8430559f82797cba3608}{set\+Name}} (std\+::string n)
+\item 
+double \mbox{\hyperlink{class_system_body_aaa79b2b5454c81ffd4020de4d0b9da6a}{get\+Value}} () const
+\item 
+void \mbox{\hyperlink{class_system_body_a37cf1492f14faef985225d833c3095f4}{set\+Value}} (double v)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_system_body_a62da4563b8efd2a08f32c309e2790314}{name}}
+\item 
+double \mbox{\hyperlink{class_system_body_a82fcaefb88098be09dbc59bf8b012922}{value}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_system}{System}} that stores energy 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_system_body_a4e3ea9e45568032d9cc586bddf85898b}\label{class_system_body_a4e3ea9e45568032d9cc586bddf85898b}} 
+\index{SystemBody@{SystemBody}!````~SystemBody@{$\sim$SystemBody}}
+\index{````~SystemBody@{$\sim$SystemBody}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{$\sim$SystemBody()}{~SystemBody()}}
+{\footnotesize\ttfamily System\+Body\+::$\sim$\+System\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Default destructor \mbox{\Hypertarget{class_system_body_a059d8a3c306bfda6a9ae47a9fcd7edc0}\label{class_system_body_a059d8a3c306bfda6a9ae47a9fcd7edc0}} 
+\index{SystemBody@{SystemBody}!SystemBody@{SystemBody}}
+\index{SystemBody@{SystemBody}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{SystemBody()}{SystemBody()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily System\+Body\+::\+System\+Body (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}\char`\"{}},  }\item[{double}]{value = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+Default constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & Inital system name \\
+\hline
+{\em value} & Inital system value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_system}{System}} with initial name and value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_system_body_a24ac2060bf8b2de2356d5b2d189a93bc}\label{class_system_body_a24ac2060bf8b2de2356d5b2d189a93bc}} 
+\index{SystemBody@{SystemBody}!SystemBody@{SystemBody}}
+\index{SystemBody@{SystemBody}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{SystemBody()}{SystemBody()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily System\+Body\+::\+System\+Body (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system_body}{System\+Body}} \&}]{system }\end{DoxyParamCaption})}
+
+Copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em system} & \mbox{\hyperlink{class_system}{System}} to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Copied system 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_system_body_ade0121ff9741d3a8317a0343f4e95ea7}\label{class_system_body_ade0121ff9741d3a8317a0343f4e95ea7}} 
+\index{SystemBody@{SystemBody}!getName@{getName}}
+\index{getName@{getName}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string System\+Body\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get system name \mbox{\Hypertarget{class_system_body_aaa79b2b5454c81ffd4020de4d0b9da6a}\label{class_system_body_aaa79b2b5454c81ffd4020de4d0b9da6a}} 
+\index{SystemBody@{SystemBody}!getValue@{getValue}}
+\index{getValue@{getValue}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily double System\+Body\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get system value \mbox{\Hypertarget{class_system_body_aa8958f0483b8b52dc2c9c1410b36dcda}\label{class_system_body_aa8958f0483b8b52dc2c9c1410b36dcda}} 
+\index{SystemBody@{SystemBody}!operator=@{operator=}}
+\index{operator=@{operator=}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system_body}{System\+Body}} \& System\+Body\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_system_body}{System\+Body}} \&}]{system }\end{DoxyParamCaption})}
+
+Copy Assignment Operator 
+\begin{DoxyParams}{Parameters}
+{\em system} & \mbox{\hyperlink{class_system}{System}} to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Copied system 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_system_body_ad0463db170ee8430559f82797cba3608}\label{class_system_body_ad0463db170ee8430559f82797cba3608}} 
+\index{SystemBody@{SystemBody}!setName@{setName}}
+\index{setName@{setName}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void System\+Body\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{n }\end{DoxyParamCaption})}
+
+Set system name 
+\begin{DoxyParams}{Parameters}
+{\em n} & Name for the system \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_system_body_a37cf1492f14faef985225d833c3095f4}\label{class_system_body_a37cf1492f14faef985225d833c3095f4}} 
+\index{SystemBody@{SystemBody}!setValue@{setValue}}
+\index{setValue@{setValue}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily void System\+Body\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{v }\end{DoxyParamCaption})}
+
+Set system value 
+\begin{DoxyParams}{Parameters}
+{\em v} & Value for the system \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_system_body_a62da4563b8efd2a08f32c309e2790314}\label{class_system_body_a62da4563b8efd2a08f32c309e2790314}} 
+\index{SystemBody@{SystemBody}!name@{name}}
+\index{name@{name}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string System\+Body\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_system_body_a82fcaefb88098be09dbc59bf8b012922}\label{class_system_body_a82fcaefb88098be09dbc59bf8b012922}} 
+\index{SystemBody@{SystemBody}!value@{value}}
+\index{value@{value}!SystemBody@{SystemBody}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily double System\+Body\+::value\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/lib/\mbox{\hyperlink{_system_implementation_8h}{System\+Implementation.\+h}}\item 
+src/lib/\mbox{\hyperlink{_system_implementation_8cpp}{System\+Implementation.\+cpp}}\end{DoxyCompactItemize}
