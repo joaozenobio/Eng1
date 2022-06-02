@@ -27,13 +27,13 @@ all: ./bin/MyVensim.so ./bin/unitTest ./bin/functionalTest ./bin/executable
 ./bin/MyVensim.so: ./bin/model.o ./bin/flow.o ./bin/system.o
 	g++ -std=c++11 -fPIC -shared ./bin/model.o ./bin/flow.o ./bin/system.o -o ./bin/libMyVensim.so
 
-./bin/model.o: ./src/lib/ModelImplementation.cpp ./src/lib/ModelImplementation.h ./src/lib/Model.h ./bin/flow.o ./bin/system.o
+./bin/model.o: ./src/lib/ModelImplementation.cpp ./src/lib/ModelImplementation.h ./src/lib/Model.h ./bin/flow.o ./src/lib/handlebody.h ./bin/system.o
 	g++ -std=c++11 -fPIC -c ./src/lib/ModelImplementation.cpp -o ./bin/model.o
 
-./bin/flow.o: ./src/lib/FlowImplementation.cpp ./src/lib/FlowImplementation.h ./src/lib/Flow.h ./bin/system.o
+./bin/flow.o: ./src/lib/FlowImplementation.cpp ./src/lib/FlowImplementation.h ./src/lib/Flow.h ./src/lib/handlebody.h ./bin/system.o
 	g++ -std=c++11 -fPIC -c ./src/lib/FlowImplementation.cpp -o ./bin/flow.o
 
-./bin/system.o: ./src/lib/SystemImplementation.cpp ./src/lib/SystemImplementation.h ./src/lib/System.h
+./bin/system.o: ./src/lib/SystemImplementation.cpp ./src/lib/SystemImplementation.h ./src/lib/System.h ./src/lib/handlebody.h
 	g++ -std=c++11 -fPIC -c ./src/lib/SystemImplementation.cpp -o ./bin/system.o
 
 clean:

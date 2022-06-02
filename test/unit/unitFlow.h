@@ -10,12 +10,11 @@
 #include <cmath>
 
 #include "../../src/lib/Model.h"
-#include "../../src/lib/FlowImplementation.h"
 
 /**
  * Flow used for testing
 **/
-class UnitTestFlow : public FlowImplementation{
+class UnitTestFlow : public FlowBody{
 public:
     /**
      * Default constructor
@@ -25,7 +24,7 @@ public:
      * \param systemEnd: Inital system where the flow goes to
      * \return UnitTestFlow with initial name, value, systemBegin and systemEnd
     **/
-    UnitTestFlow(std::string name, System* systemBegin, System* systemEnd) : FlowImplementation(name, systemBegin, systemEnd) {}
+    UnitTestFlow(std::string name="", System* systemBegin=NULL, System* systemEnd=NULL) : FlowBody(name, systemBegin, systemEnd) {}
     /**
      * Flow expression method implementation for testing
     **/

@@ -15,7 +15,7 @@
 /**
  * Flow used for testing
 **/
-class UnitTestFlow2 : public FlowImplementation{
+class UnitTestFlow2 : public FlowBody{
 public:
     /**
      * Default constructor
@@ -25,7 +25,7 @@ public:
      * \param systemEnd: Inital system where the flow goes to
      * \return UnitTestFlow2 with initial name, value, systemBegin and systemEnd
     **/
-    UnitTestFlow2(std::string name, System* systemBegin, System* systemEnd) : FlowImplementation(name, systemBegin, systemEnd) {}
+    UnitTestFlow2(std::string name="", System* systemBegin=NULL, System* systemEnd=NULL) : FlowBody(name, systemBegin, systemEnd) {}
     /**
      * Flow expression method implementation for testing
     **/

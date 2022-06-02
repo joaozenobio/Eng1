@@ -7,9 +7,9 @@
 #include "ModelImplementation.h"
 #include "SystemImplementation.h"
 
-std::vector<Model*> ModelImplementation::models;
+std::vector<Model*> ModelBody::models;
 
-ModelImplementation::~ModelImplementation(){    /*!destrutor padrao */
+ModelBody::~ModelBody(){    /*!destrutor padrao */
     if(!flows.empty()){
         for (Flow* item : flows) {
             delete (item);
@@ -24,23 +24,23 @@ ModelImplementation::~ModelImplementation(){    /*!destrutor padrao */
     }
     auto i = getModelsIterator();
     for (Model* item : models){
-        if (this == item){
+        if (this == (ModelBody*)item){
             models.erase(i);
         }
         ++i;
     }
 }
 
-ModelImplementation::ModelImplementation(std::string name, double time) : name(name), time(time) {}
+ModelBody::ModelBody(std::string name, double time) : name(name), time(time) {}
 
-ModelImplementation::ModelImplementation(const ModelImplementation& model) {
+ModelBody::ModelBody(const ModelBody& model) {
     name = model.name;
     time = model.time;
     flows = model.flows;
     systems = model.systems;
 }
 
-ModelImplementation& ModelImplementation::operator=(const ModelImplementation& model) {
+ModelBody& ModelBody::operator=(const ModelBody& model) {
     if (this == &model){
         return *this;
     }
@@ -51,7 +51,7 @@ ModelImplementation& ModelImplementation::operator=(const ModelImplementation& m
     return *this;
 }
 
-void ModelImplementation::simulate(double start, double end, double timestep) {
+void ModelBody::simulate(double start, double end, double timestep) {
     int count = 0;
     for (double i = start; i < end; i += timestep) {
         for (Flow* flow : flows) {
@@ -70,66 +70,66 @@ void ModelImplementation::simulate(double start, double end, double timestep) {
     }
 }
 
-std::string ModelImplementation::getName() const {
+std::string ModelBody::getName() const {
     return name;
 }
 
-void ModelImplementation::setName(std::string n) {
+void ModelBody::setName(std::string n) {
     name = n;
 }
 
-double ModelImplementation::getTime() const {
+double ModelBody::getTime() const {
     return time;
 }
 
-void ModelImplementation::setTime(double t) {
+void ModelBody::setTime(double t) {
     time = t;
 }
 
-void ModelImplementation::add(Flow* flow) {
+void ModelBody::add(Flow* flow) {
     flows.push_back(flow);
 }
 
-void ModelImplementation::add(System* system) {
+void ModelBody::add(System* system) {
     systems.push_back(system);
 }
 
-std::vector<System *>::iterator ModelImplementation::getSystemsIterator() {
+std::vector<System *>::iterator ModelBody::getSystemsIterator() {
     return systems.begin();
 }
 
-std::vector<Flow *>::iterator ModelImplementation::getFlowsIterator() {
+std::vector<Flow *>::iterator ModelBody::getFlowsIterator() {
     return flows.begin();
 }
 
-std::vector<Model *>::iterator ModelImplementation::getModelsIterator() {
+std::vector<Model *>::iterator ModelBody::getModelsIterator() {
     return models.begin();
 }
 
-std::vector<System*>::iterator ModelImplementation::endSystems(){
+std::vector<System*>::iterator ModelBody::endSystems(){
     return systems.end();
 }
 
-std::vector<Flow*>::iterator ModelImplementation::endFlows(){
+std::vector<Flow*>::iterator ModelBody::endFlows(){
     return flows.end();
 }
 
-std::vector<Model*>::iterator ModelImplementation::endModels(){
+std::vector<Model*>::iterator ModelBody::endModels(){
     return models.end();
 }
 
-System* ModelImplementation::createSystem(std::string name, double value){
-    System* system = new SystemImplementation(name, value);
+System* ModelBody::createSystem(std::string name, double value){
+    System* system = new SystemHandle(name, value);
     add(system);
     return system;
 }
 
 Model* Model::createModel(std::string name, double time){
-    return ModelImplementation::createModel(name, time);
+    return ModelBody::createModel(name, time);
 }
 
-Model* ModelImplementation::createModel(std::string name, double time){
-    Model* model = new ModelImplementation(name, time);
+Model* ModelBody::createModel(std::string name, double time){
+    Model* model = new ModelHandle(name, time);
     models.push_back(model);
     return model;
 }

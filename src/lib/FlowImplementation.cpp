@@ -4,58 +4,40 @@
 
 #include "FlowImplementation.h"
 
-FlowImplementation::~FlowImplementation() = default;
+FlowBody::~FlowBody() = default;
 
-FlowImplementation::FlowImplementation(std::string name, System* systemBegin, System* systemEnd) : name(name), systemBegin(systemBegin), systemEnd(systemEnd) {
+FlowBody::FlowBody(std::string name, System* systemBegin, System* systemEnd) : name(name), systemBegin(systemBegin), systemEnd(systemEnd) {
     value = 0;
 }
 
-FlowImplementation::FlowImplementation(const FlowImplementation& flow) {
-    name = flow.name;
-    value = flow.value;
-    systemBegin = flow.systemBegin;
-    systemEnd = flow.systemEnd;
-}
-
-FlowImplementation& FlowImplementation::operator=(const FlowImplementation& flow){
-    if (this == &flow){
-        return *this;
-    }
-    name = flow.name;
-    value = flow.value;
-    systemBegin = flow.systemBegin;
-    systemEnd = flow.systemEnd;
-    return *this;
-}
-
-std::string FlowImplementation::getName() const {
+std::string FlowBody::getName() const {
     return name;
 }
 
-void FlowImplementation::setName(std::string n) {
+void FlowBody::setName(std::string n) {
     name = n;
 }
 
-double FlowImplementation::getValue() const {
+double FlowBody::getValue() const {
     return value;
 }
 
-void FlowImplementation::setValue(double v) {
+void FlowBody::setValue(double v) {
     value = v;
 }
 
-System* FlowImplementation::getSystemBegin() const {
+System* FlowBody::getSystemBegin() const {
     return systemBegin;
 }
 
-void FlowImplementation::setSystemBegin(System* system) {
+void FlowBody::setSystemBegin(System* system) {
     systemBegin = system;
 }
 
-System* FlowImplementation::getSystemEnd() const {
+System* FlowBody::getSystemEnd() const {
     return systemEnd;
 }
 
-void FlowImplementation::setSystemEnd(System* system) {
+void FlowBody::setSystemEnd(System* system) {
     systemEnd = system;
 }

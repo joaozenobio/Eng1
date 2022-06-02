@@ -10,8 +10,6 @@
 #include "unitFlow.h"
 #include "unitSystem.h"
 
-using namespace std;
-
 void runGlobal();
 
 

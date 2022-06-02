@@ -10,12 +10,11 @@
 #include <cmath>
 
 #include "../../src/lib/Model.h"
-#include "../../src/lib/FlowImplementation.h"
 
 /**
  * Flow that converges energy from a model to another exponencialy with 1% of the initial system per timestep
 **/
-class ExponencialFlow : public FlowImplementation{
+class ExponencialFlow : public FlowBody{
 public:
     /**
      * Default constructor
@@ -25,7 +24,7 @@ public:
      * \param systemEnd: Inital system where the flow goes to
      * \return Exponencial flow with initial name, value, systemBegin and systemEnd
     **/
-    ExponencialFlow(std::string name, System* systemOut, System* systemIn) : FlowImplementation(name, systemOut, systemIn) {}
+    ExponencialFlow(std::string name="", System* systemOut=NULL, System* systemIn=NULL) : FlowBody(name, systemOut, systemIn) {}
     /**
      * Exponencial expression
     **/
@@ -38,7 +37,7 @@ public:
  * Flow that converges energy from a model to another exponencialy with 1% of the end system per timestep
  * times onde minus the end system divided by seventy
 **/
-class LogisticalFlow : public FlowImplementation{
+class LogisticalFlow : public FlowBody{
 public:
     /**
      * Default constructor
@@ -48,7 +47,7 @@ public:
      * \param systemEnd: Inital system where the flow goes to
      * \return Logistical flow with initial name, value, systemBegin and systemEnd
     **/
-    LogisticalFlow(std::string name, System* systemOut, System* systemIn) : FlowImplementation(name, systemOut, systemIn) {}
+    LogisticalFlow(std::string name="", System* systemOut=NULL, System* systemIn=NULL) : FlowBody(name, systemOut, systemIn) {}
     /**
      * Logistical expression
     **/
@@ -60,7 +59,7 @@ public:
 /**
  * Flow that converges energy from a model to another exponencialy with 1% of the end system per timestep
 **/
-class ComplexFlow : public FlowImplementation{
+class ComplexFlow : public FlowBody{
 public:
     /**
      * Default constructor
@@ -70,7 +69,7 @@ public:
      * \param systemEnd: Inital system where the flow goes to
      * \return Complex flow with initial name, value, systemBegin and systemEnd
     **/
-    ComplexFlow(std::string name, System* systemOut, System* systemIn) : FlowImplementation(name, systemOut, systemIn) {}
+    ComplexFlow(std::string name="", System* systemOut=NULL, System* systemIn=NULL) : FlowBody(name, systemOut, systemIn) {}
     /**
      * Complex expression
     **/

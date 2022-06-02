@@ -4,36 +4,22 @@
 
 #include "SystemImplementation.h"
 
-SystemImplementation::~SystemImplementation() = default;
+SystemBody::~SystemBody() = default;
 
-SystemImplementation::SystemImplementation(std::string name, double value): name(name), value(value) {}
+SystemBody::SystemBody(std::string name, double value): name(name), value(value) {}
 
-SystemImplementation::SystemImplementation (const SystemImplementation& system){
-    name = system.name;
-    value = system.value;
-}
-
-SystemImplementation& SystemImplementation::operator=(const SystemImplementation& system){
-    if (this == &system){
-        return *this;
-    }
-    name = system.name;
-    value = system.value;
-    return *this;
-}
-
-std::string SystemImplementation::getName() const {
+std::string SystemBody::getName() const {
     return name;
 }
 
-void SystemImplementation::setName(std::string n) {
+void SystemBody::setName(std::string n) {
     name = n;
 }
 
-double SystemImplementation::getValue() const {
+double SystemBody::getValue() const {
     return value;
 }
 
-void SystemImplementation::setValue(double v) {
+void SystemBody::setValue(double v) {
     value = v;
 }

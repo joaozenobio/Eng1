@@ -11,8 +11,20 @@
 
 #include "System.h"
 #include "Flow.h"
+#include "FlowImplementation.h"
 
 class Model {
+protected:
+    /**
+     * Add a flow to the model
+     * \param flow: Flow to be added to the model
+    **/
+    virtual void add(System*) = 0;
+    /**
+     * Add a flow to the model
+     * \param flow: Flow to be added to the model
+    **/
+    virtual void add(Flow*) = 0;
 public:
     /**
      * Default destructor
@@ -44,16 +56,6 @@ public:
     **/
     virtual void setTime(double) = 0;
     /**
-    * Add a system to the model
-    * \param system: System to be added to the model
-   **/
-    virtual void add(System*) = 0;
-    /**
-     * Add a flow to the model
-     * \param flow: Flow to be added to the model
-    **/
-    virtual void add(Flow*) = 0;
-    /**
      * Get model systems iterator
     **/
     virtual std::vector<System*>::iterator getSystemsIterator() = 0;
@@ -76,7 +78,7 @@ public:
 
     template<typename FlowType>
     Flow* createFlow(std::string name, System* systemBegin, System* systemEnd){
-        Flow* flow = new FlowType(name, systemBegin, systemEnd);
+        Flow* flow = new FlowHandle<FlowType>(name, systemBegin, systemEnd);
         add(flow);
         return flow;
     }
