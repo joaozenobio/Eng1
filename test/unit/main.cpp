@@ -16,6 +16,10 @@ int numBodyDeleted;
 
 int main(){
     runGlobal();
+    std::cout << numBodyCreated << "\n";
+    std::cout << numBodyDeleted << "\n";
+    std::cout << numHandleCreated << "\n";
+    std::cout << numHandleDeleted << "\n";
     std::cout << "Unit test concluded" << "\n";
     return 0;
 }
